@@ -11,8 +11,8 @@
   list-style: none;
 }
 .site-menu > summary::-webkit-details-marker { display: none; }
-.site-menu > summary:hover, .site-menu[open] > summary { border-color: hsl(220 15% 8%); background: #FF6B00; color: hsl(220 15% 8%); }
-.site-menu summary:focus-visible { outline: 3px solid #FF6B00; outline-offset: 2px; }
+.site-menu > summary:hover, .site-menu[open] > summary { border-color: hsl(220 15% 8%); background: var(--brand-orange); color: hsl(220 15% 8%); }
+.site-menu summary:focus-visible { outline: 3px solid var(--brand-orange); outline-offset: 2px; }
 .site-menu-close-icon { display: none; }
 .site-menu[open] .site-menu-open-icon { display: none; }
 .site-menu[open] .site-menu-close-icon { display: block; }
@@ -41,8 +41,8 @@
 }
 .site-menu-divider { margin-top: 8px; border-top: 1px solid hsl(220 8% 82%); padding-top: 16px; }
 .site-menu-panel a { display: block; padding: 10px 11px; color: hsl(220 15% 8%); font-size: .9rem; text-decoration: none; }
-.site-menu-panel a:hover, .site-menu-panel a:focus-visible, .site-menu-panel a[aria-current="page"] { outline: none; background: #FF6B00; color: hsl(220 15% 8%); }
-.site-menu-panel a:focus-visible { outline: 2px solid #FF6B00; outline-offset: -2px; }
+.site-menu-panel a:hover, .site-menu-panel a:focus-visible, .site-menu-panel a[aria-current="page"] { outline: none; background: var(--brand-orange); color: hsl(220 15% 8%); }
+.site-menu-panel a:focus-visible { outline: 2px solid var(--brand-orange); outline-offset: -2px; }
 .site-menu > summary:hover, .site-menu[open] > summary, .site-menu-panel a:hover, .site-menu-panel a:focus-visible, .site-menu-panel a[aria-current="page"] { color: hsl(220 15% 8%); }
 .desktop-site-navigation { display: none; }
 .navigation-controls { display: contents; }
@@ -53,7 +53,7 @@
 .nav-dropdown-panel { display: grid; background: hsl(210 25% 97%); padding: 6px; }
 .nav-category-dropdown:not([open]) > .nav-dropdown-panel { display: none; }
 .nav-dropdown-panel a { display: block; padding: 10px 11px; font-size: .9rem; color: hsl(220 15% 8%); }
-.nav-dropdown-panel a:hover, .nav-dropdown-panel a:focus-visible { background: #FF6B00; color: hsl(220 15% 8%); text-decoration: none; }
+.nav-dropdown-panel a:hover, .nav-dropdown-panel a:focus-visible { background: var(--brand-orange); color: hsl(220 15% 8%); text-decoration: none; }
 .nav-category-dropdown > summary:focus-visible { outline: 2px solid hsl(220 15% 8%); outline-offset: 3px; }
 @media (min-width: 1024px) {
   .site-menu { display: none; }

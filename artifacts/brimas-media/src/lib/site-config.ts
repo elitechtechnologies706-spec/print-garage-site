@@ -12,6 +12,6 @@ export const SITE = {
   email: 'printgarage101@gmail.com',
   address: 'Peacock Building, 2nd Floor, Kampala, Uganda',
   streetAddress: 'Peacock Building, 2nd Floor',
-  primary: '#FF6B00',
-  secondary: '#4B5563',
+  primary: '#F47226',
+  secondary: '#717274',
 } as const;

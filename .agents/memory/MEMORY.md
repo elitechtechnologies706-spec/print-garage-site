@@ -1,1 +1,2 @@
 - [Imported workspace setup](imported-workspace-setup.md) — registering imported services and installing all workspace dependencies need separate steps.
+- [Site brand colors](site-brand-colors.md) — use the supplied Print Garage logo’s two colors as the website’s main palette.

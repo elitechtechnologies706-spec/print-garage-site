@@ -1,14 +1,14 @@
 .price-page { min-height: 100dvh; background: hsl(0 0% 98%); color: hsl(220 15% 8%); }
 .price-page * { box-sizing: border-box; }
-.price-page a:focus-visible, .price-page input:focus-visible { outline: 3px solid #FF6B00; outline-offset: 3px; }
+.price-page a:focus-visible, .price-page input:focus-visible { outline: 3px solid var(--brand-orange); outline-offset: 3px; }
 .price-page-header { background: hsl(0 0% 100%); color: hsl(220 15% 8%); border-bottom: 1px solid hsl(220 8% 82%); }
 .price-page-header-inner { min-height: 82px; display: flex; align-items: center; gap: 28px; }
-.price-page-brand img { display: block; height: 64px; width: 64px; object-fit: contain; background: hsl(0 0% 98%); }
+.price-page-brand img { display: block; height: auto; width: clamp(118px, 12vw, 150px); object-fit: contain; }
 .price-page-toplinks { display: flex; margin-left: auto; align-items: center; gap: 25px; }
 .price-page-toplinks a { display: inline-flex; align-items: center; gap: 6px; color: inherit; text-decoration: none; font-size: .82rem; font-weight: 700; }
 .price-page-toplinks a:hover { color: hsl(220 15% 8%); text-decoration: underline; text-underline-offset: 3px; }
 .price-page-footer a:hover { color: hsl(0 0% 100%); text-decoration: underline; text-underline-offset: 3px; }
-.price-page-hero { background: #4B5563; color: hsl(0 0% 98%); padding: clamp(60px, 8vw, 110px) 0 88px; }
+.price-page-hero { background: var(--brand-gray); color: hsl(0 0% 100%); padding: clamp(60px, 8vw, 110px) 0 88px; }
 .price-page-eyebrow, .price-page-code { font: 700 11px var(--app-font-mono); letter-spacing: .11em; text-transform: uppercase; }
 .price-page-eyebrow { color: hsl(0 0% 100%); }
 .price-page-hero h1 { font-size: clamp(4rem, 9vw, 9rem); line-height: .9; letter-spacing: -.08em; margin: 28px 0; }
@@ -23,7 +23,7 @@
 .price-page-intro p { max-width: 680px; line-height: 1.5; color: hsl(220 15% 8% / .76); margin: 0; }
 .price-page-search { min-width: min(310px, 100%); display: flex; align-items: center; gap: 10px; padding: 0 16px; height: 52px; border: 1px solid hsl(220 15% 8% / .45); background: hsl(0 0% 100%); }
 .price-page-search input { width: 100%; border: 0; outline: 0; background: transparent; color: inherit; font: inherit; }
-.price-page-search:focus-within { outline: 3px solid #FF6B00; outline-offset: 2px; }
+.price-page-search:focus-within { outline: 3px solid var(--brand-orange); outline-offset: 2px; }
 .price-page-empty { padding: 40px; border: 1px solid hsl(220 15% 8% / .2); }
 .price-page-section { margin-bottom: 54px; }
 .price-page-section-head { display: flex; align-items: baseline; justify-content: space-between; gap: 15px; padding-bottom: 20px; border-bottom: 3px solid hsl(220 15% 8%); }
@@ -40,12 +40,12 @@
 .price-page-value { font-weight: 800; font-variant-numeric: tabular-nums; white-space: nowrap; }
 .price-page-value--quote { font-size: .82rem; }
 .price-page-item a { display: inline-flex; align-items: center; justify-content: center; gap: 8px; background: hsl(220 15% 8%); color: hsl(0 0% 100%); text-decoration: none; font-size: .78rem; font-weight: 700; padding: 11px 9px; }
-.price-page-item a:hover, .price-page-item a:focus-visible { background: #FF6B00; }
+.price-page-item a:hover, .price-page-item a:focus-visible { background: var(--brand-orange); }
 .price-page-notice { padding: clamp(24px, 4vw, 44px); background: hsl(0 0% 98%); border: 1px solid hsl(220 8% 82%); margin-top: 60px; max-width: 800px; }
 .price-page-notice strong { font-size: 1.8rem; letter-spacing: -.04em; }
 .price-page-notice p { line-height: 1.5; max-width: 620px; }
 .price-page-notice a { font-weight: 800; color: inherit; display: inline-flex; gap: 8px; align-items: center; }
-.price-page-footer { background: hsl(220 15% 8%); color: hsl(0 0% 98%); padding: 30px 0; font-size: .85rem; }
+.price-page-footer { background: var(--brand-gray); color: hsl(0 0% 100%); padding: 30px 0; font-size: .85rem; }
 .price-page-footer .shell { display: flex; flex-wrap: wrap; gap: 18px; justify-content: space-between; }
 .price-page-footer a { color: inherit; }
 @media (max-width: 760px) {
@@ -60,4 +60,5 @@
   .price-page-item-name { grid-column: 1 / -1; }
   .price-page-item a { min-width: 110px; }
 }
-.price-page-hero, .price-page-hero :is(.price-page-eyebrow, h1 span, p, p strong), .price-page-item a:hover, .price-page-item a:focus-visible { color: hsl(220 15% 8%); }
+.price-page-hero, .price-page-hero :is(.price-page-eyebrow, h1 span, p, p strong) { color: #fff; }
+.price-page-item a:hover, .price-page-item a:focus-visible { color: hsl(220 15% 8%); }
