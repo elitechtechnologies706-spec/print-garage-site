@@ -1,0 +1,167 @@
+openapi: 3.1.0
+info:
+  # Do not change the title, if the title changes, the import paths will be broken
+  title: Api
+  version: 0.1.0
+  description: API specification
+servers:
+  - url: /api
+    description: Base API path
+tags:
+  - name: health
+    description: Health operations
+  - name: views
+    description: Homepage visit tracking and protected history
+paths:
+  /healthz:
+    get:
+      operationId: healthCheck
+      tags: [health]
+      summary: Health check
+      description: Returns server health status
+      responses:
+        "200":
+          description: Healthy
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/HealthStatus"
+  /views:
+    get:
+      operationId: getViewCount
+      tags: [views]
+      summary: Public total homepage view count
+      responses:
+        "200":
+          description: Total visits
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ViewCount"
+    post:
+      operationId: recordView
+      tags: [views]
+      summary: Record one homepage page load
+      responses:
+        "201":
+          description: View recorded
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ViewCount"
+  /views/admin/login:
+    post:
+      operationId: loginViewsAdmin
+      tags: [views]
+      summary: Open an admin session
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/ViewsLoginInput"
+      responses:
+        "200":
+          description: Authenticated
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ViewsAdminSession"
+        "401":
+          description: Incorrect password
+        "429":
+          description: Too many login attempts
+  /views/admin/logout:
+    post:
+      operationId: logoutViewsAdmin
+      tags: [views]
+      summary: End the admin session
+      responses:
+        "200":
+          description: Signed out
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ViewsAdminSession"
+  /views/admin:
+    get:
+      operationId: getViewsAdmin
+      tags: [views]
+      summary: Read protected visit history
+      responses:
+        "200":
+          description: Count and latest visits
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ViewsHistory"
+        "401":
+          description: Authentication required
+  /views.json:
+    get:
+      operationId: exportViewsJson
+      tags: [views]
+      summary: Download protected visit history as JSON
+      responses:
+        "200":
+          description: Complete JSON export
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ViewsHistory"
+        "401":
+          description: Authentication required
+components:
+  schemas:
+    HealthStatus:
+      type: object
+      properties:
+        status:
+          type: string
+      required:
+        - status
+    ViewCount:
+      type: object
+      required: [count]
+      properties:
+        count:
+          type: integer
+          minimum: 0
+    ViewsLoginInput:
+      type: object
+      required: [password]
+      properties:
+        password:
+          type: string
+          minLength: 1
+    ViewsAdminSession:
+      type: object
+      required: [authenticated]
+      properties:
+        authenticated:
+          type: boolean
+    ViewRecord:
+      type: object
+      required: [id, ip, timestamp, userAgent]
+      properties:
+        id:
+          type: integer
+        ip:
+          type: string
+        timestamp:
+          type: string
+          format: date-time
+        userAgent:
+          type: string
+    ViewsHistory:
+      type: object
+      required: [count, visits]
+      properties:
+        count:
+          type: integer
+          minimum: 0
+        visits:
+          type: array
+          items:
+            $ref: "#/components/schemas/ViewRecord"
+

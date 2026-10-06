@@ -1,0 +1,43 @@
+[build]
+  base = "."
+  command = "pnpm install --frozen-lockfile && PORT=3000 BASE_PATH=/ pnpm --filter @workspace/brimas-media run build"
+  publish = "artifacts/brimas-media/dist/public"
+  functions = "netlify/functions"
+
+[functions]
+  node_bundler = "esbuild"
+  external_node_modules = ["pino", "pino-http"]
+
+# Vite fingerprints these files, so a new build changes the asset URL.
+# Do not apply immutable caching to HTML or unversioned catalogue images.
+[[headers]]
+  for = "/assets/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[redirects]]
+  from = "/api/*"
+  to = "/.netlify/functions/api/:splat"
+  status = 200
+  force = true
+
+# Override existing error documents, which otherwise shadow the 404 fallback.
+# Use distinct source/target paths: Netlify ignores self-rewrites. Status 404
+# serves the target HTML internally, not a 3xx redirect between these URLs.
+[[redirects]]
+  from = "/404"
+  to = "/404.html"
+  status = 404
+  force = true
+
+[[redirects]]
+  from = "/404.html"
+  to = "/404"
+  status = 404
+  force = true
+
+# Keep this unforced so public pages and assets retain their normal responses.
+[[redirects]]
+  from = "/*"
+  to = "/404.html"
+  status = 404

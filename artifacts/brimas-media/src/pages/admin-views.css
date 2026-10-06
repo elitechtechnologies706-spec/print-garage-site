@@ -1,0 +1,45 @@
+.views-admin { min-height: 100dvh; background: hsl(0 0% 98%); color: hsl(220 15% 8%); font-family: var(--app-font-sans); }
+.views-admin * { box-sizing: border-box; }
+.views-admin :is(a, button, input):focus-visible { outline: 3px solid #FF6B00; outline-offset: 3px; }
+.views-admin-header { min-height: 76px; display: flex; justify-content: space-between; align-items: center; gap: 12px; padding: 15px max(20px, calc((100vw - 1180px) / 2)); background: hsl(0 0% 100%); color: hsl(220 15% 8%); border-bottom: 1px solid hsl(220 8% 82%); }
+.views-admin-header a, .views-admin-header span { display: inline-flex; align-items: center; gap: 9px; color: inherit; text-decoration: none; font-weight: 700; font-size: .8rem; }
+.views-admin-header span { color: hsl(220 15% 8%); font-family: var(--app-font-sans); letter-spacing: .02em; }
+.views-admin-main { width: min(1180px, calc(100% - 36px)); margin-inline: auto; padding: 65px 0 110px; }
+.views-admin-eyebrow { color: hsl(220 15% 8%); font: 700 12px var(--app-font-sans); letter-spacing: .03em; }
+.views-admin-heading { max-width: 680px; }
+.views-admin-heading h1 { font-size: clamp(3.2rem, 7vw, 6.5rem); letter-spacing: -.08em; line-height: .95; margin: 20px 0 22px; }
+.views-admin-heading p { color: hsl(220 15% 8% / .76); font-size: 1.1rem; line-height: 1.5; }
+.views-admin-state { padding: 32px 0; }
+.views-admin-state button { margin-left: 14px; }
+.views-admin-login { display: flex; flex-direction: column; gap: 13px; max-width: 490px; background: hsl(0 0% 100%); color: hsl(220 15% 8%); padding: clamp(25px, 5vw, 48px); margin-top: 45px; border: 1px solid hsl(220 8% 82%); }
+.views-admin-login h2 { font-size: 2rem; letter-spacing: -.04em; margin: 4px 0 20px; }
+.views-admin-username { position: absolute; width: 1px; height: 1px; padding: 0; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0; }
+.views-admin-login label { font-weight: 700; }
+.views-admin-login input { width: 100%; min-height: 50px; padding: 12px; border: 1px solid hsl(220 8% 82%); background: hsl(0 0% 100%); color: hsl(220 15% 8%); font: inherit; }
+.views-admin-login button { min-height: 50px; padding: 10px 20px; border: 0; background: #FF6B00; color: hsl(220 15% 8%); font: 800 .95rem var(--app-font-sans); cursor: pointer; }
+.views-admin-login button:disabled { opacity: .65; cursor: wait; }
+.views-admin-error { color: hsl(220 15% 8%); margin: 0; }
+.views-admin-summary { margin-top: 46px; padding: 25px; background: hsl(0 0% 100%); color: hsl(220 15% 8%); border: 1px solid hsl(220 8% 82%); display: flex; flex-wrap: wrap; justify-content: space-between; align-items: end; gap: 26px; }
+.views-admin-summary span { display: block; font: 700 12px var(--app-font-sans); letter-spacing: .02em; color: hsl(220 15% 8%); }
+.views-admin-summary strong { font-size: clamp(3rem, 6vw, 5rem); line-height: 1; display: block; margin-top: 12px; }
+.views-admin-actions { display: flex; flex-wrap: wrap; gap: 10px; }
+.views-admin-actions a, .views-admin-actions button, .views-admin-state button { display: inline-flex; align-items: center; justify-content: center; gap: 8px; padding: 12px 16px; font: 700 .82rem var(--app-font-sans); text-decoration: none; cursor: pointer; }
+.views-admin-actions a { background: #FF6B00; color: hsl(220 15% 8%); }
+.views-admin-actions button { border: 1px solid hsl(220 8% 72%); background: hsl(0 0% 100%); color: hsl(220 15% 8%); }
+.views-admin-list { margin-top: 48px; }
+.views-admin-list h2 { font-size: 2rem; letter-spacing: -.04em; margin-bottom: 21px; }
+.views-admin-list h2 small { font: 600 12px var(--app-font-sans); letter-spacing: .02em; color: hsl(220 15% 8% / .65); }
+.views-admin-table-wrap { overflow-x: auto; border-top: 2px solid hsl(220 15% 8%); }
+.views-admin-list table { border-collapse: collapse; width: 100%; min-width: 640px; text-align: left; }
+.views-admin-list th, .views-admin-list td { padding: 15px 12px; border-bottom: 1px solid hsl(220 15% 8% / .16); vertical-align: top; font-size: .85rem; }
+.views-admin-list th { font: 700 11px var(--app-font-sans); white-space: nowrap; }
+.views-admin-mono { font-family: var(--app-font-mono); white-space: nowrap; }
+.views-admin-agent { max-width: 600px; overflow-wrap: anywhere; color: hsl(220 15% 8% / .75); }
+.views-admin-empty { padding: 25px 0; }
+@media (max-width: 600px) {
+  .views-admin-main { padding-top: 45px; }
+  .views-admin-header span { font-size: .62rem; }
+  .views-admin-actions { width: 100%; }
+  .views-admin-actions a, .views-admin-actions button { flex: 1; white-space: nowrap; }
+}
+.views-admin-login button, .views-admin-actions a { color: hsl(220 15% 8%); }

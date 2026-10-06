@@ -1,0 +1,26 @@
+{
+  "mode": "dry-run",
+  "inputAssets": 254,
+  "verifiedAssets": 254,
+  "mappedAssets": 126,
+  "needsReview": 128,
+  "activeBindings": 20,
+  "verifiedDeliveryUrls": 828,
+  "exactPixelDuplicates": [
+    {
+      "id": "f7d9ccf3e527ae3bcc6fc31d916ec3a8",
+      "duplicateOf": "a9a59f5cd31ba41999abe766a81f13fd"
+    },
+    {
+      "id": "26e9acff3bbc2ee30fac160aeff17cd6",
+      "duplicateOf": "cd2acfea9bf66679e2123b75b79d4c5e"
+    }
+  ],
+  "errors": [],
+  "uploads": 0,
+  "originalsDownloaded": 0,
+  "repositoryImageBytesAdded": 0,
+  "note": "Only this CSV batch was inspected. Do not interpret its size as the full account inventory.",
+  "verifiedAtUnix": 1791028852,
+  "candidateSha256": "9bfdec90bd5adfad8a1c136139acfb9ead2287fdfc27b7f9d22e4b4f63c5beaf"
+}

@@ -1,0 +1,3485 @@
+{
+  "PHOTO-2026-07-06-20-54-49_1": {
+    "category": "corporate-gifts",
+    "provenance": "photo",
+    "status": "mapped",
+    "subject": "Presentation gift set",
+    "alt": "Black presentation box containing a dark bottle, notebook, pen and small accessory",
+    "pages": [
+      "/",
+      "/corporate-gifts-branding-kampala"
+    ],
+    "roles": [
+      "product-example"
+    ],
+    "localBindings": []
+  },
+  "PHOTO-2026-07-06-20-54-49": {
+    "category": "corporate-gifts",
+    "provenance": "photo",
+    "status": "mapped",
+    "subject": "Presentation gift set",
+    "alt": "Open black gift box with a bottle, dark notebook and pen",
+    "pages": [
+      "/",
+      "/corporate-gifts-branding-kampala"
+    ],
+    "roles": [
+      "product-example"
+    ],
+    "localBindings": []
+  },
+  "PHOTO-2026-04-19-12-50-04_2": {
+    "category": "promotional-products",
+    "provenance": "photo",
+    "status": "mapped",
+    "subject": "Reusable bottle",
+    "alt": "Purple reusable bottle with colourful stickers beside its white packaging",
+    "pages": [
+      "/promotional-items-mugs-pens-kampala"
+    ],
+    "roles": [
+      "product-example"
+    ],
+    "localBindings": []
+  },
+  "PHOTO-2026-04-19-12-50-04_1": {
+    "category": "promotional-products",
+    "provenance": "photo",
+    "status": "mapped",
+    "subject": "Reusable bottle",
+    "alt": "Pink textured bottle beside a white product box on a wooden surface",
+    "pages": [
+      "/promotional-items-mugs-pens-kampala"
+    ],
+    "roles": [
+      "product-example"
+    ],
+    "localBindings": []
+  },
+  "PHOTO-2026-04-19-12-50-04": {
+    "category": "promotional-products",
+    "provenance": "unknown",
+    "status": "needs-review",
+    "subject": "Green drink bottles",
+    "alt": "Four pale green drink bottles in different sizes",
+    "pages": [
+      "/promotional-items-mugs-pens-kampala"
+    ],
+    "roles": [
+      "product-example"
+    ],
+    "localBindings": [],
+    "reviewReason": "Bottle subject is identifiable; photo versus rendered mockup is uncertain."
+  },
+  "PHOTO-2026-04-18-11-52-33_1": {
+    "category": "workwear",
+    "provenance": "mockup",
+    "status": "mapped",
+    "subject": "Polo shirt design",
+    "alt": "Light blue polo shirt design on a promotional graphic background",
+    "pages": [
+      "/t-shirt-printing-embroidery-kampala",
+      "/uniform-embroidery-kampala"
+    ],
+    "roles": [
+      "product-example"
+    ],
+    "localBindings": []
+  },
+  "PHOTO-2026-04-18-11-52-33": {
+    "category": "workwear",
+    "provenance": "mockup",
+    "status": "mapped",
+    "subject": "Polo shirt design",
+    "alt": "Pale green polo shirt design on a promotional graphic background",
+    "pages": [
+      "/t-shirt-printing-embroidery-kampala",
+      "/uniform-embroidery-kampala"
+    ],
+    "roles": [
+      "product-example"
+    ],
+    "localBindings": []
+  },
+  "PHOTO-2026-04-18-11-52-32": {
+    "category": "workwear",
+    "provenance": "mockup",
+    "status": "mapped",
+    "subject": "Plain T-shirt design",
+    "alt": "Plain white short-sleeved crew-neck T-shirt design",
+    "pages": [
+      "/t-shirt-printing-embroidery-kampala"
+    ],
+    "roles": [
+      "product-example"
+    ],
+    "localBindings": []
+  },
+  "PHOTO-2026-04-18-11-52-31": {
+    "category": "workwear",
+    "provenance": "mockup",
+    "status": "mapped",
+    "subject": "Plain T-shirt design",
+    "alt": "Dark green short-sleeved T-shirt design on a blue background",
+    "pages": [
+      "/t-shirt-printing-embroidery-kampala"
+    ],
+    "roles": [
+      "product-example"
+    ],
+    "localBindings": []
+  },
+  "PHOTO-2026-04-18-09-29-16": {
+    "category": "promotional-products",
+    "provenance": "unknown",
+    "status": "needs-review",
+    "subject": "Green drink bottles",
+    "alt": "Four pale green drink bottles in different sizes",
+    "pages": [
+      "/promotional-items-mugs-pens-kampala"
+    ],
+    "roles": [
+      "product-example"
+    ],
+    "localBindings": [],
+    "reviewReason": "Bottle subject is identifiable; photo versus rendered mockup is uncertain."
+  },
+  "PHOTO-2026-04-18-09-17-56": {
+    "category": "promotional-products",
+    "provenance": "photo",
+    "status": "mapped",
+    "subject": "Drink bottles",
+    "alt": "Two green and yellow drink bottles with cartoon stickers on a shelf",
+    "pages": [
+      "/promotional-items-mugs-pens-kampala"
+    ],
+    "roles": [
+      "product-example"
+    ],
+    "localBindings": []
+  },
+  "PHOTO-2026-04-17-15-45-17": {
+    "category": "needs-review",
+    "provenance": "photo",
+    "status": "needs-review",
+    "subject": "Knee-length socks",
+    "alt": "Long socks in several colours laid side by side",
+    "pages": [],
+    "roles": [],
+    "localBindings": [],
+    "reviewReason": "Socks are visible, but this product is not established in existing Brimas service content."
+  },
+  "PHOTO-2026-04-17-15-34-55": {
+    "category": "needs-review",
+    "provenance": "photo",
+    "status": "needs-review",
+    "subject": "Burgundy sock",
+    "alt": "Close-up of a burgundy sock being held beside a black skirt",
+    "pages": [],
+    "roles": [],
+    "localBindings": [],
+    "reviewReason": "Do not assume socks are Brimas workwear or PPE."
+  },
+  "PHOTO-2026-04-17-15-34-54": {
+    "category": "needs-review",
+    "provenance": "photo",
+    "status": "needs-review",
+    "subject": "Red socks",
+    "alt": "Person wearing red knee-length socks and black shoes",
+    "pages": [],
+    "roles": [],
+    "localBindings": [],
+    "reviewReason": "Do not attribute an unidentified model or garment to Brimas."
+  },
+  "PHOTO-2026-04-17-15-08-54": {
+    "category": "needs-review",
+    "provenance": "unknown",
+    "status": "needs-review",
+    "subject": "Burgundy sock",
+    "alt": "Single burgundy knee-length sock on a white background",
+    "pages": [],
+    "roles": [],
+    "localBindings": [],
+    "reviewReason": "Unsupported product category and uncertain photo/mockup provenance."
+  },
+  "PHOTO-2026-04-17-15-06-47": {
+    "category": "needs-review",
+    "provenance": "unknown",
+    "status": "needs-review",
+    "subject": "Blue socks",
+    "alt": "Pair of blue knee-length socks on a white background",
+    "pages": [],
+    "roles": [],
+    "localBindings": [],
+    "reviewReason": "Unsupported product category and uncertain photo/mockup provenance."
+  },
+  "PHOTO-2026-04-01-08-57-08": {
+    "category": "promotional-products",
+    "provenance": "photo",
+    "status": "mapped",
+    "subject": "Reusable bottles",
+    "alt": "Reusable bottles in orange, pink, green and purple arranged on a display surface",
+    "pages": [
+      "/promotional-items-mugs-pens-kampala"
+    ],
+    "roles": [
+      "product-example"
+    ],
+    "localBindings": []
+  },
+  "PHOTO-2026-04-01-08-55-56": {
+    "category": "promotional-products",
+    "provenance": "photo",
+    "status": "mapped",
+    "subject": "Reusable bottles",
+    "alt": "Colourful reusable drink bottles with carrying loops and assorted lids",
+    "pages": [
+      "/promotional-items-mugs-pens-kampala"
+    ],
+    "roles": [
+      "product-example"
+    ],
+    "localBindings": []
+  },
+  "PHOTO-2026-03-25-16-10-36": {
+    "category": "corporate-gifts",
+    "provenance": "photo",
+    "status": "mapped",
+    "subject": "Card holder and keyring",
+    "alt": "Brown card holder and matching strap keyring on a textured surface",
+    "pages": [
+      "/corporate-gifts-branding-kampala"
+    ],
+    "roles": [
+      "product-example"
+    ],
+    "localBindings": []
+  },
+  "PHOTO-2026-03-07-11-55-07_1": {
+    "category": "promotional-products",
+    "provenance": "photo",
+    "status": "mapped",
+    "subject": "Reusable bottle",
+    "alt": "Green drink bottle with a carrying loop and orange side panel",
+    "pages": [
+      "/promotional-items-mugs-pens-kampala"
+    ],
+    "roles": [
+      "product-example"
+    ],
+    "localBindings": []
+  },
+  "PHOTO-2026-03-07-11-55-07": {
+    "category": "promotional-products",
+    "provenance": "photo",
+    "status": "mapped",
+    "subject": "Reusable bottle",
+    "alt": "Dark blue drink bottle with a loop handle and pink-and-blue side panel",
+    "pages": [
+      "/promotional-items-mugs-pens-kampala"
+    ],
+    "roles": [
+      "product-example"
+    ],
+    "localBindings": []
+  },
+  "PHOTO-2026-03-05-18-40-55": {
+    "category": "corporate-gifts",
+    "provenance": "unknown",
+    "status": "needs-review",
+    "subject": "Mixed stationery and electronics gift examples",
+    "alt": "Collage of notebook, pen and charging accessory gift examples",
+    "pages": [
+      "/corporate-gifts-branding-kampala"
+    ],
+    "roles": [
+      "product-example"
+    ],
+    "localBindings": [],
+    "reviewReason": "Mixed-source collage; photo versus mockup classification needs confirmation."
+  },
+  "PHOTO-2026-03-05-18-40-32": {
+    "category": "promotional-products",
+    "provenance": "photo",
+    "status": "mapped",
+    "subject": "Promotional pens",
+    "alt": "Gold, silver, black, blue and red pens with gold-coloured caps and clips",
+    "pages": [
+      "/",
+      "/promotional-items-mugs-pens-kampala"
+    ],
+    "roles": [
+      "product-example"
+    ],
+    "localBindings": [
+      "/products/promotional-pens.webp"
+    ]
+  },
+  "PHOTO-2026-03-05-16-33-17": {
+    "category": "promotional-products",
+    "provenance": "unknown",
+    "status": "needs-review",
+    "subject": "Luggage tags",
+    "alt": "Round luggage tags in several colours beside a white keyboard",
+    "pages": [
+      "/promotional-items-mugs-pens-kampala"
+    ],
+    "roles": [
+      "product-example"
+    ],
+    "localBindings": [],
+    "reviewReason": "Subject is identifiable; photo versus rendered mockup is uncertain."
+  },
+  "PHOTO-2026-03-05-16-29-49": {
+    "category": "promotional-products",
+    "provenance": "unknown",
+    "status": "needs-review",
+    "subject": "Luggage tags",
+    "alt": "Rectangular luggage tags in several colours with adjustable straps",
+    "pages": [
+      "/promotional-items-mugs-pens-kampala"
+    ],
+    "roles": [
+      "product-example"
+    ],
+    "localBindings": [],
+    "reviewReason": "Subject is identifiable; photo versus rendered mockup is uncertain."
+  },
+  "PHOTO-2026-03-05-16-29-46": {
+    "category": "promotional-products",
+    "provenance": "photo",
+    "status": "mapped",
+    "subject": "Luggage tags",
+    "alt": "Hand holding a grey luggage tag in front of a range of coloured tags",
+    "pages": [
+      "/promotional-items-mugs-pens-kampala"
+    ],
+    "roles": [
+      "product-example"
+    ],
+    "localBindings": []
+  },
+  "PHOTO-2026-03-05-13-38-56": {
+    "category": "corporate-gifts",
+    "provenance": "photo",
+    "status": "mapped",
+    "subject": "Notebooks",
+    "alt": "Hand holding a tan notebook above stacked notebooks in muted colours",
+    "pages": [
+      "/corporate-gifts-branding-kampala"
+    ],
+    "roles": [
+      "product-example"
+    ],
+    "localBindings": []
+  },
+  "PHOTO-2026-03-01-15-36-22": {
+    "category": "corporate-gifts",
+    "provenance": "photo",
+    "status": "mapped",
+    "subject": "Travel adapters",
+    "alt": "Two light grey travel adapters with multiple sockets and USB ports",
+    "pages": [
+      "/",
+      "/corporate-gifts-branding-kampala"
+    ],
+    "roles": [
+      "product-example"
+    ],
+    "localBindings": [
+      "/products/travel-adapter.webp"
+    ]
+  },
+  "PHOTO-2026-03-01-13-18-33": {
+    "category": "corporate-gifts",
+    "provenance": "photo",
+    "status": "mapped",
+    "subject": "Notebooks and pen",
+    "alt": "Green and blue-grey notebooks with strap closures beside a black pen",
+    "pages": [
+      "/",
+      "/corporate-gifts-branding-kampala"
+    ],
+    "roles": [
+      "product-example"
+    ],
+    "localBindings": [
+      "/products/notebooks-pens.webp"
+    ]
+  },
+  "PHOTO-2026-03-01-10-50-13": {
+    "category": "bags-accessories",
+    "provenance": "unknown",
+    "status": "needs-review",
+    "subject": "Backpack and accessory bags",
+    "alt": "Dark backpack with brown trim beside two matching small bags",
+    "pages": [
+      "/corporate-gifts-branding-kampala"
+    ],
+    "roles": [
+      "product-example"
+    ],
+    "localBindings": [],
+    "reviewReason": "Subject is identifiable; photo versus rendered product mockup is uncertain."
+  },
+  "PHOTO-2026-02-27-15-36-46": {
+    "category": "promotional-products",
+    "provenance": "photo",
+    "status": "mapped",
+    "subject": "Promotional pens",
+    "alt": "Blue, green and grey pens with matching coloured clips",
+    "pages": [
+      "/promotional-items-mugs-pens-kampala"
+    ],
+    "roles": [
+      "product-example"
+    ],
+    "localBindings": []
+  },
+  "PHOTO-2026-01-31-14-15-42": {
+    "category": "bags-accessories",
+    "provenance": "photo",
+    "status": "mapped",
+    "subject": "Wash bag",
+    "alt": "Cream wash bag with brown trim, a top handle and a diagonal zip",
+    "pages": [
+      "/corporate-gifts-branding-kampala"
+    ],
+    "roles": [
+      "product-example"
+    ],
+    "localBindings": []
+  },
+  "PHOTO-2026-01-31-06-00-55": {
+    "category": "bags-accessories",
+    "provenance": "photo",
+    "status": "mapped",
+    "subject": "Electronics organiser",
+    "alt": "Open grey organiser case holding cables, plugs and small electronic accessories",
+    "pages": [
+      "/corporate-gifts-branding-kampala"
+    ],
+    "roles": [
+      "product-example"
+    ],
+    "localBindings": []
+  },
+  "PHOTO-2026-01-31-05-55-01": {
+    "category": "bags-accessories",
+    "provenance": "unknown",
+    "status": "needs-review",
+    "subject": "Zip sleeve",
+    "alt": "Pale pink rectangular sleeve with a vertical front zip",
+    "pages": [
+      "/corporate-gifts-branding-kampala"
+    ],
+    "roles": [
+      "product-example"
+    ],
+    "localBindings": [],
+    "reviewReason": "Subject is identifiable; photo versus rendered mockup is uncertain."
+  },
+  "PHOTO-2026-01-31-05-52-45": {
+    "category": "bags-accessories",
+    "provenance": "photo",
+    "status": "mapped",
+    "subject": "Laptop sleeve",
+    "alt": "Grey laptop sleeve with a horizontal front zip pocket",
+    "pages": [
+      "/corporate-gifts-branding-kampala"
+    ],
+    "roles": [
+      "product-example"
+    ],
+    "localBindings": []
+  },
+  "PHOTO-2026-01-31-05-50-51": {
+    "category": "bags-accessories",
+    "provenance": "photo",
+    "status": "mapped",
+    "subject": "Travel wash bag",
+    "alt": "Brown travel wash bag with a carry handle and two zip compartments",
+    "pages": [
+      "/",
+      "/corporate-gifts-branding-kampala"
+    ],
+    "roles": [
+      "product-example"
+    ],
+    "localBindings": [
+      "/products/travel-wash-bag.webp"
+    ]
+  },
+  "PHOTO-2026-01-31-05-40-32": {
+    "category": "corporate-gifts",
+    "provenance": "photo",
+    "status": "mapped",
+    "subject": "Notebooks",
+    "alt": "Row of grey, brown, red, blue and green notebooks with strap closures",
+    "pages": [
+      "/corporate-gifts-branding-kampala"
+    ],
+    "roles": [
+      "product-example"
+    ],
+    "localBindings": []
+  },
+  "PHOTO-2026-01-19-15-54-59": {
+    "category": "corporate-gifts",
+    "provenance": "photo",
+    "status": "mapped",
+    "subject": "Desk organiser",
+    "alt": "Brown desk organiser holding remote controls, scissors and stationery",
+    "pages": [
+      "/corporate-gifts-branding-kampala"
+    ],
+    "roles": [
+      "product-example"
+    ],
+    "localBindings": []
+  },
+  "PHOTO-2026-01-19-15-54-02": {
+    "category": "corporate-gifts",
+    "provenance": "photo",
+    "status": "mapped",
+    "subject": "Desk organiser",
+    "alt": "Black desk organiser with a pencil compartment and business-card holder",
+    "pages": [
+      "/corporate-gifts-branding-kampala"
+    ],
+    "roles": [
+      "product-example"
+    ],
+    "localBindings": []
+  },
+  "PHOTO-2026-01-19-15-53-34": {
+    "category": "corporate-gifts",
+    "provenance": "unknown",
+    "status": "needs-review",
+    "subject": "Desk organiser",
+    "alt": "Black desktop organiser holding coloured pencils and scissors",
+    "pages": [
+      "/corporate-gifts-branding-kampala"
+    ],
+    "roles": [
+      "product-example"
+    ],
+    "localBindings": [],
+    "reviewReason": "Subject is identifiable; photo versus rendered mockup is uncertain."
+  },
+  "PHOTO-2026-01-11-06-02-57_1": {
+    "category": "bags-accessories",
+    "provenance": "photo",
+    "status": "mapped",
+    "subject": "Envelope-style laptop sleeve",
+    "alt": "Grey envelope-style laptop sleeve with a flap closure on a wooden surface",
+    "pages": [
+      "/",
+      "/corporate-gifts-branding-kampala"
+    ],
+    "roles": [
+      "product-example"
+    ],
+    "localBindings": [
+      "/products/laptop-sleeve.webp"
+    ]
+  },
+  "PHOTO-2026-01-11-06-02-57": {
+    "category": "bags-accessories",
+    "provenance": "photo",
+    "status": "mapped",
+    "subject": "Laptop sleeve",
+    "alt": "Grey laptop sleeve opened to show its folded flap and inner pocket",
+    "pages": [
+      "/corporate-gifts-branding-kampala"
+    ],
+    "roles": [
+      "product-example"
+    ],
+    "localBindings": []
+  },
+  "PHOTO-2026-01-11-01-24-58": {
+    "category": "needs-review",
+    "provenance": "photo",
+    "status": "needs-review",
+    "subject": "Long socks",
+    "alt": "Black, green, burgundy and white long socks arranged in a row",
+    "pages": [],
+    "roles": [],
+    "localBindings": [],
+    "reviewReason": "Socks are not an established product in the current Brimas service content."
+  },
+  "PHOTO-2025-12-30-15-50-12_1": {
+    "category": "corporate-gifts",
+    "provenance": "photo",
+    "status": "mapped",
+    "subject": "Executive gift set",
+    "alt": "Black presentation box containing a dark bottle, notebook, pen and small accessory",
+    "pages": [
+      "/",
+      "/corporate-gifts-branding-kampala"
+    ],
+    "roles": [
+      "product-example",
+      "hero"
+    ],
+    "localBindings": [
+      "/products/executive-gift-set.webp"
+    ]
+  },
+  "PHOTO-2025-12-30-15-50-12": {
+    "category": "corporate-gifts",
+    "provenance": "photo",
+    "status": "mapped",
+    "subject": "Executive gift set",
+    "alt": "Dark notebook, bottle and pen shown as a coordinated gift-set example",
+    "pages": [
+      "/corporate-gifts-branding-kampala"
+    ],
+    "roles": [
+      "product-example"
+    ],
+    "localBindings": []
+  },
+  "PHOTO-2026-08-21-14-56-30": {
+    "category": "corporate-gifts",
+    "provenance": "photo",
+    "status": "mapped",
+    "subject": "Desk accessory",
+    "alt": "White wireless mouse resting on a brown-edged black desk pad",
+    "pages": [
+      "/corporate-gifts-branding-kampala"
+    ],
+    "roles": [
+      "product-example"
+    ],
+    "localBindings": []
+  },
+  "PHOTO-2026-08-15-14-25-21": {
+    "category": "corporate-gifts",
+    "provenance": "photo",
+    "status": "mapped",
+    "subject": "Notebook and pouch set",
+    "alt": "Grey and cream patterned notebook beside a matching flap-closure pouch",
+    "pages": [
+      "/",
+      "/corporate-gifts-branding-kampala"
+    ],
+    "roles": [
+      "product-example"
+    ],
+    "localBindings": [
+      "/products/notebook-pouch-set.webp"
+    ]
+  },
+  "PHOTO-2026-07-22-11-46-14_1": {
+    "category": "workwear",
+    "provenance": "unknown",
+    "status": "needs-review",
+    "subject": "Black jackets",
+    "alt": "Black zip-front jacket shown in adult and smaller sizes",
+    "pages": [],
+    "roles": [],
+    "localBindings": [],
+    "reviewReason": "Unverified outerwear specification and photo/mockup provenance; do not claim protective workwear."
+  },
+  "PHOTO-2026-07-22-11-46-14": {
+    "category": "workwear",
+    "provenance": "unknown",
+    "status": "needs-review",
+    "subject": "Green jackets",
+    "alt": "Pale green zip-front jacket shown in adult and smaller sizes",
+    "pages": [],
+    "roles": [],
+    "localBindings": [],
+    "reviewReason": "Unverified outerwear specification and photo/mockup provenance; do not claim protective workwear."
+  },
+  "PHOTO-2026-07-22-11-46-13": {
+    "category": "workwear",
+    "provenance": "unknown",
+    "status": "needs-review",
+    "subject": "White jackets",
+    "alt": "White zip-front jacket shown in adult and smaller sizes",
+    "pages": [],
+    "roles": [],
+    "localBindings": [],
+    "reviewReason": "Unverified outerwear specification and photo/mockup provenance; do not claim protective workwear."
+  },
+  "PHOTO-2020-07-20-13-12-29": {
+    "category": "promotional-products",
+    "provenance": "photo",
+    "status": "mapped",
+    "subject": "Reusable drinkware",
+    "alt": "Reusable bottles and travel cups in example colours and finishes",
+    "pages": [
+      "/promotional-items-mugs-pens-kampala"
+    ],
+    "roles": [
+      "product-example"
+    ],
+    "localBindings": []
+  },
+  "PHOTO-2020-07-20-13-12-30": {
+    "category": "corporate-gifts",
+    "provenance": "photo",
+    "status": "mapped",
+    "subject": "Notebooks and stationery",
+    "alt": "Notebooks and writing accessories in example colours",
+    "pages": [
+      "/corporate-gifts-branding-kampala"
+    ],
+    "roles": [
+      "product-example"
+    ],
+    "localBindings": []
+  },
+  "PHOTO-2020-07-20-13-12-32": {
+    "category": "corporate-gifts",
+    "provenance": "photo",
+    "status": "mapped",
+    "subject": "Notebooks and stationery",
+    "alt": "Notebooks and writing accessories in example colours",
+    "pages": [
+      "/corporate-gifts-branding-kampala"
+    ],
+    "roles": [
+      "product-example"
+    ],
+    "localBindings": []
+  },
+  "PHOTO-2020-07-20-14-37-13": {
+    "category": "promotional-products",
+    "provenance": "photo",
+    "status": "mapped",
+    "subject": "Reusable drinkware",
+    "alt": "Reusable bottles and travel cups in example colours and finishes",
+    "pages": [
+      "/promotional-items-mugs-pens-kampala"
+    ],
+    "roles": [
+      "product-example"
+    ],
+    "localBindings": []
+  },
+  "PHOTO-2020-07-20-14-37-15": {
+    "category": "promotional-products",
+    "provenance": "photo",
+    "status": "mapped",
+    "subject": "Reusable drinkware",
+    "alt": "Reusable bottles and travel cups in example colours and finishes",
+    "pages": [
+      "/promotional-items-mugs-pens-kampala"
+    ],
+    "roles": [
+      "product-example"
+    ],
+    "localBindings": []
+  },
+  "PHOTO-2020-07-20-14-43-58": {
+    "category": "promotional-products",
+    "provenance": "photo",
+    "status": "mapped",
+    "subject": "Printed mugs",
+    "alt": "White ceramic mugs with example floral artwork",
+    "pages": [
+      "/",
+      "/promotional-items-mugs-pens-kampala"
+    ],
+    "roles": [
+      "product-example"
+    ],
+    "localBindings": [
+      "/products/branded-mugs.jpg"
+    ]
+  },
+  "PHOTO-2020-07-27-11-44-17": {
+    "category": "garment-branding",
+    "provenance": "mockup",
+    "status": "mapped",
+    "subject": "Garment design example",
+    "alt": "Garment design with example colours and branding",
+    "pages": [
+      "/t-shirt-printing-embroidery-kampala",
+      "/uniform-embroidery-kampala"
+    ],
+    "roles": [
+      "product-example"
+    ],
+    "localBindings": []
+  },
+  "PHOTO-2020-08-03-11-21-44": {
+    "category": "garment-branding",
+    "provenance": "mockup",
+    "status": "mapped",
+    "subject": "Garment design example",
+    "alt": "Pink hooded jumper design with black example artwork",
+    "pages": [
+      "/",
+      "/t-shirt-printing-embroidery-kampala",
+      "/uniform-embroidery-kampala"
+    ],
+    "roles": [
+      "product-example"
+    ],
+    "localBindings": [
+      "/products/pink-hoodie.webp"
+    ]
+  },
+  "PHOTO-2020-10-15-16-19-47": {
+    "category": "signage",
+    "provenance": "mockup",
+    "status": "mapped",
+    "subject": "Shopfront signage concept",
+    "alt": "Shopfront with an example green and white pharmacy sign concept",
+    "pages": [
+      "/",
+      "/large-format-printing-industrial-area"
+    ],
+    "roles": [
+      "product-example"
+    ],
+    "localBindings": [
+      "/products/pharmacy-signage.webp"
+    ]
+  },
+  "PHOTO-2020-10-20-14-13-18": {
+    "category": "promotional-products",
+    "provenance": "photo",
+    "status": "mapped",
+    "subject": "Reusable drinkware",
+    "alt": "Reusable bottles and travel cups in example colours and finishes",
+    "pages": [
+      "/promotional-items-mugs-pens-kampala"
+    ],
+    "roles": [
+      "product-example"
+    ],
+    "localBindings": []
+  },
+  "PHOTO-2020-10-20-14-13-18_1": {
+    "category": "corporate-gifts",
+    "provenance": "photo",
+    "status": "mapped",
+    "subject": "Notebooks and stationery",
+    "alt": "Notebooks and writing accessories in example colours",
+    "pages": [
+      "/corporate-gifts-branding-kampala"
+    ],
+    "roles": [
+      "product-example"
+    ],
+    "localBindings": []
+  },
+  "PHOTO-2020-10-20-14-13-18_2": {
+    "category": "corporate-gifts",
+    "provenance": "photo",
+    "status": "mapped",
+    "subject": "Notebooks and stationery",
+    "alt": "Notebooks and writing accessories in example colours",
+    "pages": [
+      "/corporate-gifts-branding-kampala"
+    ],
+    "roles": [
+      "product-example"
+    ],
+    "localBindings": []
+  },
+  "PHOTO-2020-10-20-14-13-18_3": {
+    "category": "corporate-gifts",
+    "provenance": "photo",
+    "status": "mapped",
+    "subject": "Notebooks and stationery",
+    "alt": "Notebooks and writing accessories in example colours",
+    "pages": [
+      "/corporate-gifts-branding-kampala"
+    ],
+    "roles": [
+      "product-example"
+    ],
+    "localBindings": []
+  },
+  "PHOTO-2020-10-20-14-13-18_4": {
+    "category": "corporate-gifts",
+    "provenance": "photo",
+    "status": "mapped",
+    "subject": "Presentation gift sets",
+    "alt": "Presentation gift box containing coordinated stationery and accessories",
+    "pages": [
+      "/corporate-gifts-branding-kampala"
+    ],
+    "roles": [
+      "product-example"
+    ],
+    "localBindings": []
+  },
+  "PHOTO-2020-10-24-12-05-10": {
+    "category": "promotional-products",
+    "provenance": "photo",
+    "status": "mapped",
+    "subject": "Reusable drinkware",
+    "alt": "Reusable bottles and travel cups in example colours and finishes",
+    "pages": [
+      "/promotional-items-mugs-pens-kampala"
+    ],
+    "roles": [
+      "product-example"
+    ],
+    "localBindings": []
+  },
+  "PHOTO-2020-11-19-16-06-28": {
+    "category": "promotional-products",
+    "provenance": "photo",
+    "status": "mapped",
+    "subject": "Reusable drinkware",
+    "alt": "Reusable bottles and travel cups in example colours and finishes",
+    "pages": [
+      "/promotional-items-mugs-pens-kampala"
+    ],
+    "roles": [
+      "product-example"
+    ],
+    "localBindings": []
+  },
+  "PHOTO-2021-01-06-13-06-30": {
+    "category": "corporate-gifts",
+    "provenance": "photo",
+    "status": "mapped",
+    "subject": "Notebooks and stationery",
+    "alt": "Notebooks and writing accessories in example colours",
+    "pages": [
+      "/corporate-gifts-branding-kampala"
+    ],
+    "roles": [
+      "product-example"
+    ],
+    "localBindings": []
+  },
+  "PHOTO-2021-01-06-13-06-30_1": {
+    "category": "corporate-gifts",
+    "provenance": "photo",
+    "status": "mapped",
+    "subject": "Notebooks and stationery",
+    "alt": "Notebooks and writing accessories in example colours",
+    "pages": [
+      "/corporate-gifts-branding-kampala"
+    ],
+    "roles": [
+      "product-example"
+    ],
+    "localBindings": []
+  },
+  "PHOTO-2021-01-06-13-06-30_2": {
+    "category": "needs-review",
+    "provenance": "unknown",
+    "status": "needs-review",
+    "subject": null,
+    "alt": null,
+    "pages": [],
+    "roles": [],
+    "localBindings": [],
+    "reviewReason": "Preview inspected, but provenance, established service relevance or a reliable existing-slot match is insufficient for publication."
+  },
+  "PHOTO-2021-04-14-10-31-15": {
+    "category": "garment-branding",
+    "provenance": "mockup",
+    "status": "mapped",
+    "subject": "Garment design example",
+    "alt": "White T-shirt mockup with a green and orange geometric print",
+    "pages": [
+      "/",
+      "/t-shirt-printing-embroidery-kampala",
+      "/uniform-embroidery-kampala"
+    ],
+    "roles": [
+      "product-example"
+    ],
+    "localBindings": [
+      "/products/printed-white-tshirt.webp"
+    ]
+  },
+  "PHOTO-2021-04-14-10-31-16": {
+    "category": "garment-branding",
+    "provenance": "mockup",
+    "status": "mapped",
+    "subject": "Garment design example",
+    "alt": "Garment design with example colours and branding",
+    "pages": [
+      "/t-shirt-printing-embroidery-kampala",
+      "/uniform-embroidery-kampala"
+    ],
+    "roles": [
+      "product-example"
+    ],
+    "localBindings": []
+  },
+  "PHOTO-2021-05-01-08-42-18": {
+    "category": "event-branding",
+    "provenance": "mockup",
+    "status": "mapped",
+    "subject": "Outdoor display concept",
+    "alt": "Red and purple feather flags with example Peacock artwork",
+    "pages": [
+      "/",
+      "/banner-printing-kampala",
+      "/large-format-printing-industrial-area"
+    ],
+    "roles": [
+      "product-example"
+    ],
+    "localBindings": [
+      "/products/feather-flags.webp"
+    ]
+  },
+  "PHOTO-2021-05-01-08-55-18": {
+    "category": "event-branding",
+    "provenance": "mockup",
+    "status": "mapped",
+    "subject": "Outdoor display concept",
+    "alt": "White gazebo design with example branding on the canopy",
+    "pages": [
+      "/",
+      "/banner-printing-kampala",
+      "/large-format-printing-industrial-area"
+    ],
+    "roles": [
+      "product-example"
+    ],
+    "localBindings": [
+      "/products/branded-gazebo.webp"
+    ]
+  },
+  "PHOTO-2021-08-17-13-12-11": {
+    "category": "corporate-gifts",
+    "provenance": "photo",
+    "status": "mapped",
+    "subject": "Presentation gift sets",
+    "alt": "Presentation gift box containing coordinated stationery and accessories",
+    "pages": [
+      "/corporate-gifts-branding-kampala"
+    ],
+    "roles": [
+      "product-example"
+    ],
+    "localBindings": []
+  },
+  "PHOTO-2021-08-17-13-12-12": {
+    "category": "corporate-gifts",
+    "provenance": "photo",
+    "status": "mapped",
+    "subject": "Presentation gift sets",
+    "alt": "Presentation gift box containing coordinated stationery and accessories",
+    "pages": [
+      "/corporate-gifts-branding-kampala"
+    ],
+    "roles": [
+      "product-example"
+    ],
+    "localBindings": []
+  },
+  "PHOTO-2021-08-17-13-12-12_1": {
+    "category": "corporate-gifts",
+    "provenance": "photo",
+    "status": "mapped",
+    "subject": "Presentation gift sets",
+    "alt": "Presentation gift box containing coordinated stationery and accessories",
+    "pages": [
+      "/corporate-gifts-branding-kampala"
+    ],
+    "roles": [
+      "product-example"
+    ],
+    "localBindings": []
+  },
+  "PHOTO-2021-08-17-13-12-13": {
+    "category": "corporate-gifts",
+    "provenance": "photo",
+    "status": "mapped",
+    "subject": "Presentation gift sets",
+    "alt": "Presentation gift box containing coordinated stationery and accessories",
+    "pages": [
+      "/corporate-gifts-branding-kampala"
+    ],
+    "roles": [
+      "product-example"
+    ],
+    "localBindings": []
+  },
+  "PHOTO-2021-08-17-13-12-15": {
+    "category": "corporate-gifts",
+    "provenance": "photo",
+    "status": "mapped",
+    "subject": "Presentation gift sets",
+    "alt": "Presentation gift box containing coordinated stationery and accessories",
+    "pages": [
+      "/corporate-gifts-branding-kampala"
+    ],
+    "roles": [
+      "product-example"
+    ],
+    "localBindings": []
+  },
+  "PHOTO-2021-08-17-13-12-15_1": {
+    "category": "corporate-gifts",
+    "provenance": "photo",
+    "status": "mapped",
+    "subject": "Presentation gift sets",
+    "alt": "Presentation gift box containing coordinated stationery and accessories",
+    "pages": [
+      "/corporate-gifts-branding-kampala"
+    ],
+    "roles": [
+      "product-example"
+    ],
+    "localBindings": []
+  },
+  "PHOTO-2021-08-17-13-12-16": {
+    "category": "corporate-gifts",
+    "provenance": "photo",
+    "status": "mapped",
+    "subject": "Presentation gift sets",
+    "alt": "Presentation gift box containing coordinated stationery and accessories",
+    "pages": [
+      "/corporate-gifts-branding-kampala"
+    ],
+    "roles": [
+      "product-example"
+    ],
+    "localBindings": []
+  },
+  "PHOTO-2021-08-17-13-12-17": {
+    "category": "corporate-gifts",
+    "provenance": "photo",
+    "status": "mapped",
+    "subject": "Presentation gift sets",
+    "alt": "Presentation gift box containing coordinated stationery and accessories",
+    "pages": [
+      "/corporate-gifts-branding-kampala"
+    ],
+    "roles": [
+      "product-example"
+    ],
+    "localBindings": []
+  },
+  "PHOTO-2021-08-17-13-12-19": {
+    "category": "promotional-products",
+    "provenance": "unknown",
+    "status": "needs-review",
+    "subject": "Drinkware or promotional accessory",
+    "alt": null,
+    "pages": [
+      "/promotional-items-mugs-pens-kampala"
+    ],
+    "roles": [],
+    "localBindings": [],
+    "reviewReason": "Product topic is visible, but photo/mockup provenance, specific suitability or a sufficiently reliable live-slot match is not established; kept off the website."
+  },
+  "PHOTO-2021-08-17-13-12-20": {
+    "category": "promotional-products",
+    "provenance": "unknown",
+    "status": "needs-review",
+    "subject": "Drinkware or promotional accessory",
+    "alt": null,
+    "pages": [
+      "/promotional-items-mugs-pens-kampala"
+    ],
+    "roles": [],
+    "localBindings": [],
+    "reviewReason": "Product topic is visible, but photo/mockup provenance, specific suitability or a sufficiently reliable live-slot match is not established; kept off the website."
+  },
+  "PHOTO-2021-08-19-16-57-56": {
+    "category": "promotional-products",
+    "provenance": "unknown",
+    "status": "needs-review",
+    "subject": "Drinkware or promotional accessory",
+    "alt": null,
+    "pages": [
+      "/promotional-items-mugs-pens-kampala"
+    ],
+    "roles": [],
+    "localBindings": [],
+    "reviewReason": "Product topic is visible, but photo/mockup provenance, specific suitability or a sufficiently reliable live-slot match is not established; kept off the website."
+  },
+  "PHOTO-2021-08-19-16-59-36": {
+    "category": "promotional-products",
+    "provenance": "unknown",
+    "status": "needs-review",
+    "subject": "Drinkware or promotional accessory",
+    "alt": null,
+    "pages": [
+      "/promotional-items-mugs-pens-kampala"
+    ],
+    "roles": [],
+    "localBindings": [],
+    "reviewReason": "Product topic is visible, but photo/mockup provenance, specific suitability or a sufficiently reliable live-slot match is not established; kept off the website."
+  },
+  "PHOTO-2021-08-19-16-59-36_1": {
+    "category": "promotional-products",
+    "provenance": "unknown",
+    "status": "needs-review",
+    "subject": "Drinkware or promotional accessory",
+    "alt": null,
+    "pages": [
+      "/promotional-items-mugs-pens-kampala"
+    ],
+    "roles": [],
+    "localBindings": [],
+    "reviewReason": "Product topic is visible, but photo/mockup provenance, specific suitability or a sufficiently reliable live-slot match is not established; kept off the website."
+  },
+  "PHOTO-2021-08-19-16-59-36_2": {
+    "category": "promotional-products",
+    "provenance": "unknown",
+    "status": "needs-review",
+    "subject": "Drinkware or promotional accessory",
+    "alt": null,
+    "pages": [
+      "/promotional-items-mugs-pens-kampala"
+    ],
+    "roles": [],
+    "localBindings": [],
+    "reviewReason": "Product topic is visible, but photo/mockup provenance, specific suitability or a sufficiently reliable live-slot match is not established; kept off the website."
+  },
+  "PHOTO-2021-08-19-17-05-12": {
+    "category": "corporate-gifts",
+    "provenance": "photo",
+    "status": "mapped",
+    "subject": "Notebooks and stationery",
+    "alt": "Notebooks and writing accessories in example colours",
+    "pages": [
+      "/corporate-gifts-branding-kampala"
+    ],
+    "roles": [
+      "product-example"
+    ],
+    "localBindings": []
+  },
+  "PHOTO-2021-08-19-17-05-12_1": {
+    "category": "corporate-gifts",
+    "provenance": "photo",
+    "status": "mapped",
+    "subject": "Notebooks and stationery",
+    "alt": "Notebooks and writing accessories in example colours",
+    "pages": [
+      "/corporate-gifts-branding-kampala"
+    ],
+    "roles": [
+      "product-example"
+    ],
+    "localBindings": []
+  },
+  "PHOTO-2021-08-19-19-21-55": {
+    "category": "promotional-products",
+    "provenance": "unknown",
+    "status": "needs-review",
+    "subject": "Drinkware or promotional accessory",
+    "alt": null,
+    "pages": [
+      "/promotional-items-mugs-pens-kampala"
+    ],
+    "roles": [],
+    "localBindings": [],
+    "reviewReason": "Product topic is visible, but photo/mockup provenance, specific suitability or a sufficiently reliable live-slot match is not established; kept off the website."
+  },
+  "PHOTO-2021-08-20-14-24-01": {
+    "category": "corporate-gifts",
+    "provenance": "unknown",
+    "status": "needs-review",
+    "subject": "Gift or technology accessory",
+    "alt": null,
+    "pages": [
+      "/corporate-gifts-branding-kampala"
+    ],
+    "roles": [],
+    "localBindings": [],
+    "reviewReason": "Product topic is visible, but photo/mockup provenance, specific suitability or a sufficiently reliable live-slot match is not established; kept off the website."
+  },
+  "PHOTO-2021-08-20-14-24-01_1": {
+    "category": "corporate-gifts",
+    "provenance": "unknown",
+    "status": "needs-review",
+    "subject": "Gift or technology accessory",
+    "alt": null,
+    "pages": [
+      "/corporate-gifts-branding-kampala"
+    ],
+    "roles": [],
+    "localBindings": [],
+    "reviewReason": "Product topic is visible, but photo/mockup provenance, specific suitability or a sufficiently reliable live-slot match is not established; kept off the website."
+  },
+  "PHOTO-2021-08-20-14-24-01_2": {
+    "category": "corporate-gifts",
+    "provenance": "unknown",
+    "status": "needs-review",
+    "subject": "Gift or technology accessory",
+    "alt": null,
+    "pages": [
+      "/corporate-gifts-branding-kampala"
+    ],
+    "roles": [],
+    "localBindings": [],
+    "reviewReason": "Product topic is visible, but photo/mockup provenance, specific suitability or a sufficiently reliable live-slot match is not established; kept off the website."
+  },
+  "PHOTO-2021-09-07-14-07-08": {
+    "category": "needs-review",
+    "provenance": "unknown",
+    "status": "needs-review",
+    "subject": null,
+    "alt": null,
+    "pages": [],
+    "roles": [],
+    "localBindings": [],
+    "reviewReason": "Preview inspected, but provenance, established service relevance or a reliable existing-slot match is insufficient for publication."
+  },
+  "PHOTO-2021-09-07-14-07-08_1": {
+    "category": "needs-review",
+    "provenance": "unknown",
+    "status": "needs-review",
+    "subject": null,
+    "alt": null,
+    "pages": [],
+    "roles": [],
+    "localBindings": [],
+    "reviewReason": "Preview inspected, but provenance, established service relevance or a reliable existing-slot match is insufficient for publication."
+  },
+  "PHOTO-2021-09-07-14-07-08_2": {
+    "category": "needs-review",
+    "provenance": "unknown",
+    "status": "needs-review",
+    "subject": null,
+    "alt": null,
+    "pages": [],
+    "roles": [],
+    "localBindings": [],
+    "reviewReason": "Preview inspected, but provenance, established service relevance or a reliable existing-slot match is insufficient for publication."
+  },
+  "PHOTO-2021-09-22-10-13-32": {
+    "category": "promotional-products",
+    "provenance": "photo",
+    "status": "mapped",
+    "subject": "Promotional keyrings",
+    "alt": "Keyrings with example shapes, colours and branding",
+    "pages": [
+      "/promotional-items-mugs-pens-kampala"
+    ],
+    "roles": [
+      "product-example"
+    ],
+    "localBindings": []
+  },
+  "PHOTO-2021-09-22-16-38-12": {
+    "category": "promotional-products",
+    "provenance": "photo",
+    "status": "mapped",
+    "subject": "Reusable drinkware",
+    "alt": "Reusable bottles and travel cups in example colours and finishes",
+    "pages": [
+      "/promotional-items-mugs-pens-kampala"
+    ],
+    "roles": [
+      "product-example"
+    ],
+    "localBindings": []
+  },
+  "PHOTO-2021-09-23-11-45-43": {
+    "category": "promotional-products",
+    "provenance": "photo",
+    "status": "mapped",
+    "subject": "Promotional keyrings",
+    "alt": "Round keyrings in several colours with long straps",
+    "pages": [
+      "/",
+      "/promotional-items-mugs-pens-kampala"
+    ],
+    "roles": [
+      "product-example"
+    ],
+    "localBindings": [
+      "/products/tassel-keyrings.webp"
+    ]
+  },
+  "PHOTO-2021-10-08-12-15-44": {
+    "category": "promotional-products",
+    "provenance": "photo",
+    "status": "mapped",
+    "subject": "Reusable drinkware",
+    "alt": "Reusable bottles and travel cups in example colours and finishes",
+    "pages": [
+      "/promotional-items-mugs-pens-kampala"
+    ],
+    "roles": [
+      "product-example"
+    ],
+    "localBindings": []
+  },
+  "PHOTO-2021-11-13-10-37-13": {
+    "category": "promotional-products",
+    "provenance": "photo",
+    "status": "mapped",
+    "subject": "Reusable drinkware",
+    "alt": "Reusable bottles and travel cups in example colours and finishes",
+    "pages": [
+      "/promotional-items-mugs-pens-kampala"
+    ],
+    "roles": [
+      "product-example"
+    ],
+    "localBindings": []
+  },
+  "PHOTO-2021-11-13-11-09-57": {
+    "category": "needs-review",
+    "provenance": "unknown",
+    "status": "needs-review",
+    "subject": null,
+    "alt": null,
+    "pages": [],
+    "roles": [],
+    "localBindings": [],
+    "reviewReason": "Preview inspected, but provenance, established service relevance or a reliable existing-slot match is insufficient for publication."
+  },
+  "PHOTO-2021-11-13-11-54-51": {
+    "category": "promotional-products",
+    "provenance": "photo",
+    "status": "mapped",
+    "subject": "Reusable drinkware",
+    "alt": "Reusable bottles and travel cups in example colours and finishes",
+    "pages": [
+      "/promotional-items-mugs-pens-kampala"
+    ],
+    "roles": [
+      "product-example"
+    ],
+    "localBindings": []
+  },
+  "PHOTO-2021-11-13-12-25-28": {
+    "category": "needs-review",
+    "provenance": "unknown",
+    "status": "needs-review",
+    "subject": null,
+    "alt": null,
+    "pages": [],
+    "roles": [],
+    "localBindings": [],
+    "reviewReason": "Preview inspected, but provenance, established service relevance or a reliable existing-slot match is insufficient for publication."
+  },
+  "PHOTO-2021-11-23-09-27-25": {
+    "category": "garment-branding",
+    "provenance": "mockup",
+    "status": "mapped",
+    "subject": "Garment design example",
+    "alt": "Garment design with example colours and branding",
+    "pages": [
+      "/t-shirt-printing-embroidery-kampala",
+      "/uniform-embroidery-kampala"
+    ],
+    "roles": [
+      "product-example"
+    ],
+    "localBindings": []
+  },
+  "PHOTO-2021-11-23-09-27-26": {
+    "category": "garment-branding",
+    "provenance": "mockup",
+    "status": "mapped",
+    "subject": "Garment design example",
+    "alt": "Garment design with example colours and branding",
+    "pages": [
+      "/t-shirt-printing-embroidery-kampala",
+      "/uniform-embroidery-kampala"
+    ],
+    "roles": [
+      "product-example"
+    ],
+    "localBindings": []
+  },
+  "PHOTO-2021-11-23-11-23-58": {
+    "category": "garment-branding",
+    "provenance": "mockup",
+    "status": "mapped",
+    "subject": "Garment design example",
+    "alt": "Navy polo shirt design with green accents and example chest branding",
+    "pages": [
+      "/",
+      "/t-shirt-printing-embroidery-kampala",
+      "/uniform-embroidery-kampala"
+    ],
+    "roles": [
+      "product-example"
+    ],
+    "localBindings": [
+      "/products/navy-polo.webp"
+    ]
+  },
+  "PHOTO-2021-11-23-12-17-04": {
+    "category": "garment-branding",
+    "provenance": "mockup",
+    "status": "mapped",
+    "subject": "Garment design example",
+    "alt": "Garment design with example colours and branding",
+    "pages": [
+      "/t-shirt-printing-embroidery-kampala",
+      "/uniform-embroidery-kampala"
+    ],
+    "roles": [
+      "product-example"
+    ],
+    "localBindings": []
+  },
+  "PHOTO-2021-11-23-12-21-30": {
+    "category": "garment-branding",
+    "provenance": "mockup",
+    "status": "mapped",
+    "subject": "Garment design example",
+    "alt": "Garment design with example colours and branding",
+    "pages": [
+      "/t-shirt-printing-embroidery-kampala",
+      "/uniform-embroidery-kampala"
+    ],
+    "roles": [
+      "product-example"
+    ],
+    "localBindings": []
+  },
+  "PHOTO-2021-11-23-13-21-13": {
+    "category": "garment-branding",
+    "provenance": "mockup",
+    "status": "mapped",
+    "subject": "Garment design example",
+    "alt": "Garment design with example colours and branding",
+    "pages": [
+      "/t-shirt-printing-embroidery-kampala",
+      "/uniform-embroidery-kampala"
+    ],
+    "roles": [
+      "product-example"
+    ],
+    "localBindings": []
+  },
+  "PHOTO-2021-11-25-17-16-20": {
+    "category": "promotional-products",
+    "provenance": "photo",
+    "status": "mapped",
+    "subject": "Promotional keyrings",
+    "alt": "Two round yellow and blue keyrings with example branding",
+    "pages": [
+      "/",
+      "/promotional-items-mugs-pens-kampala"
+    ],
+    "roles": [
+      "product-example"
+    ],
+    "localBindings": [
+      "/products/round-keyrings.webp"
+    ]
+  },
+  "PHOTO-2021-12-15-12-05-18": {
+    "category": "vehicle-branding",
+    "provenance": "mockup",
+    "status": "mapped",
+    "subject": "Vehicle branding concept",
+    "alt": "Blue minivan mockup with colourful example vehicle branding",
+    "pages": [
+      "/"
+    ],
+    "roles": [
+      "product-example"
+    ],
+    "localBindings": [
+      "/products/blue-vehicle-branding.webp"
+    ]
+  },
+  "PHOTO-2021-12-15-12-10-58": {
+    "category": "vehicle-branding",
+    "provenance": "mockup",
+    "status": "mapped",
+    "subject": "Vehicle branding concept",
+    "alt": "Black minivan mockup with Brimas Media vehicle branding",
+    "pages": [
+      "/"
+    ],
+    "roles": [
+      "product-example"
+    ],
+    "localBindings": [
+      "/products/black-vehicle-branding.webp"
+    ]
+  },
+  "PHOTO-2022-04-26-14-45-31": {
+    "category": "ppe",
+    "provenance": "photo",
+    "status": "mapped",
+    "subject": "Safety helmets",
+    "alt": "Safety helmet shown as a protective-equipment example",
+    "pages": [
+      "/ppe-supplier-kampala-uganda",
+      "/safety-helmets-overalls-kampala"
+    ],
+    "roles": [
+      "product-example"
+    ],
+    "localBindings": []
+  },
+  "PHOTO-2022-04-26-14-45-31_1": {
+    "category": "ppe",
+    "provenance": "photo",
+    "status": "mapped",
+    "subject": "Safety footwear",
+    "alt": "Protective work boots shown as a product example",
+    "pages": [
+      "/ppe-supplier-kampala-uganda"
+    ],
+    "roles": [
+      "product-example"
+    ],
+    "localBindings": []
+  },
+  "PHOTO-2022-04-26-14-45-31_10": {
+    "category": "ppe",
+    "provenance": "photo",
+    "status": "mapped",
+    "subject": "Work gloves",
+    "alt": "Work gloves shown as a safety-wear example",
+    "pages": [
+      "/ppe-supplier-kampala-uganda"
+    ],
+    "roles": [
+      "product-example"
+    ],
+    "localBindings": []
+  },
+  "PHOTO-2022-04-26-14-45-31_11": {
+    "category": "workwear",
+    "provenance": "photo",
+    "status": "mapped",
+    "subject": "Reflective workwear",
+    "alt": "High-visibility workwear with reflective strips",
+    "pages": [
+      "/ppe-supplier-kampala-uganda",
+      "/uniform-embroidery-kampala"
+    ],
+    "roles": [
+      "product-example"
+    ],
+    "localBindings": []
+  },
+  "PHOTO-2022-04-26-14-45-31_12": {
+    "category": "ppe",
+    "provenance": "photo",
+    "status": "mapped",
+    "subject": "Work gloves",
+    "alt": "Work gloves shown as a safety-wear example",
+    "pages": [
+      "/ppe-supplier-kampala-uganda"
+    ],
+    "roles": [
+      "product-example"
+    ],
+    "localBindings": []
+  },
+  "PHOTO-2022-04-26-14-45-31_13": {
+    "category": "ppe",
+    "provenance": "photo",
+    "status": "mapped",
+    "subject": "Safety helmets",
+    "alt": "Safety helmet shown as a protective-equipment example",
+    "pages": [
+      "/ppe-supplier-kampala-uganda",
+      "/safety-helmets-overalls-kampala"
+    ],
+    "roles": [
+      "product-example"
+    ],
+    "localBindings": []
+  },
+  "PHOTO-2022-04-26-14-45-31_14": {
+    "category": "workwear",
+    "provenance": "photo",
+    "status": "mapped",
+    "subject": "Reflective workwear",
+    "alt": "High-visibility workwear with reflective strips",
+    "pages": [
+      "/ppe-supplier-kampala-uganda",
+      "/uniform-embroidery-kampala"
+    ],
+    "roles": [
+      "product-example"
+    ],
+    "localBindings": []
+  },
+  "PHOTO-2022-04-26-14-45-31_2": {
+    "category": "ppe",
+    "provenance": "photo",
+    "status": "mapped",
+    "subject": "Safety footwear",
+    "alt": "Protective work boots shown as a product example",
+    "pages": [
+      "/ppe-supplier-kampala-uganda"
+    ],
+    "roles": [
+      "product-example"
+    ],
+    "localBindings": []
+  },
+  "PHOTO-2022-04-26-14-45-31_3": {
+    "category": "ppe",
+    "provenance": "photo",
+    "status": "mapped",
+    "subject": "Safety footwear",
+    "alt": "Black protective work boots displayed on a counter",
+    "pages": [
+      "/",
+      "/ppe-supplier-kampala-uganda"
+    ],
+    "roles": [
+      "product-example"
+    ],
+    "localBindings": [
+      "/products/ppe-footwear.jpg"
+    ]
+  },
+  "PHOTO-2022-04-26-14-45-31_4": {
+    "category": "needs-review",
+    "provenance": "unknown",
+    "status": "needs-review",
+    "subject": null,
+    "alt": null,
+    "pages": [],
+    "roles": [],
+    "localBindings": [],
+    "reviewReason": "Preview inspected, but provenance, established service relevance or a reliable existing-slot match is insufficient for publication."
+  },
+  "PHOTO-2022-04-26-14-45-31_5": {
+    "category": "needs-review",
+    "provenance": "unknown",
+    "status": "needs-review",
+    "subject": null,
+    "alt": null,
+    "pages": [],
+    "roles": [],
+    "localBindings": [],
+    "reviewReason": "Preview inspected, but provenance, established service relevance or a reliable existing-slot match is insufficient for publication."
+  },
+  "PHOTO-2022-04-26-14-45-31_6": {
+    "category": "ppe",
+    "provenance": "photo",
+    "status": "mapped",
+    "subject": "Work gloves",
+    "alt": "Work gloves shown as a safety-wear example",
+    "pages": [
+      "/ppe-supplier-kampala-uganda"
+    ],
+    "roles": [
+      "product-example"
+    ],
+    "localBindings": []
+  },
+  "PHOTO-2022-04-26-14-45-31_7": {
+    "category": "ppe",
+    "provenance": "photo",
+    "status": "mapped",
+    "subject": "Safety helmets",
+    "alt": "Safety helmet shown as a protective-equipment example",
+    "pages": [
+      "/ppe-supplier-kampala-uganda",
+      "/safety-helmets-overalls-kampala"
+    ],
+    "roles": [
+      "product-example"
+    ],
+    "localBindings": []
+  },
+  "PHOTO-2022-04-26-14-45-31_8": {
+    "category": "ppe",
+    "provenance": "photo",
+    "status": "mapped",
+    "subject": "Safety footwear",
+    "alt": "Protective work boots shown as a product example",
+    "pages": [
+      "/ppe-supplier-kampala-uganda"
+    ],
+    "roles": [
+      "product-example"
+    ],
+    "localBindings": []
+  },
+  "PHOTO-2022-04-26-14-45-31_9": {
+    "category": "needs-review",
+    "provenance": "unknown",
+    "status": "needs-review",
+    "subject": null,
+    "alt": null,
+    "pages": [],
+    "roles": [],
+    "localBindings": [],
+    "reviewReason": "Preview inspected, but provenance, established service relevance or a reliable existing-slot match is insufficient for publication."
+  },
+  "PHOTO-2022-05-17-13-04-28": {
+    "category": "workwear",
+    "provenance": "unknown",
+    "status": "needs-review",
+    "subject": "Garment example",
+    "alt": null,
+    "pages": [
+      "/uniform-embroidery-kampala"
+    ],
+    "roles": [],
+    "localBindings": [],
+    "reviewReason": "Product topic is visible, but photo/mockup provenance, specific suitability or a sufficiently reliable live-slot match is not established; kept off the website."
+  },
+  "PHOTO-2022-05-17-13-04-28_1": {
+    "category": "workwear",
+    "provenance": "unknown",
+    "status": "needs-review",
+    "subject": "Garment example",
+    "alt": null,
+    "pages": [
+      "/uniform-embroidery-kampala"
+    ],
+    "roles": [],
+    "localBindings": [],
+    "reviewReason": "Product topic is visible, but photo/mockup provenance, specific suitability or a sufficiently reliable live-slot match is not established; kept off the website."
+  },
+  "PHOTO-2022-05-17-13-04-28_2": {
+    "category": "workwear",
+    "provenance": "unknown",
+    "status": "needs-review",
+    "subject": "Garment example",
+    "alt": null,
+    "pages": [
+      "/uniform-embroidery-kampala"
+    ],
+    "roles": [],
+    "localBindings": [],
+    "reviewReason": "Product topic is visible, but photo/mockup provenance, specific suitability or a sufficiently reliable live-slot match is not established; kept off the website."
+  },
+  "PHOTO-2023-01-30-15-02-41": {
+    "category": "bags-accessories",
+    "provenance": "photo",
+    "status": "mapped",
+    "subject": "Branded bags",
+    "alt": "Bags with example printed branding",
+    "pages": [
+      "/corporate-gifts-branding-kampala"
+    ],
+    "roles": [
+      "product-example"
+    ],
+    "localBindings": []
+  },
+  "PHOTO-2023-01-30-15-18-27": {
+    "category": "bags-accessories",
+    "provenance": "photo",
+    "status": "mapped",
+    "subject": "Branded bags",
+    "alt": "Bags with example printed branding",
+    "pages": [
+      "/corporate-gifts-branding-kampala"
+    ],
+    "roles": [
+      "product-example"
+    ],
+    "localBindings": []
+  },
+  "PHOTO-2023-01-30-15-40-24": {
+    "category": "bags-accessories",
+    "provenance": "photo",
+    "status": "mapped",
+    "subject": "Branded bags",
+    "alt": "Bags with example printed branding",
+    "pages": [
+      "/corporate-gifts-branding-kampala"
+    ],
+    "roles": [
+      "product-example"
+    ],
+    "localBindings": []
+  },
+  "PHOTO-2023-03-20-16-58-58": {
+    "category": "signage",
+    "provenance": "photo",
+    "status": "mapped",
+    "subject": "Signage example",
+    "alt": "Shopfront signage shown as an example, not a client endorsement",
+    "pages": [
+      "/large-format-printing-industrial-area"
+    ],
+    "roles": [
+      "product-example"
+    ],
+    "localBindings": []
+  },
+  "PHOTO-2023-05-05-13-25-21": {
+    "category": "promotional-products",
+    "provenance": "photo",
+    "status": "mapped",
+    "subject": "Promotional keyrings",
+    "alt": "Keyrings with example shapes, colours and branding",
+    "pages": [
+      "/promotional-items-mugs-pens-kampala"
+    ],
+    "roles": [
+      "product-example"
+    ],
+    "localBindings": []
+  },
+  "PHOTO-2023-05-26-11-05-54": {
+    "category": "corporate-gifts",
+    "provenance": "unknown",
+    "status": "needs-review",
+    "subject": "Gift or technology accessory",
+    "alt": null,
+    "pages": [
+      "/corporate-gifts-branding-kampala"
+    ],
+    "roles": [],
+    "localBindings": [],
+    "reviewReason": "Product topic is visible, but photo/mockup provenance, specific suitability or a sufficiently reliable live-slot match is not established; kept off the website."
+  },
+  "PHOTO-2023-05-26-11-05-56": {
+    "category": "corporate-gifts",
+    "provenance": "unknown",
+    "status": "needs-review",
+    "subject": "Gift or technology accessory",
+    "alt": null,
+    "pages": [
+      "/corporate-gifts-branding-kampala"
+    ],
+    "roles": [],
+    "localBindings": [],
+    "reviewReason": "Product topic is visible, but photo/mockup provenance, specific suitability or a sufficiently reliable live-slot match is not established; kept off the website."
+  },
+  "PHOTO-2023-05-31-13-41-26": {
+    "category": "promotional-products",
+    "provenance": "photo",
+    "status": "mapped",
+    "subject": "Reusable drinkware",
+    "alt": "Reusable bottles and travel cups in example colours and finishes",
+    "pages": [
+      "/promotional-items-mugs-pens-kampala"
+    ],
+    "roles": [
+      "product-example"
+    ],
+    "localBindings": []
+  },
+  "PHOTO-2023-06-08-13-23-19": {
+    "category": "promotional-products",
+    "provenance": "photo",
+    "status": "mapped",
+    "subject": "Reusable drinkware",
+    "alt": "Three reusable travel mugs with example printed branding",
+    "pages": [
+      "/",
+      "/promotional-items-mugs-pens-kampala"
+    ],
+    "roles": [
+      "product-example"
+    ],
+    "localBindings": [
+      "/products/branded-drinkware.webp"
+    ]
+  },
+  "PHOTO-2023-07-11-15-41-57": {
+    "category": "corporate-gifts",
+    "provenance": "unknown",
+    "status": "needs-review",
+    "subject": "Gift or technology accessory",
+    "alt": null,
+    "pages": [
+      "/corporate-gifts-branding-kampala"
+    ],
+    "roles": [],
+    "localBindings": [],
+    "reviewReason": "Product topic is visible, but photo/mockup provenance, specific suitability or a sufficiently reliable live-slot match is not established; kept off the website."
+  },
+  "PHOTO-2023-07-11-15-41-57_1": {
+    "category": "corporate-gifts",
+    "provenance": "unknown",
+    "status": "needs-review",
+    "subject": "Gift or technology accessory",
+    "alt": null,
+    "pages": [
+      "/corporate-gifts-branding-kampala"
+    ],
+    "roles": [],
+    "localBindings": [],
+    "reviewReason": "Product topic is visible, but photo/mockup provenance, specific suitability or a sufficiently reliable live-slot match is not established; kept off the website."
+  },
+  "PHOTO-2023-07-11-15-41-59": {
+    "category": "corporate-gifts",
+    "provenance": "unknown",
+    "status": "needs-review",
+    "subject": "Gift or technology accessory",
+    "alt": null,
+    "pages": [
+      "/corporate-gifts-branding-kampala"
+    ],
+    "roles": [],
+    "localBindings": [],
+    "reviewReason": "Product topic is visible, but photo/mockup provenance, specific suitability or a sufficiently reliable live-slot match is not established; kept off the website."
+  },
+  "PHOTO-2023-07-11-15-42-01": {
+    "category": "corporate-gifts",
+    "provenance": "unknown",
+    "status": "needs-review",
+    "subject": "Gift or technology accessory",
+    "alt": null,
+    "pages": [
+      "/corporate-gifts-branding-kampala"
+    ],
+    "roles": [],
+    "localBindings": [],
+    "reviewReason": "Product topic is visible, but photo/mockup provenance, specific suitability or a sufficiently reliable live-slot match is not established; kept off the website."
+  },
+  "PHOTO-2023-07-11-15-42-02": {
+    "category": "corporate-gifts",
+    "provenance": "unknown",
+    "status": "needs-review",
+    "subject": "Gift or technology accessory",
+    "alt": null,
+    "pages": [
+      "/corporate-gifts-branding-kampala"
+    ],
+    "roles": [],
+    "localBindings": [],
+    "reviewReason": "Product topic is visible, but photo/mockup provenance, specific suitability or a sufficiently reliable live-slot match is not established; kept off the website."
+  },
+  "PHOTO-2023-08-14-15-03-48": {
+    "category": "promotional-products",
+    "provenance": "unknown",
+    "status": "needs-review",
+    "subject": "Drinkware or promotional accessory",
+    "alt": null,
+    "pages": [
+      "/promotional-items-mugs-pens-kampala"
+    ],
+    "roles": [],
+    "localBindings": [],
+    "reviewReason": "Product topic is visible, but photo/mockup provenance, specific suitability or a sufficiently reliable live-slot match is not established; kept off the website."
+  },
+  "PHOTO-2023-08-14-15-03-48_1": {
+    "category": "promotional-products",
+    "provenance": "unknown",
+    "status": "needs-review",
+    "subject": "Drinkware or promotional accessory",
+    "alt": null,
+    "pages": [
+      "/promotional-items-mugs-pens-kampala"
+    ],
+    "roles": [],
+    "localBindings": [],
+    "reviewReason": "Product topic is visible, but photo/mockup provenance, specific suitability or a sufficiently reliable live-slot match is not established; kept off the website."
+  },
+  "PHOTO-2023-08-14-15-03-49": {
+    "category": "promotional-products",
+    "provenance": "unknown",
+    "status": "needs-review",
+    "subject": "Drinkware or promotional accessory",
+    "alt": null,
+    "pages": [
+      "/promotional-items-mugs-pens-kampala"
+    ],
+    "roles": [],
+    "localBindings": [],
+    "reviewReason": "Product topic is visible, but photo/mockup provenance, specific suitability or a sufficiently reliable live-slot match is not established; kept off the website."
+  },
+  "PHOTO-2023-08-14-15-03-49_1": {
+    "category": "corporate-gifts",
+    "provenance": "photo",
+    "status": "mapped",
+    "subject": "Presentation gift sets",
+    "alt": "Presentation gift box containing coordinated stationery and accessories",
+    "pages": [
+      "/corporate-gifts-branding-kampala"
+    ],
+    "roles": [
+      "product-example"
+    ],
+    "localBindings": []
+  },
+  "PHOTO-2023-08-16-15-50-19": {
+    "category": "bags-accessories",
+    "provenance": "photo",
+    "status": "mapped",
+    "subject": "Branded bags",
+    "alt": "Bags with example printed branding",
+    "pages": [
+      "/corporate-gifts-branding-kampala"
+    ],
+    "roles": [
+      "product-example"
+    ],
+    "localBindings": []
+  },
+  "PHOTO-2023-08-16-15-54-34": {
+    "category": "needs-review",
+    "provenance": "unknown",
+    "status": "needs-review",
+    "subject": null,
+    "alt": null,
+    "pages": [],
+    "roles": [],
+    "localBindings": [],
+    "reviewReason": "Preview inspected, but provenance, established service relevance or a reliable existing-slot match is insufficient for publication."
+  },
+  "PHOTO-2023-11-23-19-07-22": {
+    "category": "corporate-gifts",
+    "provenance": "unknown",
+    "status": "needs-review",
+    "subject": "Gift or technology accessory",
+    "alt": null,
+    "pages": [
+      "/corporate-gifts-branding-kampala"
+    ],
+    "roles": [],
+    "localBindings": [],
+    "reviewReason": "Product topic is visible, but photo/mockup provenance, specific suitability or a sufficiently reliable live-slot match is not established; kept off the website."
+  },
+  "PHOTO-2023-11-28-16-18-39": {
+    "category": "needs-review",
+    "provenance": "unknown",
+    "status": "needs-review",
+    "subject": null,
+    "alt": null,
+    "pages": [],
+    "roles": [],
+    "localBindings": [],
+    "reviewReason": "Preview inspected, but provenance, established service relevance or a reliable existing-slot match is insufficient for publication."
+  },
+  "PHOTO-2023-11-28-16-21-39": {
+    "category": "needs-review",
+    "provenance": "unknown",
+    "status": "needs-review",
+    "subject": null,
+    "alt": null,
+    "pages": [],
+    "roles": [],
+    "localBindings": [],
+    "reviewReason": "Preview inspected, but provenance, established service relevance or a reliable existing-slot match is insufficient for publication."
+  },
+  "PHOTO-2023-11-28-16-23-39": {
+    "category": "corporate-gifts",
+    "provenance": "unknown",
+    "status": "needs-review",
+    "subject": "Gift or technology accessory",
+    "alt": null,
+    "pages": [
+      "/corporate-gifts-branding-kampala"
+    ],
+    "roles": [],
+    "localBindings": [],
+    "reviewReason": "Product topic is visible, but photo/mockup provenance, specific suitability or a sufficiently reliable live-slot match is not established; kept off the website."
+  },
+  "PHOTO-2023-11-28-16-23-39_1": {
+    "category": "corporate-gifts",
+    "provenance": "unknown",
+    "status": "needs-review",
+    "subject": "Gift or technology accessory",
+    "alt": null,
+    "pages": [
+      "/corporate-gifts-branding-kampala"
+    ],
+    "roles": [],
+    "localBindings": [],
+    "reviewReason": "Product topic is visible, but photo/mockup provenance, specific suitability or a sufficiently reliable live-slot match is not established; kept off the website."
+  },
+  "PHOTO-2023-11-28-16-55-15": {
+    "category": "corporate-gifts",
+    "provenance": "unknown",
+    "status": "needs-review",
+    "subject": "Gift or technology accessory",
+    "alt": null,
+    "pages": [
+      "/corporate-gifts-branding-kampala"
+    ],
+    "roles": [],
+    "localBindings": [],
+    "reviewReason": "Product topic is visible, but photo/mockup provenance, specific suitability or a sufficiently reliable live-slot match is not established; kept off the website."
+  },
+  "PHOTO-2023-11-30-19-36-53": {
+    "category": "corporate-gifts",
+    "provenance": "unknown",
+    "status": "needs-review",
+    "subject": "Gift or technology accessory",
+    "alt": null,
+    "pages": [
+      "/corporate-gifts-branding-kampala"
+    ],
+    "roles": [],
+    "localBindings": [],
+    "reviewReason": "Product topic is visible, but photo/mockup provenance, specific suitability or a sufficiently reliable live-slot match is not established; kept off the website."
+  },
+  "PHOTO-2023-11-30-19-38-13": {
+    "category": "corporate-gifts",
+    "provenance": "photo",
+    "status": "mapped",
+    "subject": "Presentation gift sets",
+    "alt": "Presentation gift box containing coordinated stationery and accessories",
+    "pages": [
+      "/corporate-gifts-branding-kampala"
+    ],
+    "roles": [
+      "product-example"
+    ],
+    "localBindings": []
+  },
+  "PHOTO-2023-11-30-19-38-13_1": {
+    "category": "corporate-gifts",
+    "provenance": "photo",
+    "status": "mapped",
+    "subject": "Presentation gift sets",
+    "alt": "Presentation gift box containing coordinated stationery and accessories",
+    "pages": [
+      "/corporate-gifts-branding-kampala"
+    ],
+    "roles": [
+      "product-example"
+    ],
+    "localBindings": []
+  },
+  "PHOTO-2023-11-30-19-38-14": {
+    "category": "corporate-gifts",
+    "provenance": "photo",
+    "status": "mapped",
+    "subject": "Presentation gift sets",
+    "alt": "Presentation gift box containing coordinated stationery and accessories",
+    "pages": [
+      "/corporate-gifts-branding-kampala"
+    ],
+    "roles": [
+      "product-example"
+    ],
+    "localBindings": []
+  },
+  "PHOTO-2023-11-30-19-38-15": {
+    "category": "corporate-gifts",
+    "provenance": "photo",
+    "status": "mapped",
+    "subject": "Presentation gift sets",
+    "alt": "Presentation gift box containing coordinated stationery and accessories",
+    "pages": [
+      "/corporate-gifts-branding-kampala"
+    ],
+    "roles": [
+      "product-example"
+    ],
+    "localBindings": []
+  },
+  "PHOTO-2023-11-30-19-38-15_1": {
+    "category": "corporate-gifts",
+    "provenance": "photo",
+    "status": "mapped",
+    "subject": "Presentation gift sets",
+    "alt": "Presentation gift box containing coordinated stationery and accessories",
+    "pages": [
+      "/corporate-gifts-branding-kampala"
+    ],
+    "roles": [
+      "product-example"
+    ],
+    "localBindings": []
+  },
+  "PHOTO-2023-11-30-19-38-16": {
+    "category": "corporate-gifts",
+    "provenance": "photo",
+    "status": "mapped",
+    "subject": "Presentation gift sets",
+    "alt": "Presentation gift box containing coordinated stationery and accessories",
+    "pages": [
+      "/corporate-gifts-branding-kampala"
+    ],
+    "roles": [
+      "product-example"
+    ],
+    "localBindings": []
+  },
+  "PHOTO-2023-11-30-19-45-53": {
+    "category": "bags-accessories",
+    "provenance": "unknown",
+    "status": "needs-review",
+    "subject": "Bag or stationery accessory",
+    "alt": null,
+    "pages": [
+      "/corporate-gifts-branding-kampala"
+    ],
+    "roles": [],
+    "localBindings": [],
+    "reviewReason": "Product topic is visible, but photo/mockup provenance, specific suitability or a sufficiently reliable live-slot match is not established; kept off the website."
+  },
+  "PHOTO-2023-11-30-19-45-53_1": {
+    "category": "bags-accessories",
+    "provenance": "unknown",
+    "status": "needs-review",
+    "subject": "Bag or stationery accessory",
+    "alt": null,
+    "pages": [
+      "/corporate-gifts-branding-kampala"
+    ],
+    "roles": [],
+    "localBindings": [],
+    "reviewReason": "Product topic is visible, but photo/mockup provenance, specific suitability or a sufficiently reliable live-slot match is not established; kept off the website."
+  },
+  "PHOTO-2023-11-30-19-45-54": {
+    "category": "bags-accessories",
+    "provenance": "unknown",
+    "status": "needs-review",
+    "subject": "Bag or stationery accessory",
+    "alt": null,
+    "pages": [
+      "/corporate-gifts-branding-kampala"
+    ],
+    "roles": [],
+    "localBindings": [],
+    "reviewReason": "Product topic is visible, but photo/mockup provenance, specific suitability or a sufficiently reliable live-slot match is not established; kept off the website."
+  },
+  "PHOTO-2023-11-30-19-45-54_1": {
+    "category": "bags-accessories",
+    "provenance": "unknown",
+    "status": "needs-review",
+    "subject": "Bag or stationery accessory",
+    "alt": null,
+    "pages": [
+      "/corporate-gifts-branding-kampala"
+    ],
+    "roles": [],
+    "localBindings": [],
+    "reviewReason": "Product topic is visible, but photo/mockup provenance, specific suitability or a sufficiently reliable live-slot match is not established; kept off the website."
+  },
+  "PHOTO-2023-11-30-19-45-55": {
+    "category": "bags-accessories",
+    "provenance": "unknown",
+    "status": "needs-review",
+    "subject": "Bag or stationery accessory",
+    "alt": null,
+    "pages": [
+      "/corporate-gifts-branding-kampala"
+    ],
+    "roles": [],
+    "localBindings": [],
+    "reviewReason": "Product topic is visible, but photo/mockup provenance, specific suitability or a sufficiently reliable live-slot match is not established; kept off the website."
+  },
+  "PHOTO-2023-11-30-19-45-55_1": {
+    "category": "bags-accessories",
+    "provenance": "unknown",
+    "status": "needs-review",
+    "subject": "Bag or stationery accessory",
+    "alt": null,
+    "pages": [
+      "/corporate-gifts-branding-kampala"
+    ],
+    "roles": [],
+    "localBindings": [],
+    "reviewReason": "Product topic is visible, but photo/mockup provenance, specific suitability or a sufficiently reliable live-slot match is not established; kept off the website."
+  },
+  "PHOTO-2023-11-30-19-45-57": {
+    "category": "bags-accessories",
+    "provenance": "unknown",
+    "status": "needs-review",
+    "subject": "Bag or stationery accessory",
+    "alt": null,
+    "pages": [
+      "/corporate-gifts-branding-kampala"
+    ],
+    "roles": [],
+    "localBindings": [],
+    "reviewReason": "Product topic is visible, but photo/mockup provenance, specific suitability or a sufficiently reliable live-slot match is not established; kept off the website."
+  },
+  "PHOTO-2023-11-30-19-45-58": {
+    "category": "bags-accessories",
+    "provenance": "unknown",
+    "status": "needs-review",
+    "subject": "Bag or stationery accessory",
+    "alt": null,
+    "pages": [
+      "/corporate-gifts-branding-kampala"
+    ],
+    "roles": [],
+    "localBindings": [],
+    "reviewReason": "Product topic is visible, but photo/mockup provenance, specific suitability or a sufficiently reliable live-slot match is not established; kept off the website."
+  },
+  "PHOTO-2023-11-30-19-46-00": {
+    "category": "bags-accessories",
+    "provenance": "unknown",
+    "status": "needs-review",
+    "subject": "Bag or stationery accessory",
+    "alt": null,
+    "pages": [
+      "/corporate-gifts-branding-kampala"
+    ],
+    "roles": [],
+    "localBindings": [],
+    "reviewReason": "Product topic is visible, but photo/mockup provenance, specific suitability or a sufficiently reliable live-slot match is not established; kept off the website."
+  },
+  "PHOTO-2023-11-30-19-46-01": {
+    "category": "bags-accessories",
+    "provenance": "unknown",
+    "status": "needs-review",
+    "subject": "Bag or stationery accessory",
+    "alt": null,
+    "pages": [
+      "/corporate-gifts-branding-kampala"
+    ],
+    "roles": [],
+    "localBindings": [],
+    "reviewReason": "Product topic is visible, but photo/mockup provenance, specific suitability or a sufficiently reliable live-slot match is not established; kept off the website."
+  },
+  "PHOTO-2023-11-30-19-46-02": {
+    "category": "bags-accessories",
+    "provenance": "unknown",
+    "status": "needs-review",
+    "subject": "Bag or stationery accessory",
+    "alt": null,
+    "pages": [
+      "/corporate-gifts-branding-kampala"
+    ],
+    "roles": [],
+    "localBindings": [],
+    "reviewReason": "Product topic is visible, but photo/mockup provenance, specific suitability or a sufficiently reliable live-slot match is not established; kept off the website."
+  },
+  "PHOTO-2023-11-30-19-46-02_1": {
+    "category": "bags-accessories",
+    "provenance": "unknown",
+    "status": "needs-review",
+    "subject": "Bag or stationery accessory",
+    "alt": null,
+    "pages": [
+      "/corporate-gifts-branding-kampala"
+    ],
+    "roles": [],
+    "localBindings": [],
+    "reviewReason": "Product topic is visible, but photo/mockup provenance, specific suitability or a sufficiently reliable live-slot match is not established; kept off the website."
+  },
+  "PHOTO-2023-11-30-19-46-04": {
+    "category": "bags-accessories",
+    "provenance": "unknown",
+    "status": "needs-review",
+    "subject": "Bag or stationery accessory",
+    "alt": null,
+    "pages": [
+      "/corporate-gifts-branding-kampala"
+    ],
+    "roles": [],
+    "localBindings": [],
+    "reviewReason": "Product topic is visible, but photo/mockup provenance, specific suitability or a sufficiently reliable live-slot match is not established; kept off the website."
+  },
+  "PHOTO-2023-11-30-19-50-24": {
+    "category": "bags-accessories",
+    "provenance": "unknown",
+    "status": "needs-review",
+    "subject": "Bag or stationery accessory",
+    "alt": null,
+    "pages": [
+      "/corporate-gifts-branding-kampala"
+    ],
+    "roles": [],
+    "localBindings": [],
+    "reviewReason": "Product topic is visible, but photo/mockup provenance, specific suitability or a sufficiently reliable live-slot match is not established; kept off the website."
+  },
+  "PHOTO-2023-11-30-19-50-24_1": {
+    "category": "bags-accessories",
+    "provenance": "unknown",
+    "status": "needs-review",
+    "subject": "Bag or stationery accessory",
+    "alt": null,
+    "pages": [
+      "/corporate-gifts-branding-kampala"
+    ],
+    "roles": [],
+    "localBindings": [],
+    "reviewReason": "Product topic is visible, but photo/mockup provenance, specific suitability or a sufficiently reliable live-slot match is not established; kept off the website."
+  },
+  "PHOTO-2023-11-30-19-50-25": {
+    "category": "bags-accessories",
+    "provenance": "unknown",
+    "status": "needs-review",
+    "subject": "Bag or stationery accessory",
+    "alt": null,
+    "pages": [
+      "/corporate-gifts-branding-kampala"
+    ],
+    "roles": [],
+    "localBindings": [],
+    "reviewReason": "Product topic is visible, but photo/mockup provenance, specific suitability or a sufficiently reliable live-slot match is not established; kept off the website."
+  },
+  "PHOTO-2023-11-30-19-50-25_1": {
+    "category": "bags-accessories",
+    "provenance": "unknown",
+    "status": "needs-review",
+    "subject": "Bag or stationery accessory",
+    "alt": null,
+    "pages": [
+      "/corporate-gifts-branding-kampala"
+    ],
+    "roles": [],
+    "localBindings": [],
+    "reviewReason": "Product topic is visible, but photo/mockup provenance, specific suitability or a sufficiently reliable live-slot match is not established; kept off the website."
+  },
+  "PHOTO-2023-11-30-19-50-26": {
+    "category": "bags-accessories",
+    "provenance": "unknown",
+    "status": "needs-review",
+    "subject": "Bag or stationery accessory",
+    "alt": null,
+    "pages": [
+      "/corporate-gifts-branding-kampala"
+    ],
+    "roles": [],
+    "localBindings": [],
+    "reviewReason": "Product topic is visible, but photo/mockup provenance, specific suitability or a sufficiently reliable live-slot match is not established; kept off the website."
+  },
+  "PHOTO-2023-11-30-19-50-30": {
+    "category": "bags-accessories",
+    "provenance": "unknown",
+    "status": "needs-review",
+    "subject": "Bag or stationery accessory",
+    "alt": null,
+    "pages": [
+      "/corporate-gifts-branding-kampala"
+    ],
+    "roles": [],
+    "localBindings": [],
+    "reviewReason": "Product topic is visible, but photo/mockup provenance, specific suitability or a sufficiently reliable live-slot match is not established; kept off the website."
+  },
+  "PHOTO-2023-11-30-19-50-32": {
+    "category": "bags-accessories",
+    "provenance": "unknown",
+    "status": "needs-review",
+    "subject": "Bag or stationery accessory",
+    "alt": null,
+    "pages": [
+      "/corporate-gifts-branding-kampala"
+    ],
+    "roles": [],
+    "localBindings": [],
+    "reviewReason": "Product topic is visible, but photo/mockup provenance, specific suitability or a sufficiently reliable live-slot match is not established; kept off the website."
+  },
+  "PHOTO-2023-11-30-19-50-32_1": {
+    "category": "bags-accessories",
+    "provenance": "unknown",
+    "status": "needs-review",
+    "subject": "Bag or stationery accessory",
+    "alt": null,
+    "pages": [
+      "/corporate-gifts-branding-kampala"
+    ],
+    "roles": [],
+    "localBindings": [],
+    "reviewReason": "Product topic is visible, but photo/mockup provenance, specific suitability or a sufficiently reliable live-slot match is not established; kept off the website."
+  },
+  "PHOTO-2023-11-30-19-50-34": {
+    "category": "bags-accessories",
+    "provenance": "unknown",
+    "status": "needs-review",
+    "subject": "Bag or stationery accessory",
+    "alt": null,
+    "pages": [
+      "/corporate-gifts-branding-kampala"
+    ],
+    "roles": [],
+    "localBindings": [],
+    "reviewReason": "Product topic is visible, but photo/mockup provenance, specific suitability or a sufficiently reliable live-slot match is not established; kept off the website."
+  },
+  "PHOTO-2023-11-30-19-50-35": {
+    "category": "bags-accessories",
+    "provenance": "unknown",
+    "status": "needs-review",
+    "subject": "Bag or stationery accessory",
+    "alt": null,
+    "pages": [
+      "/corporate-gifts-branding-kampala"
+    ],
+    "roles": [],
+    "localBindings": [],
+    "reviewReason": "Product topic is visible, but photo/mockup provenance, specific suitability or a sufficiently reliable live-slot match is not established; kept off the website."
+  },
+  "PHOTO-2023-11-30-19-50-36": {
+    "category": "bags-accessories",
+    "provenance": "unknown",
+    "status": "needs-review",
+    "subject": "Bag or stationery accessory",
+    "alt": null,
+    "pages": [
+      "/corporate-gifts-branding-kampala"
+    ],
+    "roles": [],
+    "localBindings": [],
+    "reviewReason": "Product topic is visible, but photo/mockup provenance, specific suitability or a sufficiently reliable live-slot match is not established; kept off the website."
+  },
+  "PHOTO-2023-11-30-19-50-36_1": {
+    "category": "bags-accessories",
+    "provenance": "unknown",
+    "status": "needs-review",
+    "subject": "Bag or stationery accessory",
+    "alt": null,
+    "pages": [
+      "/corporate-gifts-branding-kampala"
+    ],
+    "roles": [],
+    "localBindings": [],
+    "reviewReason": "Product topic is visible, but photo/mockup provenance, specific suitability or a sufficiently reliable live-slot match is not established; kept off the website."
+  },
+  "PHOTO-2023-11-30-19-53-21": {
+    "category": "bags-accessories",
+    "provenance": "unknown",
+    "status": "needs-review",
+    "subject": "Bag or stationery accessory",
+    "alt": null,
+    "pages": [
+      "/corporate-gifts-branding-kampala"
+    ],
+    "roles": [],
+    "localBindings": [],
+    "reviewReason": "Product topic is visible, but photo/mockup provenance, specific suitability or a sufficiently reliable live-slot match is not established; kept off the website."
+  },
+  "PHOTO-2023-11-30-19-53-21_1": {
+    "category": "bags-accessories",
+    "provenance": "unknown",
+    "status": "needs-review",
+    "subject": "Bag or stationery accessory",
+    "alt": null,
+    "pages": [
+      "/corporate-gifts-branding-kampala"
+    ],
+    "roles": [],
+    "localBindings": [],
+    "reviewReason": "Product topic is visible, but photo/mockup provenance, specific suitability or a sufficiently reliable live-slot match is not established; kept off the website."
+  },
+  "PHOTO-2023-11-30-19-53-24": {
+    "category": "bags-accessories",
+    "provenance": "unknown",
+    "status": "needs-review",
+    "subject": "Bag or stationery accessory",
+    "alt": null,
+    "pages": [
+      "/corporate-gifts-branding-kampala"
+    ],
+    "roles": [],
+    "localBindings": [],
+    "reviewReason": "Product topic is visible, but photo/mockup provenance, specific suitability or a sufficiently reliable live-slot match is not established; kept off the website."
+  },
+  "PHOTO-2023-11-30-19-53-25": {
+    "category": "bags-accessories",
+    "provenance": "unknown",
+    "status": "needs-review",
+    "subject": "Bag or stationery accessory",
+    "alt": null,
+    "pages": [
+      "/corporate-gifts-branding-kampala"
+    ],
+    "roles": [],
+    "localBindings": [],
+    "reviewReason": "Product topic is visible, but photo/mockup provenance, specific suitability or a sufficiently reliable live-slot match is not established; kept off the website."
+  },
+  "PHOTO-2024-03-05-15-55-12": {
+    "category": "signage",
+    "provenance": "photo",
+    "status": "mapped",
+    "subject": "Signage example",
+    "alt": "Shopfront signage shown as an example, not a client endorsement",
+    "pages": [
+      "/large-format-printing-industrial-area"
+    ],
+    "roles": [
+      "product-example"
+    ],
+    "localBindings": []
+  },
+  "PHOTO-2024-06-14-08-56-37": {
+    "category": "garment-branding",
+    "provenance": "mockup",
+    "status": "mapped",
+    "subject": "Garment design example",
+    "alt": "Garment design with example colours and branding",
+    "pages": [
+      "/t-shirt-printing-embroidery-kampala",
+      "/uniform-embroidery-kampala"
+    ],
+    "roles": [
+      "product-example"
+    ],
+    "localBindings": []
+  },
+  "PHOTO-2024-06-14-09-46-21": {
+    "category": "garment-branding",
+    "provenance": "mockup",
+    "status": "mapped",
+    "subject": "Garment design example",
+    "alt": "Garment design with example colours and branding",
+    "pages": [
+      "/t-shirt-printing-embroidery-kampala",
+      "/uniform-embroidery-kampala"
+    ],
+    "roles": [
+      "product-example"
+    ],
+    "localBindings": []
+  },
+  "PHOTO-2024-06-28-19-27-02": {
+    "category": "bags-accessories",
+    "provenance": "unknown",
+    "status": "needs-review",
+    "subject": "Bag or stationery accessory",
+    "alt": null,
+    "pages": [
+      "/corporate-gifts-branding-kampala"
+    ],
+    "roles": [],
+    "localBindings": [],
+    "reviewReason": "Product topic is visible, but photo/mockup provenance, specific suitability or a sufficiently reliable live-slot match is not established; kept off the website."
+  },
+  "PHOTO-2024-06-29-11-49-34": {
+    "category": "corporate-gifts",
+    "provenance": "unknown",
+    "status": "needs-review",
+    "subject": "Gift or technology accessory",
+    "alt": null,
+    "pages": [
+      "/corporate-gifts-branding-kampala"
+    ],
+    "roles": [],
+    "localBindings": [],
+    "reviewReason": "Product topic is visible, but photo/mockup provenance, specific suitability or a sufficiently reliable live-slot match is not established; kept off the website."
+  },
+  "PHOTO-2024-08-07-09-38-46": {
+    "category": "corporate-gifts",
+    "provenance": "unknown",
+    "status": "needs-review",
+    "subject": "Gift or technology accessory",
+    "alt": null,
+    "pages": [
+      "/corporate-gifts-branding-kampala"
+    ],
+    "roles": [],
+    "localBindings": [],
+    "reviewReason": "Product topic is visible, but photo/mockup provenance, specific suitability or a sufficiently reliable live-slot match is not established; kept off the website."
+  },
+  "PHOTO-2024-08-07-09-39-28": {
+    "category": "corporate-gifts",
+    "provenance": "unknown",
+    "status": "needs-review",
+    "subject": "Gift or technology accessory",
+    "alt": null,
+    "pages": [
+      "/corporate-gifts-branding-kampala"
+    ],
+    "roles": [],
+    "localBindings": [],
+    "reviewReason": "Product topic is visible, but photo/mockup provenance, specific suitability or a sufficiently reliable live-slot match is not established; kept off the website."
+  },
+  "PHOTO-2025-02-05-08-58-05": {
+    "category": "bags-accessories",
+    "provenance": "unknown",
+    "status": "needs-review",
+    "subject": "Bag or stationery accessory",
+    "alt": null,
+    "pages": [
+      "/corporate-gifts-branding-kampala"
+    ],
+    "roles": [],
+    "localBindings": [],
+    "reviewReason": "Product topic is visible, but photo/mockup provenance, specific suitability or a sufficiently reliable live-slot match is not established; kept off the website."
+  },
+  "PHOTO-2025-02-24-14-57-08": {
+    "category": "corporate-gifts",
+    "provenance": "unknown",
+    "status": "needs-review",
+    "subject": "Gift or technology accessory",
+    "alt": null,
+    "pages": [
+      "/corporate-gifts-branding-kampala"
+    ],
+    "roles": [],
+    "localBindings": [],
+    "reviewReason": "Product topic is visible, but photo/mockup provenance, specific suitability or a sufficiently reliable live-slot match is not established; kept off the website."
+  },
+  "PHOTO-2025-02-24-14-57-14": {
+    "category": "corporate-gifts",
+    "provenance": "unknown",
+    "status": "needs-review",
+    "subject": "Gift or technology accessory",
+    "alt": null,
+    "pages": [
+      "/corporate-gifts-branding-kampala"
+    ],
+    "roles": [],
+    "localBindings": [],
+    "reviewReason": "Product topic is visible, but photo/mockup provenance, specific suitability or a sufficiently reliable live-slot match is not established; kept off the website."
+  },
+  "PHOTO-2025-02-24-15-36-13": {
+    "category": "bags-accessories",
+    "provenance": "photo",
+    "status": "mapped",
+    "subject": "Branded bags",
+    "alt": "Bags with example printed branding",
+    "pages": [
+      "/corporate-gifts-branding-kampala"
+    ],
+    "roles": [
+      "product-example"
+    ],
+    "localBindings": []
+  },
+  "PHOTO-2025-02-24-15-36-13_1": {
+    "category": "corporate-gifts",
+    "provenance": "photo",
+    "status": "mapped",
+    "subject": "Notebooks and stationery",
+    "alt": "Notebooks and writing accessories in example colours",
+    "pages": [
+      "/corporate-gifts-branding-kampala"
+    ],
+    "roles": [
+      "product-example"
+    ],
+    "localBindings": []
+  },
+  "PHOTO-2025-05-09-17-43-06": {
+    "category": "bags-accessories",
+    "provenance": "unknown",
+    "status": "needs-review",
+    "subject": "Bag or stationery accessory",
+    "alt": null,
+    "pages": [
+      "/corporate-gifts-branding-kampala"
+    ],
+    "roles": [],
+    "localBindings": [],
+    "reviewReason": "Product topic is visible, but photo/mockup provenance, specific suitability or a sufficiently reliable live-slot match is not established; kept off the website."
+  },
+  "PHOTO-2025-05-09-17-43-09": {
+    "category": "bags-accessories",
+    "provenance": "photo",
+    "status": "mapped",
+    "subject": "Branded bags",
+    "alt": "Bags with example printed branding",
+    "pages": [
+      "/corporate-gifts-branding-kampala"
+    ],
+    "roles": [
+      "product-example"
+    ],
+    "localBindings": []
+  },
+  "PHOTO-2025-05-09-17-46-37": {
+    "category": "bags-accessories",
+    "provenance": "photo",
+    "status": "mapped",
+    "subject": "Branded bags",
+    "alt": "Bags with example printed branding",
+    "pages": [
+      "/corporate-gifts-branding-kampala"
+    ],
+    "roles": [
+      "product-example"
+    ],
+    "localBindings": []
+  },
+  "PHOTO-2025-05-13-05-16-34": {
+    "category": "corporate-gifts",
+    "provenance": "photo",
+    "status": "mapped",
+    "subject": "Presentation gift sets",
+    "alt": "Presentation gift box containing coordinated stationery and accessories",
+    "pages": [
+      "/corporate-gifts-branding-kampala"
+    ],
+    "roles": [
+      "product-example"
+    ],
+    "localBindings": []
+  },
+  "PHOTO-2025-05-13-05-16-34_1": {
+    "category": "corporate-gifts",
+    "provenance": "photo",
+    "status": "mapped",
+    "subject": "Presentation gift sets",
+    "alt": "Presentation gift box containing coordinated stationery and accessories",
+    "pages": [
+      "/corporate-gifts-branding-kampala"
+    ],
+    "roles": [
+      "product-example"
+    ],
+    "localBindings": []
+  },
+  "PHOTO-2025-05-13-05-16-35": {
+    "category": "corporate-gifts",
+    "provenance": "photo",
+    "status": "mapped",
+    "subject": "Presentation gift sets",
+    "alt": "Presentation gift box containing coordinated stationery and accessories",
+    "pages": [
+      "/corporate-gifts-branding-kampala"
+    ],
+    "roles": [
+      "product-example"
+    ],
+    "localBindings": []
+  },
+  "PHOTO-2025-05-13-05-16-35_1": {
+    "category": "corporate-gifts",
+    "provenance": "photo",
+    "status": "mapped",
+    "subject": "Presentation gift sets",
+    "alt": "Presentation gift box containing coordinated stationery and accessories",
+    "pages": [
+      "/corporate-gifts-branding-kampala"
+    ],
+    "roles": [
+      "product-example"
+    ],
+    "localBindings": []
+  },
+  "PHOTO-2025-05-13-05-16-35_2": {
+    "category": "corporate-gifts",
+    "provenance": "photo",
+    "status": "mapped",
+    "subject": "Presentation gift sets",
+    "alt": "Presentation gift box containing coordinated stationery and accessories",
+    "pages": [
+      "/corporate-gifts-branding-kampala"
+    ],
+    "roles": [
+      "product-example"
+    ],
+    "localBindings": []
+  },
+  "PHOTO-2025-07-08-18-44-49": {
+    "category": "signage",
+    "provenance": "photo",
+    "status": "mapped",
+    "subject": "Signage example",
+    "alt": "Shopfront signage shown as an example, not a client endorsement",
+    "pages": [
+      "/large-format-printing-industrial-area"
+    ],
+    "roles": [
+      "product-example"
+    ],
+    "localBindings": []
+  },
+  "PHOTO-2025-07-08-18-44-49_1": {
+    "category": "signage",
+    "provenance": "photo",
+    "status": "mapped",
+    "subject": "Signage example",
+    "alt": "Shopfront signage shown as an example, not a client endorsement",
+    "pages": [
+      "/large-format-printing-industrial-area"
+    ],
+    "roles": [
+      "product-example"
+    ],
+    "localBindings": []
+  },
+  "PHOTO-2025-07-08-18-44-49_2": {
+    "category": "signage",
+    "provenance": "photo",
+    "status": "mapped",
+    "subject": "Signage example",
+    "alt": "Shopfront signage shown as an example, not a client endorsement",
+    "pages": [
+      "/large-format-printing-industrial-area"
+    ],
+    "roles": [
+      "product-example"
+    ],
+    "localBindings": []
+  },
+  "PHOTO-2025-07-08-18-44-49_3": {
+    "category": "signage",
+    "provenance": "photo",
+    "status": "mapped",
+    "subject": "Signage example",
+    "alt": "Shopfront signage shown as an example, not a client endorsement",
+    "pages": [
+      "/large-format-printing-industrial-area"
+    ],
+    "roles": [
+      "product-example"
+    ],
+    "localBindings": []
+  },
+  "PHOTO-2025-09-17-15-20-41": {
+    "category": "promotional-products",
+    "provenance": "photo",
+    "status": "mapped",
+    "subject": "Promotional keyrings",
+    "alt": "Keyrings with example shapes, colours and branding",
+    "pages": [
+      "/promotional-items-mugs-pens-kampala"
+    ],
+    "roles": [
+      "product-example"
+    ],
+    "localBindings": []
+  },
+  "PHOTO-2025-09-17-17-57-43": {
+    "category": "promotional-products",
+    "provenance": "photo",
+    "status": "mapped",
+    "subject": "Promotional keyrings",
+    "alt": "Keyrings with example shapes, colours and branding",
+    "pages": [
+      "/promotional-items-mugs-pens-kampala"
+    ],
+    "roles": [
+      "product-example"
+    ],
+    "localBindings": []
+  },
+  "PHOTO-2025-10-07-14-50-22": {
+    "category": "corporate-gifts",
+    "provenance": "photo",
+    "status": "mapped",
+    "subject": "Presentation gift sets",
+    "alt": "Presentation gift box containing coordinated stationery and accessories",
+    "pages": [
+      "/corporate-gifts-branding-kampala"
+    ],
+    "roles": [
+      "product-example"
+    ],
+    "localBindings": []
+  },
+  "PHOTO-2025-10-07-14-50-22_1": {
+    "category": "promotional-products",
+    "provenance": "unknown",
+    "status": "needs-review",
+    "subject": "Drinkware or promotional accessory",
+    "alt": null,
+    "pages": [
+      "/promotional-items-mugs-pens-kampala"
+    ],
+    "roles": [],
+    "localBindings": [],
+    "reviewReason": "Product topic is visible, but photo/mockup provenance, specific suitability or a sufficiently reliable live-slot match is not established; kept off the website."
+  },
+  "PHOTO-2026-02-06-17-13-34": {
+    "category": "bags-accessories",
+    "provenance": "unknown",
+    "status": "needs-review",
+    "subject": "Bag or stationery accessory",
+    "alt": null,
+    "pages": [
+      "/corporate-gifts-branding-kampala"
+    ],
+    "roles": [],
+    "localBindings": [],
+    "reviewReason": "Product topic is visible, but photo/mockup provenance, specific suitability or a sufficiently reliable live-slot match is not established; kept off the website."
+  },
+  "PHOTO-2026-02-06-17-20-18": {
+    "category": "bags-accessories",
+    "provenance": "unknown",
+    "status": "needs-review",
+    "subject": "Bag or stationery accessory",
+    "alt": null,
+    "pages": [
+      "/corporate-gifts-branding-kampala"
+    ],
+    "roles": [],
+    "localBindings": [],
+    "reviewReason": "Product topic is visible, but photo/mockup provenance, specific suitability or a sufficiently reliable live-slot match is not established; kept off the website."
+  },
+  "PHOTO-2026-07-06-17-27-05": {
+    "category": "needs-review",
+    "provenance": "unknown",
+    "status": "needs-review",
+    "subject": null,
+    "alt": null,
+    "pages": [],
+    "roles": [],
+    "localBindings": [],
+    "reviewReason": "Preview inspected, but provenance, established service relevance or a reliable existing-slot match is insufficient for publication."
+  },
+  "PHOTO-2026-07-06-17-27-05_1": {
+    "category": "corporate-gifts",
+    "provenance": "unknown",
+    "status": "needs-review",
+    "subject": "Gift or technology accessory",
+    "alt": null,
+    "pages": [
+      "/corporate-gifts-branding-kampala"
+    ],
+    "roles": [],
+    "localBindings": [],
+    "reviewReason": "Product topic is visible, but photo/mockup provenance, specific suitability or a sufficiently reliable live-slot match is not established; kept off the website."
+  },
+  "PHOTO-2026-07-06-17-27-05_10": {
+    "category": "corporate-gifts",
+    "provenance": "unknown",
+    "status": "needs-review",
+    "subject": "Gift or technology accessory",
+    "alt": null,
+    "pages": [
+      "/corporate-gifts-branding-kampala"
+    ],
+    "roles": [],
+    "localBindings": [],
+    "reviewReason": "Product topic is visible, but photo/mockup provenance, specific suitability or a sufficiently reliable live-slot match is not established; kept off the website."
+  },
+  "PHOTO-2026-07-06-17-27-05_11": {
+    "category": "corporate-gifts",
+    "provenance": "unknown",
+    "status": "needs-review",
+    "subject": "Gift or technology accessory",
+    "alt": null,
+    "pages": [
+      "/corporate-gifts-branding-kampala"
+    ],
+    "roles": [],
+    "localBindings": [],
+    "reviewReason": "Product topic is visible, but photo/mockup provenance, specific suitability or a sufficiently reliable live-slot match is not established; kept off the website."
+  },
+  "PHOTO-2026-07-06-17-27-05_2": {
+    "category": "corporate-gifts",
+    "provenance": "unknown",
+    "status": "needs-review",
+    "subject": "Gift or technology accessory",
+    "alt": null,
+    "pages": [
+      "/corporate-gifts-branding-kampala"
+    ],
+    "roles": [],
+    "localBindings": [],
+    "reviewReason": "Product topic is visible, but photo/mockup provenance, specific suitability or a sufficiently reliable live-slot match is not established; kept off the website."
+  },
+  "PHOTO-2026-07-06-17-27-05_3": {
+    "category": "promotional-products",
+    "provenance": "unknown",
+    "status": "needs-review",
+    "subject": "Drinkware or promotional accessory",
+    "alt": null,
+    "pages": [
+      "/promotional-items-mugs-pens-kampala"
+    ],
+    "roles": [],
+    "localBindings": [],
+    "reviewReason": "Product topic is visible, but photo/mockup provenance, specific suitability or a sufficiently reliable live-slot match is not established; kept off the website."
+  },
+  "PHOTO-2026-07-06-17-27-05_4": {
+    "category": "corporate-gifts",
+    "provenance": "unknown",
+    "status": "needs-review",
+    "subject": "Gift or technology accessory",
+    "alt": null,
+    "pages": [
+      "/corporate-gifts-branding-kampala"
+    ],
+    "roles": [],
+    "localBindings": [],
+    "reviewReason": "Product topic is visible, but photo/mockup provenance, specific suitability or a sufficiently reliable live-slot match is not established; kept off the website."
+  },
+  "PHOTO-2026-07-06-17-27-05_5": {
+    "category": "corporate-gifts",
+    "provenance": "unknown",
+    "status": "needs-review",
+    "subject": "Gift or technology accessory",
+    "alt": null,
+    "pages": [
+      "/corporate-gifts-branding-kampala"
+    ],
+    "roles": [],
+    "localBindings": [],
+    "reviewReason": "Product topic is visible, but photo/mockup provenance, specific suitability or a sufficiently reliable live-slot match is not established; kept off the website."
+  },
+  "PHOTO-2026-07-06-17-27-05_6": {
+    "category": "corporate-gifts",
+    "provenance": "unknown",
+    "status": "needs-review",
+    "subject": "Gift or technology accessory",
+    "alt": null,
+    "pages": [
+      "/corporate-gifts-branding-kampala"
+    ],
+    "roles": [],
+    "localBindings": [],
+    "reviewReason": "Product topic is visible, but photo/mockup provenance, specific suitability or a sufficiently reliable live-slot match is not established; kept off the website."
+  },
+  "PHOTO-2026-07-06-17-27-05_7": {
+    "category": "bags-accessories",
+    "provenance": "unknown",
+    "status": "needs-review",
+    "subject": "Bag or stationery accessory",
+    "alt": null,
+    "pages": [
+      "/corporate-gifts-branding-kampala"
+    ],
+    "roles": [],
+    "localBindings": [],
+    "reviewReason": "Product topic is visible, but photo/mockup provenance, specific suitability or a sufficiently reliable live-slot match is not established; kept off the website."
+  },
+  "PHOTO-2026-07-06-17-27-05_8": {
+    "category": "corporate-gifts",
+    "provenance": "unknown",
+    "status": "needs-review",
+    "subject": "Gift or technology accessory",
+    "alt": null,
+    "pages": [
+      "/corporate-gifts-branding-kampala"
+    ],
+    "roles": [],
+    "localBindings": [],
+    "reviewReason": "Product topic is visible, but photo/mockup provenance, specific suitability or a sufficiently reliable live-slot match is not established; kept off the website."
+  },
+  "PHOTO-2026-07-06-17-27-05_9": {
+    "category": "corporate-gifts",
+    "provenance": "unknown",
+    "status": "needs-review",
+    "subject": "Gift or technology accessory",
+    "alt": null,
+    "pages": [
+      "/corporate-gifts-branding-kampala"
+    ],
+    "roles": [],
+    "localBindings": [],
+    "reviewReason": "Product topic is visible, but photo/mockup provenance, specific suitability or a sufficiently reliable live-slot match is not established; kept off the website."
+  },
+  "PHOTO-2026-07-06-20-54-49_2": {
+    "category": "corporate-gifts",
+    "provenance": "unknown",
+    "status": "needs-review",
+    "subject": "Gift or technology accessory",
+    "alt": null,
+    "pages": [
+      "/corporate-gifts-branding-kampala"
+    ],
+    "roles": [],
+    "localBindings": [],
+    "reviewReason": "Product topic is visible, but photo/mockup provenance, specific suitability or a sufficiently reliable live-slot match is not established; kept off the website."
+  },
+  "PHOTO-2026-07-06-20-54-49_3": {
+    "category": "corporate-gifts",
+    "provenance": "unknown",
+    "status": "needs-review",
+    "subject": "Gift or technology accessory",
+    "alt": null,
+    "pages": [
+      "/corporate-gifts-branding-kampala"
+    ],
+    "roles": [],
+    "localBindings": [],
+    "reviewReason": "Product topic is visible, but photo/mockup provenance, specific suitability or a sufficiently reliable live-slot match is not established; kept off the website."
+  },
+  "PHOTO-2026-07-06-20-54-49_4": {
+    "category": "corporate-gifts",
+    "provenance": "unknown",
+    "status": "needs-review",
+    "subject": "Gift or technology accessory",
+    "alt": null,
+    "pages": [
+      "/corporate-gifts-branding-kampala"
+    ],
+    "roles": [],
+    "localBindings": [],
+    "reviewReason": "Product topic is visible, but photo/mockup provenance, specific suitability or a sufficiently reliable live-slot match is not established; kept off the website."
+  },
+  "PHOTO-2026-07-06-20-54-49_5": {
+    "category": "corporate-gifts",
+    "provenance": "unknown",
+    "status": "needs-review",
+    "subject": "Gift or technology accessory",
+    "alt": null,
+    "pages": [
+      "/corporate-gifts-branding-kampala"
+    ],
+    "roles": [],
+    "localBindings": [],
+    "reviewReason": "Product topic is visible, but photo/mockup provenance, specific suitability or a sufficiently reliable live-slot match is not established; kept off the website."
+  },
+  "PHOTO-2026-07-07-08-07-36": {
+    "category": "bags-accessories",
+    "provenance": "unknown",
+    "status": "needs-review",
+    "subject": "Bag or stationery accessory",
+    "alt": null,
+    "pages": [
+      "/corporate-gifts-branding-kampala"
+    ],
+    "roles": [],
+    "localBindings": [],
+    "reviewReason": "Product topic is visible, but photo/mockup provenance, specific suitability or a sufficiently reliable live-slot match is not established; kept off the website."
+  },
+  "PHOTO-2026-07-07-08-07-36_1": {
+    "category": "corporate-gifts",
+    "provenance": "unknown",
+    "status": "needs-review",
+    "subject": "Gift or technology accessory",
+    "alt": null,
+    "pages": [
+      "/corporate-gifts-branding-kampala"
+    ],
+    "roles": [],
+    "localBindings": [],
+    "reviewReason": "Product topic is visible, but photo/mockup provenance, specific suitability or a sufficiently reliable live-slot match is not established; kept off the website."
+  },
+  "PHOTO-2026-07-07-08-07-36_2": {
+    "category": "corporate-gifts",
+    "provenance": "unknown",
+    "status": "needs-review",
+    "subject": "Gift or technology accessory",
+    "alt": null,
+    "pages": [
+      "/corporate-gifts-branding-kampala"
+    ],
+    "roles": [],
+    "localBindings": [],
+    "reviewReason": "Product topic is visible, but photo/mockup provenance, specific suitability or a sufficiently reliable live-slot match is not established; kept off the website."
+  },
+  "PHOTO-2026-07-07-08-07-36_3": {
+    "category": "promotional-products",
+    "provenance": "unknown",
+    "status": "needs-review",
+    "subject": "Drinkware or promotional accessory",
+    "alt": null,
+    "pages": [
+      "/promotional-items-mugs-pens-kampala"
+    ],
+    "roles": [],
+    "localBindings": [],
+    "reviewReason": "Product topic is visible, but photo/mockup provenance, specific suitability or a sufficiently reliable live-slot match is not established; kept off the website."
+  },
+  "PHOTO-2026-07-07-08-07-36_4": {
+    "category": "promotional-products",
+    "provenance": "unknown",
+    "status": "needs-review",
+    "subject": "Drinkware or promotional accessory",
+    "alt": null,
+    "pages": [
+      "/promotional-items-mugs-pens-kampala"
+    ],
+    "roles": [],
+    "localBindings": [],
+    "reviewReason": "Product topic is visible, but photo/mockup provenance, specific suitability or a sufficiently reliable live-slot match is not established; kept off the website."
+  },
+  "PHOTO-2026-07-07-08-07-36_5": {
+    "category": "promotional-products",
+    "provenance": "unknown",
+    "status": "needs-review",
+    "subject": "Drinkware or promotional accessory",
+    "alt": null,
+    "pages": [
+      "/promotional-items-mugs-pens-kampala"
+    ],
+    "roles": [],
+    "localBindings": [],
+    "reviewReason": "Product topic is visible, but photo/mockup provenance, specific suitability or a sufficiently reliable live-slot match is not established; kept off the website."
+  },
+  "PHOTO-2026-07-22-11-42-29": {
+    "category": "workwear",
+    "provenance": "unknown",
+    "status": "needs-review",
+    "subject": "Garment example",
+    "alt": null,
+    "pages": [
+      "/uniform-embroidery-kampala"
+    ],
+    "roles": [],
+    "localBindings": [],
+    "reviewReason": "Product topic is visible, but photo/mockup provenance, specific suitability or a sufficiently reliable live-slot match is not established; kept off the website."
+  },
+  "PHOTO-2026-07-22-11-42-47": {
+    "category": "workwear",
+    "provenance": "unknown",
+    "status": "needs-review",
+    "subject": "Garment example",
+    "alt": null,
+    "pages": [
+      "/uniform-embroidery-kampala"
+    ],
+    "roles": [],
+    "localBindings": [],
+    "reviewReason": "Product topic is visible, but photo/mockup provenance, specific suitability or a sufficiently reliable live-slot match is not established; kept off the website."
+  },
+  "PHOTO-2026-07-22-11-42-48": {
+    "category": "workwear",
+    "provenance": "unknown",
+    "status": "needs-review",
+    "subject": "Garment example",
+    "alt": null,
+    "pages": [
+      "/uniform-embroidery-kampala"
+    ],
+    "roles": [],
+    "localBindings": [],
+    "reviewReason": "Product topic is visible, but photo/mockup provenance, specific suitability or a sufficiently reliable live-slot match is not established; kept off the website."
+  },
+  "PHOTO-2026-09-07-17-00-33": {
+    "category": "promotional-products",
+    "provenance": "unknown",
+    "status": "needs-review",
+    "subject": "Drinkware or promotional accessory",
+    "alt": null,
+    "pages": [
+      "/promotional-items-mugs-pens-kampala"
+    ],
+    "roles": [],
+    "localBindings": [],
+    "reviewReason": "Product topic is visible, but photo/mockup provenance, specific suitability or a sufficiently reliable live-slot match is not established; kept off the website."
+  },
+  "PHOTO-2026-09-07-17-00-33_1": {
+    "category": "corporate-gifts",
+    "provenance": "unknown",
+    "status": "needs-review",
+    "subject": "Gift or technology accessory",
+    "alt": null,
+    "pages": [
+      "/corporate-gifts-branding-kampala"
+    ],
+    "roles": [],
+    "localBindings": [],
+    "reviewReason": "Product topic is visible, but photo/mockup provenance, specific suitability or a sufficiently reliable live-slot match is not established; kept off the website."
+  },
+  "PHOTO-2026-09-07-17-00-33_2": {
+    "category": "bags-accessories",
+    "provenance": "unknown",
+    "status": "needs-review",
+    "subject": "Bag or stationery accessory",
+    "alt": null,
+    "pages": [
+      "/corporate-gifts-branding-kampala"
+    ],
+    "roles": [],
+    "localBindings": [],
+    "reviewReason": "Product topic is visible, but photo/mockup provenance, specific suitability or a sufficiently reliable live-slot match is not established; kept off the website."
+  },
+  "PHOTO-2026-09-07-17-00-33_3": {
+    "category": "promotional-products",
+    "provenance": "photo",
+    "status": "mapped",
+    "subject": "Reusable drinkware",
+    "alt": "Reusable bottles and travel cups in example colours and finishes",
+    "pages": [
+      "/promotional-items-mugs-pens-kampala"
+    ],
+    "roles": [
+      "product-example"
+    ],
+    "localBindings": []
+  },
+  "PHOTO-2026-09-07-17-00-33_4": {
+    "category": "corporate-gifts",
+    "provenance": "unknown",
+    "status": "needs-review",
+    "subject": "Gift or technology accessory",
+    "alt": null,
+    "pages": [
+      "/corporate-gifts-branding-kampala"
+    ],
+    "roles": [],
+    "localBindings": [],
+    "reviewReason": "Product topic is visible, but photo/mockup provenance, specific suitability or a sufficiently reliable live-slot match is not established; kept off the website."
+  },
+  "PHOTO-2026-09-07-17-00-33_5": {
+    "category": "corporate-gifts",
+    "provenance": "unknown",
+    "status": "needs-review",
+    "subject": "Gift or technology accessory",
+    "alt": null,
+    "pages": [
+      "/corporate-gifts-branding-kampala"
+    ],
+    "roles": [],
+    "localBindings": [],
+    "reviewReason": "Product topic is visible, but photo/mockup provenance, specific suitability or a sufficiently reliable live-slot match is not established; kept off the website."
+  }
+}

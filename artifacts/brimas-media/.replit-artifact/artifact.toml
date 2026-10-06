@@ -1,0 +1,84 @@
+kind = "web"
+previewPath = "/"
+title = "Brimas Media"
+description = "A mobile-first website for Brimas Media Ltd in Kampala, helping businesses price commercial printing, branded merchandise, textiles, and PPE and request custom quotes directly through WhatsApp."
+version = "1.0.0"
+id = "artifacts/brimas-media"
+router = "path"
+
+[[services]]
+name = "web"
+paths = [ "/" ]
+localPort = 20947
+
+[services.development]
+run = "pnpm --filter @workspace/brimas-media run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/brimas-media", "run", "build" ]
+serve = "static"
+publicDir = "artifacts/brimas-media/dist/public"
+
+[[services.production.rewrites]]
+from = "/printing-services-kampala"
+to = "/printing-services-kampala.html"
+
+[[services.production.rewrites]]
+from = "/business-cards-printing-kampala"
+to = "/business-cards-printing-kampala.html"
+
+[[services.production.rewrites]]
+from = "/flyers-brochures-printing-kampala"
+to = "/flyers-brochures-printing-kampala.html"
+
+[[services.production.rewrites]]
+from = "/banner-printing-kampala"
+to = "/banner-printing-kampala.html"
+
+[[services.production.rewrites]]
+from = "/large-format-printing-industrial-area"
+to = "/large-format-printing-industrial-area.html"
+
+[[services.production.rewrites]]
+from = "/t-shirt-printing-embroidery-kampala"
+to = "/t-shirt-printing-embroidery-kampala.html"
+
+[[services.production.rewrites]]
+from = "/uniform-embroidery-kampala"
+to = "/uniform-embroidery-kampala.html"
+
+[[services.production.rewrites]]
+from = "/promotional-items-mugs-pens-kampala"
+to = "/promotional-items-mugs-pens-kampala.html"
+
+[[services.production.rewrites]]
+from = "/ppe-supplier-kampala-uganda"
+to = "/ppe-supplier-kampala-uganda.html"
+
+[[services.production.rewrites]]
+from = "/safety-helmets-overalls-kampala"
+to = "/safety-helmets-overalls-kampala.html"
+
+[[services.production.rewrites]]
+from = "/corporate-gifts-branding-kampala"
+to = "/corporate-gifts-branding-kampala.html"
+
+[[services.production.rewrites]]
+from = "/construction-company-branding-bundle"
+to = "/construction-company-branding-bundle.html"
+
+[[services.production.rewrites]]
+from = "/price-list"
+to = "/price-list.html"
+
+[[services.production.rewrites]]
+from = "/request-a-quote"
+to = "/request-a-quote.html"
+
+[[services.production.rewrites]]
+from = "/admin/views"
+to = "/admin/views.html"
+
+[services.env]
+PORT = "20947"
+BASE_PATH = "/"

@@ -1,0 +1,26 @@
+.request-quote-page { min-height: 100dvh; }
+.request-quote-layout { display: grid; gap: 38px; padding-block: 44px 100px; }
+.request-quote-intro { max-width: 620px; }
+.request-quote-back { display: flex; width: fit-content; align-items: center; gap: 8px; margin-bottom: 50px; color: var(--seo-ink); font-weight: 700; font-size: .82rem; }
+.request-quote-back:hover { text-decoration: underline; }
+.request-quote-intro h1 { font-size: clamp(3rem, 6vw, 5.8rem); line-height: .94; letter-spacing: -.075em; margin: 20px 0 26px; text-wrap: balance; }
+.request-quote-intro h1 em { font-style: normal; color: hsl(220 15% 8%); }
+.request-quote-intro > p { font-size: 1.15rem; line-height: 1.5; max-width: 540px; }
+.request-quote-note { border-top: 1px solid var(--seo-ink); padding-top: 21px; margin-top: 40px; display: grid; gap: 8px; max-width: 470px; line-height: 1.5; }
+.request-quote-note span { color: hsl(220 15% 8% / .76); }
+.request-quote-form { background: hsl(0 0% 100%); color: var(--seo-ink); padding: clamp(24px, 4vw, 45px); display: flex; flex-direction: column; border: 1px solid hsl(220 8% 82%); }
+.request-quote-form .seo-eyebrow { color: var(--seo-ink); }
+.request-quote-form h2 { font-size: clamp(1.8rem, 3vw, 2.6rem); letter-spacing: -.05em; margin: 12px 0 28px; }
+.request-quote-form label { font-weight: 700; font-size: .85rem; display: block; margin: 0 0 8px; }
+.request-quote-form label span { color: var(--seo-ink); }
+.request-quote-form label small { font-size: .75rem; font-weight: 400; color: hsl(220 8% 34%); }
+.request-quote-form input, .request-quote-form select, .request-quote-form textarea { display: block; width: 100%; min-height: 48px; padding: 12px; margin-bottom: 22px; border: 1px solid hsl(220 8% 72%); border-radius: 0; background: hsl(0 0% 100%); color: var(--seo-ink); font: inherit; font-size: .94rem; }
+.request-quote-form textarea { resize: vertical; min-height: 130px; }
+.request-quote-form :is(input, select, textarea):focus-visible { outline: 3px solid var(--seo-blue); outline-offset: 2px; }
+.request-quote-row { display: grid; gap: 0 16px; }
+.request-quote-submit { width: 100%; margin-top: 6px; cursor: pointer; }
+.request-quote-help { font-size: .85rem; line-height: 1.5; color: hsl(220 8% 34%); margin: 18px 0 0; }
+@media (min-width: 840px) {
+  .request-quote-layout { grid-template-columns: minmax(0, .95fr) minmax(0, 1fr); gap: 7%; padding-block: 76px 130px; }
+  .request-quote-row { grid-template-columns: 1fr 1fr; }
+}
