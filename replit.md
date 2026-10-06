@@ -1,15 +1,22 @@
-# [Project name]
+# Brimas Media / Print Garage
 
-_Replace the heading above with the project's name, and this line with one sentence describing what this app does for users._
+A printing and branding website with product pricing, WhatsApp quote requests, and a private visit-history page.
 
 ## Run & Operate
 
-- `pnpm --filter @workspace/api-server run dev` — run the API server (port 5000)
+- Use Replit's Run button to start the managed site and API workflows.
+- `artifacts/brimas-media: web` — React/Vite website at `/`, port 20947.
+- `artifacts/api-server: API Server` — Express API at `/api`, port 8080.
+- Workflows supply the required `PORT` and frontend `BASE_PATH` settings.
+- `pnpm install --frozen-lockfile` — install the existing workspace dependencies.
 - `pnpm run typecheck` — full typecheck across all packages
 - `pnpm run build` — typecheck + build all packages
 - `pnpm --filter @workspace/api-spec run codegen` — regenerate API hooks and Zod schemas from the OpenAPI spec
 - `pnpm --filter @workspace/db run push` — push DB schema changes (dev only)
-- Required env: `DATABASE_URL` — Postgres connection string
+- Required secrets: `DATABASE_URL` (provided by Replit) and `SESSION_SECRET`.
+- `BRIMAS_VIEWS_PASSWORD` is required to sign in at `/admin/views`; without it, admin login explicitly returns 503. Never commit passwords.
+- Public API checks: `/api/healthz` and `/api/views`.
+- `pnpm --filter @workspace/brimas-media test:images` — image delivery tests (requires Node.js 24).
 
 ## Stack
 
@@ -22,7 +29,12 @@ _Replace the heading above with the project's name, and this line with one sente
 
 ## Where things live
 
-_Populate as you build — short repo map plus pointers to the source-of-truth file for DB schema, API contracts, theme files, etc._
+- `artifacts/brimas-media` — website, routes, images, and frontend tests.
+- `artifacts/api-server` — API and protected visit-history endpoints.
+- `lib/db/src/schema` — Drizzle database schema.
+- `lib/api-spec/openapi.yaml` — API contract.
+- `docs/netlify.md` — optional Netlify hosting instructions; not needed for Replit preview.
+- `artifacts/mockup-sandbox` — imported design sandbox, not required to run the website.
 
 ## Architecture decisions
 

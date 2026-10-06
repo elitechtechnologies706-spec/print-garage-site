@@ -52,6 +52,8 @@ onlyBuiltDependencies:
   - unrs-resolver
 
 overrides:
+  # The imported proxy-addr version is blocked by the package firewall.
+  proxy-addr: 2.0.8
   # This workspace deploys to linux-x64 only; omit optional binaries for other platforms.
   # drizzle-kit otherwise pulls an older vulnerable esbuild.
   '@esbuild-kit/esm-loader': npm:tsx@^4.21.0

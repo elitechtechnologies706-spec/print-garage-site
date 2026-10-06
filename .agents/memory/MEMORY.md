@@ -1,0 +1,1 @@
+- [Imported workspace setup](imported-workspace-setup.md) — registering imported services and installing all workspace dependencies need separate steps.
