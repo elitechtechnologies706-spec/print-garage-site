@@ -30,6 +30,7 @@
 .seo-top-inner { min-height: 82px; display: flex; align-items: center; justify-content: space-between; gap: 20px; }
 .seo-logo { display: inline-flex; flex: none; align-items: center; gap: 14px; }
 .seo-logo img { width: 60px; height: 60px; display: block; object-fit: contain; background: var(--seo-paper); }
+.seo-logo .brand-logo-image { width: clamp(118px, 12vw, 150px); height: auto; background: transparent; }
 .seo-logo-word { display: none; font-size: 12px; font-weight: 700; line-height: 1.15; letter-spacing: -.02em; }
 .seo-logo-word small { display: block; color: var(--seo-ink); font: 10px var(--app-font-sans); letter-spacing: .02em; margin-top: 5px; }
 .seo-top-right { display: flex; align-items: center; gap: 18px; }

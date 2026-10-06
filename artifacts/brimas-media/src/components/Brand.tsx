@@ -1,3 +1,12 @@
 export function Brand() {
-  return <span className="print-garage-wordmark" data-testid="brand-lockup">Print <span>Garage</span></span>;
+  return (
+    <img
+      src="/print-garage-logo.png"
+      alt="Print Garage"
+      width={507}
+      height={195}
+      className="brand-logo-image"
+      data-testid="brand-lockup"
+    />
+  );
 }

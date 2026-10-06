@@ -124,9 +124,8 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
 }
 .topbar-inner { min-height: 76px; display: flex; align-items: center; justify-content: space-between; gap: 10px; }
 .brand { display: inline-flex; align-items: center; }
-.print-garage-wordmark { display: inline-block; color: #FF6B00; font: 800 clamp(18px, 3.6vw, 26px)/1.1 var(--app-font-sans); letter-spacing: -.045em; white-space: nowrap; }
-.print-garage-wordmark > span { color: #4B5563; }
-.footer .print-garage-wordmark, .seo-footer .print-garage-wordmark { background: #fff; padding: 6px 10px; }
+.brand-logo-image { display: block; width: clamp(118px, 12vw, 150px); height: auto; object-fit: contain; }
+.footer .brand-logo-image, .seo-footer .brand-logo-image { box-sizing: content-box; width: 130px; padding: 6px 10px; background: #fff; }
 .header-tools { display: inline-flex; align-items: center; gap: 9px; flex-shrink: 0; }
 .header-currency { display: inline-flex; align-items: center; border: 1px solid hsl(220 8% 72%); }
 .header-currency button { min-width: 34px; padding: 8px 6px; border: 0; background: transparent; color: hsl(220 15% 8%); cursor: pointer; font: 700 9px var(--app-font-sans); }
