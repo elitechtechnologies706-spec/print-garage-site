@@ -307,7 +307,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
 .footer-social-icons { display: flex; flex-wrap: wrap; gap: 10px; padding-top: 5px; }
 .footer-social-icon { display: inline-flex; align-items: center; justify-content: center; width: 40px; height: 40px; border-radius: 9px; background: #fff; }
 .footer-social-icon--facebook { color: #0866ff; }
-.footer-social-icon--whatsapp { color: #25d366; }
+.footer-social-icon--whatsapp { color: var(--brand-gray); }
 .footer-social-icon--instagram { color: #fff; background: radial-gradient(circle at 30% 105%, #fdf497 0%, #fd5949 40%, #d6249f 65%, #285aeb 100%); }
 .footer-social-icon--tiktok { color: #fff; background: #000; }
 .footer-social-icon--tiktok svg { filter: drop-shadow(-1px -1px 0 #25f4ee) drop-shadow(1px 1px 0 #fe2c55); }
@@ -315,9 +315,9 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
 .footer-social-icon--linkedin { color: #0a66c2; }
 .footer-social-icon--youtube { color: #ff0000; }
 /* Apply WhatsApp branding to its existing contact actions on every page. */
-:is(a[href^="https://wa.me/"], button[data-testid="button-request-whatsapp"]):has(> svg):not(.footer-social-icon) { background: #25d366; border-color: #25d366; color: #101314; }
-:is(a[href^="https://wa.me/"], button[data-testid="button-request-whatsapp"]):has(> svg):not(.footer-social-icon):hover { background: #20bd5b; border-color: #20bd5b; color: #101314; }
-:is(a[href^="https://wa.me/"], button[data-testid="button-request-whatsapp"]) > svg:first-child { color: #fff; }
+:is(a[href^="https://wa.me/"], button[data-testid="button-request-whatsapp"]):has(> svg):not(.footer-social-icon) { background: var(--brand-gray); border-color: var(--brand-gray); color: #fff; }
+:is(a[href^="https://wa.me/"], button[data-testid="button-request-whatsapp"]):has(> svg):not(.footer-social-icon):hover { background: #5B5C5E; border-color: #5B5C5E; color: #fff; }
+:is(a[href^="https://wa.me/"], button[data-testid="button-request-whatsapp"]):not(.footer-social-icon) > svg:first-child { color: #fff; }
 a[href^="tel:"] > svg:first-child { color: #0a66c2; }
 .mobile-cta { position: fixed; left: 0; right: 0; bottom: 0; z-index: 35; display: grid; grid-template-columns: 1fr 1fr; background: hsl(220 15% 8%); border-top: 1px solid hsl(0 0% 98% / .18); }
 .mobile-cta a { padding: 15px 10px; text-align: center; color: hsl(var(--background)); font: 700 12px var(--app-font-sans); }
