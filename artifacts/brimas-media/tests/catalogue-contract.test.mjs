@@ -5,6 +5,15 @@ import { readFileSync } from 'node:fs';
 const data = JSON.parse(readFileSync(new URL('../src/lib/print-garage-catalogue.json', import.meta.url), 'utf8'));
 const partners = JSON.parse(readFileSync(new URL('../src/lib/print-garage-partners.json', import.meta.url), 'utf8'));
 
+test('service-delivery hero has explicit intrinsic dimensions and a durable image URL', () => {
+  const hero = JSON.parse(readFileSync(new URL('../src/lib/print-garage-hero.json', import.meta.url), 'utf8'));
+  assert.match(hero.image, /^\/api\/catalogue-assets\/hero-p\d{2}-\d{2}\.webp$/);
+  assert.ok(hero.width > hero.height && hero.height > 0);
+  assert.match(hero.alt, /Illustrative printing and branding workshop/);
+  const source = readFileSync(new URL('../src/App.tsx', import.meta.url), 'utf8');
+  assert.ok(source.includes('src={hero.image} alt={hero.alt} width={hero.width} height={hero.height}'));
+});
+
 test('partner grid uses unique full-color source-profile cuts, excluding the site’s own logo', () => {
   assert.equal(partners.length, 93);
   assert.equal(new Set(partners.map((p) => p.name)).size, 93);

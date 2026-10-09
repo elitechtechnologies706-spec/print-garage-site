@@ -13,6 +13,7 @@ import { Brand } from '@/components/Brand';
 import { SITE } from '@/lib/site-config';
 import { CatalogueImage } from '@/components/CatalogueImage';
 import { catalogue, homeTeasers } from '@/lib/pg-catalogue';
+import hero from '@/lib/print-garage-hero.json';
 
 const queryClient = new QueryClient();
 
@@ -55,7 +56,7 @@ function AppContent() {
 
       <main id="top">
         <section className="hero hero--center">
-          <CatalogueImage className="hero-background" src="/hero/printing-branding.webp" alt="Illustration of a printing and branding workshop with a wide-format printer, printed stationery, T-shirt and mug" loading="eager" fetchPriority="high" decoding="async" sizes="100vw" />
+          <CatalogueImage className="hero-background" src={hero.image} alt={hero.alt} width={hero.width} height={hero.height} loading="eager" fetchPriority="high" decoding="async" sizes="100vw" />
           <div className="shell hero-grid">
             <div className="hero-copy">
               <h1 className="reveal">{HERO_TITLE}</h1>

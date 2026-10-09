@@ -510,3 +510,34 @@ main p { text-align: justify; text-align-last: start; text-justify: inter-word; 
   .pg-pillars-grid { gap: 28px; }
 }
 @media (min-width: 1024px) { .pg-m-item img { max-height: 170px; } }
+
+/* Refinement pass: left hero, light service rows, small partner marks */
+.hero--center { text-align: left; }
+.hero--center .hero-copy { margin: 0; max-width: 640px; }
+.hero--center .hero-intro { margin: 0; max-width: 560px; }
+.hero--center .hero-actions { justify-content: flex-start; }
+.hero--center::before { background: linear-gradient(90deg, rgb(17 17 17 / .82) 0%, rgb(17 17 17 / .6) 45%, rgb(17 17 17 / .1) 80%); }
+.hero-background { object-position: right top; }
+.hero--center h1 { text-shadow: 0 1px 12px rgb(0 0 0 / .35); }
+
+.pg-zig { gap: 10px; }
+.pg-zig-row { background: #fff; color: #111; border: 1px solid #d4d4d2; transition: border-color .2s; }
+.pg-zig-row:hover { border-color: #FF6B00; }
+.pg-zig-text { background: #fff; border-bottom: 0; border-top: 3px solid #FF6B00; padding: 12px 16px; gap: 4px; }
+.pg-zig-text h3 { font-size: 1.1rem; letter-spacing: -.01em; }
+.pg-link { font-size: .82rem; color: #111; }
+.pg-num { font-size: .85rem; }
+.pg-zig-media { max-height: 150px; }
+@media (min-width: 700px) {
+  .pg-zig { gap: 12px; }
+  .pg-zig-media { min-height: 140px; max-height: 160px; }
+}
+
+.pg-logos { gap: 6px; }
+.pg-logo { padding: 5px; height: 60px; aspect-ratio: auto; }
+.pg-logo img { max-height: 34px; max-width: 80%; width: auto; height: auto; object-fit: contain; filter: none; opacity: 1; }
+@media (min-width: 700px) { .pg-logo img { max-height: 38px; } }
+@media (max-width: 699px) {
+  .pg-logo { height: 54px; }
+  .hero--center::before { background: rgb(17 17 17 / .72); }
+}

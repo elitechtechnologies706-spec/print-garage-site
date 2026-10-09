@@ -3,7 +3,7 @@ name: Print Garage content rules
 description: User-directed homepage order, teaser limits, and source authenticity
 ---
 
-The user’s final homepage order is Hero → Who We Are → Services → Mission/Vision/Purpose → Products → Partners → Footer. Keep the existing workshop hero background.
+The user’s final homepage order is Hero → Who We Are → Services → Mission/Vision/Purpose → Products → Partners → Footer.
 
 **Why:** The user explicitly called this the final combined master order, including the request that the three-column Mission/Vision/Purpose follow Services and Partners be last.
 
@@ -26,3 +26,9 @@ Keep the site compact rather than using oversized structures.
 **Why:** The user said “reduce on site structures don't need big things.”
 
 **How to apply:** Keep headings, section spacing, image areas and cards restrained while retaining the agreed content.
+
+Left-align the hero heading and use a business-relevant printing/branding service-delivery background. Avoid large black service-text rectangles; use a restrained presentation and small partner marks.
+
+**Why:** The user explicitly requested these refinements, including a new hero background. This supersedes the earlier request to preserve the original workshop background.
+
+**How to apply:** Keep the established content order, justified paragraphs and source-logo colors; changing the background does not authorize replacing catalogue products or client logos.

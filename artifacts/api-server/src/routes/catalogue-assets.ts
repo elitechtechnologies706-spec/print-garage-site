@@ -5,7 +5,7 @@ const router = Router();
 
 router.get('/catalogue-assets/:filename', async (req, res) => {
   const filename = req.params.filename;
-  if (!/^(min|drinkware|eco|bags|portfolio|partner)-p\d{2}-\d{2}\.webp$/.test(filename)) {
+  if (!/^(min|drinkware|eco|bags|portfolio|partner|hero)-p\d{2}-\d{2}\.webp$/.test(filename)) {
     res.status(404).json({ error: 'Catalogue image not found' });
     return;
   }
