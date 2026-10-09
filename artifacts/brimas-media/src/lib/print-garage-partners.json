@@ -1,0 +1,746 @@
+[
+  {
+    "name": "USAID",
+    "logo": "/api/catalogue-assets/partner-p04-01.webp",
+    "width": 177,
+    "height": 54,
+    "sourcePdf": "BRIMAS_PROFILE_PRINT_1791582547961.pdf",
+    "page": 4
+  },
+  {
+    "name": "REBUILD",
+    "logo": "/api/catalogue-assets/partner-p04-02.webp",
+    "width": 180,
+    "height": 69,
+    "sourcePdf": "BRIMAS_PROFILE_PRINT_1791582547961.pdf",
+    "page": 4
+  },
+  {
+    "name": "PATH",
+    "logo": "/api/catalogue-assets/partner-p04-03.webp",
+    "width": 163,
+    "height": 63,
+    "sourcePdf": "BRIMAS_PROFILE_PRINT_1791582547961.pdf",
+    "page": 4
+  },
+  {
+    "name": "Rotary Club of Kampala North",
+    "logo": "/api/catalogue-assets/partner-p04-04.webp",
+    "width": 181,
+    "height": 53,
+    "sourcePdf": "BRIMAS_PROFILE_PRINT_1791582547961.pdf",
+    "page": 4
+  },
+  {
+    "name": "Walimu",
+    "logo": "/api/catalogue-assets/partner-p04-05.webp",
+    "width": 179,
+    "height": 51,
+    "sourcePdf": "BRIMAS_PROFILE_PRINT_1791582547961.pdf",
+    "page": 4
+  },
+  {
+    "name": "Mercy Corps",
+    "logo": "/api/catalogue-assets/partner-p04-06.webp",
+    "width": 179,
+    "height": 64,
+    "sourcePdf": "BRIMAS_PROFILE_PRINT_1791582547961.pdf",
+    "page": 4
+  },
+  {
+    "name": "ISER",
+    "logo": "/api/catalogue-assets/partner-p04-07.webp",
+    "width": 175,
+    "height": 74,
+    "sourcePdf": "BRIMAS_PROFILE_PRINT_1791582547961.pdf",
+    "page": 4
+  },
+  {
+    "name": "Aga Khan Foundation",
+    "logo": "/api/catalogue-assets/partner-p04-08.webp",
+    "width": 175,
+    "height": 111,
+    "sourcePdf": "BRIMAS_PROFILE_PRINT_1791582547961.pdf",
+    "page": 4
+  },
+  {
+    "name": "Kulea Watoto",
+    "logo": "/api/catalogue-assets/partner-p04-09.webp",
+    "width": 173,
+    "height": 91,
+    "sourcePdf": "BRIMAS_PROFILE_PRINT_1791582547961.pdf",
+    "page": 4
+  },
+  {
+    "name": "PlayMatters",
+    "logo": "/api/catalogue-assets/partner-p04-10.webp",
+    "width": 188,
+    "height": 35,
+    "sourcePdf": "BRIMAS_PROFILE_PRINT_1791582547961.pdf",
+    "page": 4
+  },
+  {
+    "name": "World Health Organization",
+    "logo": "/api/catalogue-assets/partner-p04-11.webp",
+    "width": 253,
+    "height": 78,
+    "sourcePdf": "BRIMAS_PROFILE_PRINT_1791582547961.pdf",
+    "page": 4
+  },
+  {
+    "name": "ACORD",
+    "logo": "/api/catalogue-assets/partner-p04-12.webp",
+    "width": 140,
+    "height": 88,
+    "sourcePdf": "BRIMAS_PROFILE_PRINT_1791582547961.pdf",
+    "page": 4
+  },
+  {
+    "name": "NURI",
+    "logo": "/api/catalogue-assets/partner-p04-13.webp",
+    "width": 77,
+    "height": 131,
+    "sourcePdf": "BRIMAS_PROFILE_PRINT_1791582547961.pdf",
+    "page": 4
+  },
+  {
+    "name": "Medical Teams International",
+    "logo": "/api/catalogue-assets/partner-p04-14.webp",
+    "width": 132,
+    "height": 93,
+    "sourcePdf": "BRIMAS_PROFILE_PRINT_1791582547961.pdf",
+    "page": 4
+  },
+  {
+    "name": "Uganda Healthcare Federation",
+    "logo": "/api/catalogue-assets/partner-p04-15.webp",
+    "width": 136,
+    "height": 65,
+    "sourcePdf": "BRIMAS_PROFILE_PRINT_1791582547961.pdf",
+    "page": 4
+  },
+  {
+    "name": "International Rescue Committee",
+    "logo": "/api/catalogue-assets/partner-p04-16.webp",
+    "width": 96,
+    "height": 127,
+    "sourcePdf": "BRIMAS_PROFILE_PRINT_1791582547961.pdf",
+    "page": 4
+  },
+  {
+    "name": "UK aid",
+    "logo": "/api/catalogue-assets/partner-p04-17.webp",
+    "width": 122,
+    "height": 134,
+    "sourcePdf": "BRIMAS_PROFILE_PRINT_1791582547961.pdf",
+    "page": 4
+  },
+  {
+    "name": "War Child",
+    "logo": "/api/catalogue-assets/partner-p04-18.webp",
+    "width": 122,
+    "height": 124,
+    "sourcePdf": "BRIMAS_PROFILE_PRINT_1791582547961.pdf",
+    "page": 4
+  },
+  {
+    "name": "U-Learn",
+    "logo": "/api/catalogue-assets/partner-p04-19.webp",
+    "width": 102,
+    "height": 137,
+    "sourcePdf": "BRIMAS_PROFILE_PRINT_1791582547961.pdf",
+    "page": 4
+  },
+  {
+    "name": "Action Against Hunger",
+    "logo": "/api/catalogue-assets/partner-p04-20.webp",
+    "width": 127,
+    "height": 77,
+    "sourcePdf": "BRIMAS_PROFILE_PRINT_1791582547961.pdf",
+    "page": 4
+  },
+  {
+    "name": "KCB",
+    "logo": "/api/catalogue-assets/partner-p04-21.webp",
+    "width": 173,
+    "height": 84,
+    "sourcePdf": "BRIMAS_PROFILE_PRINT_1791582547961.pdf",
+    "page": 4
+  },
+  {
+    "name": "Tropical Bank",
+    "logo": "/api/catalogue-assets/partner-p04-22.webp",
+    "width": 185,
+    "height": 81,
+    "sourcePdf": "BRIMAS_PROFILE_PRINT_1791582547961.pdf",
+    "page": 4
+  },
+  {
+    "name": "dfcu Bank",
+    "logo": "/api/catalogue-assets/partner-p04-23.webp",
+    "width": 181,
+    "height": 79,
+    "sourcePdf": "BRIMAS_PROFILE_PRINT_1791582547961.pdf",
+    "page": 4
+  },
+  {
+    "name": "Housing Finance Bank",
+    "logo": "/api/catalogue-assets/partner-p04-24.webp",
+    "width": 180,
+    "height": 73,
+    "sourcePdf": "BRIMAS_PROFILE_PRINT_1791582547961.pdf",
+    "page": 4
+  },
+  {
+    "name": "EFC",
+    "logo": "/api/catalogue-assets/partner-p04-25.webp",
+    "width": 187,
+    "height": 74,
+    "sourcePdf": "BRIMAS_PROFILE_PRINT_1791582547961.pdf",
+    "page": 4
+  },
+  {
+    "name": "Centenary Bank",
+    "logo": "/api/catalogue-assets/partner-p04-26.webp",
+    "width": 191,
+    "height": 76,
+    "sourcePdf": "BRIMAS_PROFILE_PRINT_1791582547961.pdf",
+    "page": 4
+  },
+  {
+    "name": "UBA",
+    "logo": "/api/catalogue-assets/partner-p04-27.webp",
+    "width": 124,
+    "height": 61,
+    "sourcePdf": "BRIMAS_PROFILE_PRINT_1791582547961.pdf",
+    "page": 4
+  },
+  {
+    "name": "Uganda Development Bank",
+    "logo": "/api/catalogue-assets/partner-p04-28.webp",
+    "width": 106,
+    "height": 130,
+    "sourcePdf": "BRIMAS_PROFILE_PRINT_1791582547961.pdf",
+    "page": 4
+  },
+  {
+    "name": "Absa",
+    "logo": "/api/catalogue-assets/partner-p04-29.webp",
+    "width": 113,
+    "height": 112,
+    "sourcePdf": "BRIMAS_PROFILE_PRINT_1791582547961.pdf",
+    "page": 4
+  },
+  {
+    "name": "FINCA",
+    "logo": "/api/catalogue-assets/partner-p04-30.webp",
+    "width": 123,
+    "height": 98,
+    "sourcePdf": "BRIMAS_PROFILE_PRINT_1791582547961.pdf",
+    "page": 4
+  },
+  {
+    "name": "ABC Capital Bank",
+    "logo": "/api/catalogue-assets/partner-p04-31.webp",
+    "width": 122,
+    "height": 123,
+    "sourcePdf": "BRIMAS_PROFILE_PRINT_1791582547961.pdf",
+    "page": 4
+  },
+  {
+    "name": "Cairo Bank Uganda",
+    "logo": "/api/catalogue-assets/partner-p04-32.webp",
+    "width": 134,
+    "height": 113,
+    "sourcePdf": "BRIMAS_PROFILE_PRINT_1791582547961.pdf",
+    "page": 4
+  },
+  {
+    "name": "Pride Microfinance",
+    "logo": "/api/catalogue-assets/partner-p04-33.webp",
+    "width": 73,
+    "height": 132,
+    "sourcePdf": "BRIMAS_PROFILE_PRINT_1791582547961.pdf",
+    "page": 4
+  },
+  {
+    "name": "Opportunity Bank",
+    "logo": "/api/catalogue-assets/partner-p04-34.webp",
+    "width": 317,
+    "height": 52,
+    "sourcePdf": "BRIMAS_PROFILE_PRINT_1791582547961.pdf",
+    "page": 4
+  },
+  {
+    "name": "Sourcing",
+    "logo": "/api/catalogue-assets/partner-p04-35.webp",
+    "width": 193,
+    "height": 83,
+    "sourcePdf": "BRIMAS_PROFILE_PRINT_1791582547961.pdf",
+    "page": 4
+  },
+  {
+    "name": "UNOC",
+    "logo": "/api/catalogue-assets/partner-p04-36.webp",
+    "width": 167,
+    "height": 50,
+    "sourcePdf": "BRIMAS_PROFILE_PRINT_1791582547961.pdf",
+    "page": 4
+  },
+  {
+    "name": "Mota-Engil",
+    "logo": "/api/catalogue-assets/partner-p04-37.webp",
+    "width": 189,
+    "height": 94,
+    "sourcePdf": "BRIMAS_PROFILE_PRINT_1791582547961.pdf",
+    "page": 4
+  },
+  {
+    "name": "TotalEnergies",
+    "logo": "/api/catalogue-assets/partner-p04-38.webp",
+    "width": 125,
+    "height": 92,
+    "sourcePdf": "BRIMAS_PROFILE_PRINT_1791582547961.pdf",
+    "page": 4
+  },
+  {
+    "name": "Rubis",
+    "logo": "/api/catalogue-assets/partner-p04-39.webp",
+    "width": 137,
+    "height": 109,
+    "sourcePdf": "BRIMAS_PROFILE_PRINT_1791582547961.pdf",
+    "page": 4
+  },
+  {
+    "name": "Tilenga MOOC",
+    "logo": "/api/catalogue-assets/partner-p04-40.webp",
+    "width": 126,
+    "height": 132,
+    "sourcePdf": "BRIMAS_PROFILE_PRINT_1791582547961.pdf",
+    "page": 4
+  },
+  {
+    "name": "Oryx Energies",
+    "logo": "/api/catalogue-assets/partner-p04-41.webp",
+    "width": 121,
+    "height": 43,
+    "sourcePdf": "BRIMAS_PROFILE_PRINT_1791582547961.pdf",
+    "page": 4
+  },
+  {
+    "name": "VOGE",
+    "logo": "/api/catalogue-assets/partner-p04-42.webp",
+    "width": 124,
+    "height": 113,
+    "sourcePdf": "BRIMAS_PROFILE_PRINT_1791582547961.pdf",
+    "page": 4
+  },
+  {
+    "name": "MTAC East Africa",
+    "logo": "/api/catalogue-assets/partner-p04-43.webp",
+    "width": 236,
+    "height": 65,
+    "sourcePdf": "BRIMAS_PROFILE_PRINT_1791582547961.pdf",
+    "page": 4
+  },
+  {
+    "name": "Isuzu",
+    "logo": "/api/catalogue-assets/partner-p04-44.webp",
+    "width": 181,
+    "height": 32,
+    "sourcePdf": "BRIMAS_PROFILE_PRINT_1791582547961.pdf",
+    "page": 4
+  },
+  {
+    "name": "Old Mutual",
+    "logo": "/api/catalogue-assets/partner-p04-45.webp",
+    "width": 178,
+    "height": 33,
+    "sourcePdf": "BRIMAS_PROFILE_PRINT_1791582547961.pdf",
+    "page": 4
+  },
+  {
+    "name": "Clarkson",
+    "logo": "/api/catalogue-assets/partner-p04-46.webp",
+    "width": 144,
+    "height": 96,
+    "sourcePdf": "BRIMAS_PROFILE_PRINT_1791582547961.pdf",
+    "page": 4
+  },
+  {
+    "name": "Letshego",
+    "logo": "/api/catalogue-assets/partner-p04-47.webp",
+    "width": 171,
+    "height": 58,
+    "sourcePdf": "BRIMAS_PROFILE_PRINT_1791582547961.pdf",
+    "page": 4
+  },
+  {
+    "name": "BDO",
+    "logo": "/api/catalogue-assets/partner-p04-48.webp",
+    "width": 125,
+    "height": 48,
+    "sourcePdf": "BRIMAS_PROFILE_PRINT_1791582547961.pdf",
+    "page": 4
+  },
+  {
+    "name": "XENO",
+    "logo": "/api/catalogue-assets/partner-p04-49.webp",
+    "width": 113,
+    "height": 113,
+    "sourcePdf": "BRIMAS_PROFILE_PRINT_1791582547961.pdf",
+    "page": 4
+  },
+  {
+    "name": "NIC General Insurance",
+    "logo": "/api/catalogue-assets/partner-p04-50.webp",
+    "width": 121,
+    "height": 124,
+    "sourcePdf": "BRIMAS_PROFILE_PRINT_1791582547961.pdf",
+    "page": 4
+  },
+  {
+    "name": "Jubilee",
+    "logo": "/api/catalogue-assets/partner-p04-51.webp",
+    "width": 154,
+    "height": 96,
+    "sourcePdf": "BRIMAS_PROFILE_PRINT_1791582547961.pdf",
+    "page": 4
+  },
+  {
+    "name": "NSSF",
+    "logo": "/api/catalogue-assets/partner-p04-52.webp",
+    "width": 129,
+    "height": 60,
+    "sourcePdf": "BRIMAS_PROFILE_PRINT_1791582547961.pdf",
+    "page": 4
+  },
+  {
+    "name": "Uganda Wildlife Authority",
+    "logo": "/api/catalogue-assets/partner-p04-53.webp",
+    "width": 87,
+    "height": 135,
+    "sourcePdf": "BRIMAS_PROFILE_PRINT_1791582547961.pdf",
+    "page": 4
+  },
+  {
+    "name": "National Drug Authority",
+    "logo": "/api/catalogue-assets/partner-p04-54.webp",
+    "width": 122,
+    "height": 122,
+    "sourcePdf": "BRIMAS_PROFILE_PRINT_1791582547961.pdf",
+    "page": 4
+  },
+  {
+    "name": "Uganda Bureau of Statistics",
+    "logo": "/api/catalogue-assets/partner-p04-55.webp",
+    "width": 129,
+    "height": 129,
+    "sourcePdf": "BRIMAS_PROFILE_PRINT_1791582547961.pdf",
+    "page": 4
+  },
+  {
+    "name": "FUFA",
+    "logo": "/api/catalogue-assets/partner-p04-56.webp",
+    "width": 90,
+    "height": 124,
+    "sourcePdf": "BRIMAS_PROFILE_PRINT_1791582547961.pdf",
+    "page": 4
+  },
+  {
+    "name": "Posta Uganda",
+    "logo": "/api/catalogue-assets/partner-p04-57.webp",
+    "width": 97,
+    "height": 133,
+    "sourcePdf": "BRIMAS_PROFILE_PRINT_1791582547961.pdf",
+    "page": 4
+  },
+  {
+    "name": "Insurance Regulatory Authority",
+    "logo": "/api/catalogue-assets/partner-p04-58.webp",
+    "width": 193,
+    "height": 87,
+    "sourcePdf": "BRIMAS_PROFILE_PRINT_1791582547961.pdf",
+    "page": 4
+  },
+  {
+    "name": "Uganda Communications Commission",
+    "logo": "/api/catalogue-assets/partner-p04-59.webp",
+    "width": 204,
+    "height": 71,
+    "sourcePdf": "BRIMAS_PROFILE_PRINT_1791582547961.pdf",
+    "page": 4
+  },
+  {
+    "name": "Bank of Uganda",
+    "logo": "/api/catalogue-assets/partner-p04-60.webp",
+    "width": 216,
+    "height": 108,
+    "sourcePdf": "BRIMAS_PROFILE_PRINT_1791582547961.pdf",
+    "page": 4
+  },
+  {
+    "name": "PIBID",
+    "logo": "/api/catalogue-assets/partner-p04-61.webp",
+    "width": 204,
+    "height": 97,
+    "sourcePdf": "BRIMAS_PROFILE_PRINT_1791582547961.pdf",
+    "page": 4
+  },
+  {
+    "name": "National Enterprise Corporation",
+    "logo": "/api/catalogue-assets/partner-p04-62.webp",
+    "width": 197,
+    "height": 107,
+    "sourcePdf": "BRIMAS_PROFILE_PRINT_1791582547961.pdf",
+    "page": 4
+  },
+  {
+    "name": "Uganda Road Fund",
+    "logo": "/api/catalogue-assets/partner-p04-63.webp",
+    "width": 183,
+    "height": 94,
+    "sourcePdf": "BRIMAS_PROFILE_PRINT_1791582547961.pdf",
+    "page": 4
+  },
+  {
+    "name": "Purple-and-gold institutional partner emblem",
+    "logo": "/api/catalogue-assets/partner-p04-64.webp",
+    "width": 133,
+    "height": 132,
+    "sourcePdf": "BRIMAS_PROFILE_PRINT_1791582547961.pdf",
+    "page": 4
+  },
+  {
+    "name": "Uganda National Roads Authority",
+    "logo": "/api/catalogue-assets/partner-p04-65.webp",
+    "width": 204,
+    "height": 80,
+    "sourcePdf": "BRIMAS_PROFILE_PRINT_1791582547961.pdf",
+    "page": 4
+  },
+  {
+    "name": "Steel & Tube",
+    "logo": "/api/catalogue-assets/partner-p04-66.webp",
+    "width": 180,
+    "height": 104,
+    "sourcePdf": "BRIMAS_PROFILE_PRINT_1791582547961.pdf",
+    "page": 4
+  },
+  {
+    "name": "Coca-Cola Beverages Africa",
+    "logo": "/api/catalogue-assets/partner-p04-67.webp",
+    "width": 189,
+    "height": 34,
+    "sourcePdf": "BRIMAS_PROFILE_PRINT_1791582547961.pdf",
+    "page": 4
+  },
+  {
+    "name": "Rwenzori Bottling Company",
+    "logo": "/api/catalogue-assets/partner-p04-68.webp",
+    "width": 178,
+    "height": 48,
+    "sourcePdf": "BRIMAS_PROFILE_PRINT_1791582547961.pdf",
+    "page": 4
+  },
+  {
+    "name": "Balton Uganda",
+    "logo": "/api/catalogue-assets/partner-p04-69.webp",
+    "width": 139,
+    "height": 148,
+    "sourcePdf": "BRIMAS_PROFILE_PRINT_1791582547961.pdf",
+    "page": 4
+  },
+  {
+    "name": "Uganda coat of arms",
+    "logo": "/api/catalogue-assets/partner-p04-70.webp",
+    "width": 138,
+    "height": 122,
+    "sourcePdf": "BRIMAS_PROFILE_PRINT_1791582547961.pdf",
+    "page": 4
+  },
+  {
+    "name": "Cina Butchery",
+    "logo": "/api/catalogue-assets/partner-p04-71.webp",
+    "width": 178,
+    "height": 75,
+    "sourcePdf": "BRIMAS_PROFILE_PRINT_1791582547961.pdf",
+    "page": 4
+  },
+  {
+    "name": "National Medical Stores",
+    "logo": "/api/catalogue-assets/partner-p04-72.webp",
+    "width": 179,
+    "height": 61,
+    "sourcePdf": "BRIMAS_PROFILE_PRINT_1791582547961.pdf",
+    "page": 4
+  },
+  {
+    "name": "Buildnet",
+    "logo": "/api/catalogue-assets/partner-p04-73.webp",
+    "width": 167,
+    "height": 90,
+    "sourcePdf": "BRIMAS_PROFILE_PRINT_1791582547961.pdf",
+    "page": 4
+  },
+  {
+    "name": "NxtRadio",
+    "logo": "/api/catalogue-assets/partner-p04-74.webp",
+    "width": 134,
+    "height": 102,
+    "sourcePdf": "BRIMAS_PROFILE_PRINT_1791582547961.pdf",
+    "page": 4
+  },
+  {
+    "name": "MTN",
+    "logo": "/api/catalogue-assets/partner-p04-75.webp",
+    "width": 130,
+    "height": 130,
+    "sourcePdf": "BRIMAS_PROFILE_PRINT_1791582547961.pdf",
+    "page": 4
+  },
+  {
+    "name": "Papa Foods",
+    "logo": "/api/catalogue-assets/partner-p04-76.webp",
+    "width": 127,
+    "height": 134,
+    "sourcePdf": "BRIMAS_PROFILE_PRINT_1791582547961.pdf",
+    "page": 4
+  },
+  {
+    "name": "ICEA LION Group",
+    "logo": "/api/catalogue-assets/partner-p04-77.webp",
+    "width": 138,
+    "height": 99,
+    "sourcePdf": "BRIMAS_PROFILE_PRINT_1791582547961.pdf",
+    "page": 4
+  },
+  {
+    "name": "Saachi",
+    "logo": "/api/catalogue-assets/partner-p04-78.webp",
+    "width": 165,
+    "height": 59,
+    "sourcePdf": "BRIMAS_PROFILE_PRINT_1791582547961.pdf",
+    "page": 4
+  },
+  {
+    "name": "Sheraton",
+    "logo": "/api/catalogue-assets/partner-p04-80.webp",
+    "width": 182,
+    "height": 84,
+    "sourcePdf": "BRIMAS_PROFILE_PRINT_1791582547961.pdf",
+    "page": 4
+  },
+  {
+    "name": "Rocket Health",
+    "logo": "/api/catalogue-assets/partner-p04-81.webp",
+    "width": 190,
+    "height": 92,
+    "sourcePdf": "BRIMAS_PROFILE_PRINT_1791582547961.pdf",
+    "page": 4
+  },
+  {
+    "name": "Yamaha",
+    "logo": "/api/catalogue-assets/partner-p04-82.webp",
+    "width": 191,
+    "height": 43,
+    "sourcePdf": "BRIMAS_PROFILE_PRINT_1791582547961.pdf",
+    "page": 4
+  },
+  {
+    "name": "Lancet Laboratories Uganda",
+    "logo": "/api/catalogue-assets/partner-p04-83.webp",
+    "width": 165,
+    "height": 79,
+    "sourcePdf": "BRIMAS_PROFILE_PRINT_1791582547961.pdf",
+    "page": 4
+  },
+  {
+    "name": "NBS",
+    "logo": "/api/catalogue-assets/partner-p04-84.webp",
+    "width": 138,
+    "height": 144,
+    "sourcePdf": "BRIMAS_PROFILE_PRINT_1791582547961.pdf",
+    "page": 4
+  },
+  {
+    "name": "Forest Rally Team",
+    "logo": "/api/catalogue-assets/partner-p04-85.webp",
+    "width": 138,
+    "height": 58,
+    "sourcePdf": "BRIMAS_PROFILE_PRINT_1791582547961.pdf",
+    "page": 4
+  },
+  {
+    "name": "CHINT Electric",
+    "logo": "/api/catalogue-assets/partner-p04-86.webp",
+    "width": 133,
+    "height": 47,
+    "sourcePdf": "BRIMAS_PROFILE_PRINT_1791582547961.pdf",
+    "page": 4
+  },
+  {
+    "name": "Ericsson",
+    "logo": "/api/catalogue-assets/partner-p04-87.webp",
+    "width": 129,
+    "height": 114,
+    "sourcePdf": "BRIMAS_PROFILE_PRINT_1791582547961.pdf",
+    "page": 4
+  },
+  {
+    "name": "K2 Telecom",
+    "logo": "/api/catalogue-assets/partner-p04-88.webp",
+    "width": 126,
+    "height": 120,
+    "sourcePdf": "BRIMAS_PROFILE_PRINT_1791582547961.pdf",
+    "page": 4
+  },
+  {
+    "name": "Tuli Wamu Nawe",
+    "logo": "/api/catalogue-assets/partner-p04-89.webp",
+    "width": 129,
+    "height": 150,
+    "sourcePdf": "BRIMAS_PROFILE_PRINT_1791582547961.pdf",
+    "page": 4
+  },
+  {
+    "name": "UG-Rides",
+    "logo": "/api/catalogue-assets/partner-p04-90.webp",
+    "width": 180,
+    "height": 81,
+    "sourcePdf": "BRIMAS_PROFILE_PRINT_1791582547961.pdf",
+    "page": 4
+  },
+  {
+    "name": "Forest Art & Fabrication",
+    "logo": "/api/catalogue-assets/partner-p04-91.webp",
+    "width": 165,
+    "height": 72,
+    "sourcePdf": "BRIMAS_PROFILE_PRINT_1791582547961.pdf",
+    "page": 4
+  },
+  {
+    "name": "Lake Victoria Hotel Limited",
+    "logo": "/api/catalogue-assets/partner-p04-92.webp",
+    "width": 194,
+    "height": 56,
+    "sourcePdf": "BRIMAS_PROFILE_PRINT_1791582547961.pdf",
+    "page": 4
+  },
+  {
+    "name": "SGA Security",
+    "logo": "/api/catalogue-assets/partner-p04-93.webp",
+    "width": 187,
+    "height": 69,
+    "sourcePdf": "BRIMAS_PROFILE_PRINT_1791582547961.pdf",
+    "page": 4
+  },
+  {
+    "name": "Peacock Paints",
+    "logo": "/api/catalogue-assets/partner-p04-95.webp",
+    "width": 185,
+    "height": 79,
+    "sourcePdf": "BRIMAS_PROFILE_PRINT_1791582547961.pdf",
+    "page": 4
+  }
+]

@@ -3,6 +3,25 @@ import test from 'node:test';
 import { readFileSync } from 'node:fs';
 
 const data = JSON.parse(readFileSync(new URL('../src/lib/print-garage-catalogue.json', import.meta.url), 'utf8'));
+const partners = JSON.parse(readFileSync(new URL('../src/lib/print-garage-partners.json', import.meta.url), 'utf8'));
+
+test('partner grid uses unique full-color source-profile cuts, excluding the site’s own logo', () => {
+  assert.equal(partners.length, 93);
+  assert.equal(new Set(partners.map((p) => p.name)).size, 93);
+  assert.equal(new Set(partners.map((p) => p.logo)).size, 93);
+  assert.equal(partners.filter((p) => p.name === 'Aga Khan Foundation').length, 1);
+  assert.ok(!partners.some((p) => p.name === 'Print Garage'));
+  assert.ok(partners.some((p) => p.name === 'KCB'));
+  assert.ok(partners.some((p) => p.name === 'MTN'));
+  for (const partner of partners) {
+    assert.equal(partner.page, 4);
+    assert.match(partner.sourcePdf, /^BRIMAS_PROFILE_PRINT_/);
+    assert.match(partner.logo, /^\/api\/catalogue-assets\/partner-p04-\d{2}\.webp$/);
+    assert.ok(partner.width > 0 && partner.height > 0);
+  }
+  const source = readFileSync(new URL('../src/lib/pg-catalogue.ts', import.meta.url), 'utf8');
+  assert.ok(source.includes("import partners from './print-garage-partners.json'"));
+});
 const sourcePages = {
   'MIN catalogue Garage.pdf': 8,
   'DRINK WARE.pdf': 29,

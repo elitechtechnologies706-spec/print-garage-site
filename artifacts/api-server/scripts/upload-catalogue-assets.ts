@@ -2,7 +2,7 @@ import fs from 'node:fs/promises';
 import path from 'node:path';
 import { catalogueAssetFile } from '../src/lib/catalogueStorage';
 
-const allAssets = JSON.parse(await fs.readFile('generated-artifacts/catalogues/upload.json', 'utf8')) as { file: string; filename: string }[];
+const allAssets = JSON.parse(await fs.readFile(process.argv[3] ?? 'generated-artifacts/catalogues/upload.json', 'utf8')) as { file: string; filename: string }[];
 const manifest = allAssets.filter((item) => item.filename.startsWith(process.argv[2] ?? ''));
 let next = 0;
 let done = 0;

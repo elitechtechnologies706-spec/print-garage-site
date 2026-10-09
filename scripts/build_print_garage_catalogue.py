@@ -244,13 +244,13 @@ data = {
     "vision":"To be a one stop center providing exceptional services.",
     "mission":"To provide unique, timely and professional branding services for better customer experience.",
     "purpose":"To establish sustainable relationships with our clients, as the leading service provider in the printing, advertising and marketing industry.",
-    "products":products, "services":services,"partners":[],
+    "products":products, "services":services,
     "sourceNotes":{
         "about":"Adapted from MIN catalogue Garage.pdf, page 2",
         "vision":"MIN catalogue Garage.pdf, page 2",
         "mission":"MIN catalogue Garage.pdf, page 2",
         "purpose":"User-provided fallback; no purpose wording was found in the PDFs.",
-        "partners":"No verified partner/client logo page exists in the five supplied PDFs.",
+        "partners":"Partner logos are sourced separately from page 4 of the supplied Brimas corporate profile.",
         "missingItems":"No standalone umbrellas, speakers, power banks, AMP 020 identifier, JUCO identifier or seed-pencil claim could be verified; the MIN catalogue has eight pages, not 49.",
     },
 }

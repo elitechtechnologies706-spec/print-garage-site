@@ -14,3 +14,15 @@ Catalogue products and client/partner marks must come from supplied source mater
 **Why:** The user requested standalone, complete product cuts and original-color partner/client logos from the five uploaded PDFs.
 
 **How to apply:** Verify actual source content and page bounds before claiming an item or relationship exists. A brand printed on a catalogue sample is not by itself proof that it is a confirmed partner. Explicitly flag absent requested assets rather than manufacturing them.
+
+The user approved the partners from the supplied Brimas corporate profile for use on the Print Garage site.
+
+**Why:** The user uploaded that profile and explicitly said “Get partners from here.”
+
+**How to apply:** Treat its dedicated partner section as an approved source despite the Brimas branding; do not mistake decorative brands on product samples for additional approved partners.
+
+Keep the site compact rather than using oversized structures.
+
+**Why:** The user said “reduce on site structures don't need big things.”
+
+**How to apply:** Keep headings, section spacing, image areas and cards restrained while retaining the agreed content.

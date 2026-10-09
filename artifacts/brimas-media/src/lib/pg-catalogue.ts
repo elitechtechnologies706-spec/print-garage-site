@@ -9,6 +9,7 @@ export type Catalogue = {
 };
 
 import data from './print-garage-catalogue.json';
+import partners from './print-garage-partners.json';
 
 export const catalogue: Catalogue = {
   about: data.about,
@@ -17,7 +18,7 @@ export const catalogue: Catalogue = {
   purpose: data.purpose || 'To help businesses and organisations promote themselves through quality printing, branding and promotional products.',
   products: data.products as CatalogueProduct[],
   services: data.services as CatalogueService[],
-  partners: (data as { partners?: Catalogue['partners'] }).partners ?? [],
+  partners,
 };
 
 export const slugify = (value: string) => value.toLowerCase().replace(/&/g, ' and ').replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
