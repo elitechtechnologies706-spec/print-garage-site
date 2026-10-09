@@ -32,3 +32,9 @@ Left-align the hero heading and use a business-relevant printing/branding servic
 **Why:** The user explicitly requested these refinements, including a new hero background. This supersedes the earlier request to preserve the original workshop background.
 
 **How to apply:** Keep the established content order, justified paragraphs and source-logo colors; changing the background does not authorize replacing catalogue products or client logos.
+
+Use independently written Print Garage marketing copy, not Brimas website paragraphs or a company-name substitution.
+
+**Why:** The user requested a different hero description and said all text found on the Brimas site should not be found here. This supersedes the earlier exact hero description and catalogue-derived mission/vision/purpose wording.
+
+**How to apply:** Give homepage and inner-page descriptions their own wording. Preserve factual product names, technical specifications, approved partner identities and contact details; source PDFs remain references for assets, not reusable marketing paragraphs.

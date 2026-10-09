@@ -16,7 +16,7 @@ export default function NotFound() {
           <p className="mt-4 text-sm text-gray-600">
             This page could not be found. Return to Print Garage to explore our printing and branding services.
           </p>
-          <a href="/" className="mt-4 inline-block underline text-blue-700">Return to homepage</a>
+          <a href="/" className="mt-4 inline-block underline text-[var(--brand-gray)]">Return to homepage</a>
         </CardContent>
       </Card>
     </div>

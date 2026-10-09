@@ -55,8 +55,8 @@ export function LandingPage({ service }: { service: ServicePage }) {
                 </div>
                 <div className="seo-hero-note">
                   <span>Peacock Building, 2nd Floor</span>
-                  <span>Walk-in enquiries welcome</span>
-                  <span>Quoted to your actual brief</span>
+                  <span>Bring a design or sample to discuss</span>
+                  <span>Price confirmed for your specification</span>
                 </div>
               </div>
               <div className="seo-visual">
@@ -70,7 +70,7 @@ export function LandingPage({ service }: { service: ServicePage }) {
                   <div className="seo-visual-fallback" aria-label={`${service.label} at Print Garage`} data-testid="graphic-seo-service">
                     <span className="seo-mono">Print Garage / Kampala / 01</span>
                     <strong>{service.label}</strong>
-                    <span className="seo-mono">Tell us the spec. We'll make the plan.</span>
+                    <span className="seo-mono">Your artwork. Your quantities. A defined production brief.</span>
                   </div>
                 )}
               </div>
@@ -80,16 +80,16 @@ export function LandingPage({ service }: { service: ServicePage }) {
 
         <div className="seo-ticker" aria-label="Why work with Print Garage">
           <div className="seo-wrap seo-ticker-inner">
-            <span><b>01</b> One Kampala production partner</span>
-            <span><b>02</b> Specs confirmed before pricing</span>
-            <span><b>03</b> Collect or arrange dispatch</span>
+            <span><b>01</b> Plan the item and its purpose</span>
+            <span><b>02</b> Review materials and artwork</span>
+            <span><b>03</b> Confirm price and fulfilment</span>
           </div>
         </div>
 
         <section className="seo-section" aria-labelledby="seo-overview-title">
           <div className="seo-wrap">
             <div className="seo-section-header">
-              <div><span className="seo-mono seo-eyebrow">The work / What to expect</span><h2 id="seo-overview-title">Made for your brief, not a guess.</h2></div>
+              <div><span className="seo-mono seo-eyebrow">Inside this service</span><h2 id="seo-overview-title">Specify it with Print Garage.</h2></div>
             </div>
             <div className="seo-overview">
               <p className="seo-detail" data-testid="text-seo-detail">
@@ -98,17 +98,17 @@ export function LandingPage({ service }: { service: ServicePage }) {
                   <span key={item.slug}>{index > 0 ? ', ' : ''}<a href={item.path}>{item.label.toLowerCase()}</a></span>
                 ))}.
               </p>
-              <div className="seo-detail-aside"><strong>Start with what you know.</strong>Send your quantity, artwork or reference, deadline and delivery location. We’ll confirm the materials, finish and final quote with you.</div>
+              <div className="seo-detail-aside"><strong>A useful enquiry has specifics.</strong>Include quantities, a design reference, your target date and any delivery requirements. Print Garage can review the material and finish options against that brief.</div>
             </div>
             <div className="seo-lists">
               <div className="seo-list-card">
-                <span className="seo-mono seo-eyebrow">01 / The output</span>
-                <h3>What we can help with</h3>
+                <span className="seo-mono seo-eyebrow">01 / Define the job</span>
+                <h3>Options to discuss</h3>
                 <ul>{service.deliverables.map((item, index) => <li key={`${item}-${index}`} data-testid={`text-seo-deliverable-${index}`}>{item}</li>)}</ul>
               </div>
               <div className="seo-list-card">
-                <span className="seo-mono seo-eyebrow">02 / In the field</span>
-                <h3>Where it gets used</h3>
+                <span className="seo-mono seo-eyebrow">02 / Define the purpose</span>
+                <h3>Projects this can support</h3>
                 <ul>{service.useCases.map((item, index) => <li key={`${item}-${index}`} data-testid={`text-seo-use-case-${index}`}>{item}</li>)}</ul>
               </div>
             </div>
@@ -118,8 +118,8 @@ export function LandingPage({ service }: { service: ServicePage }) {
         <section className="seo-section seo-pricing" id="guide-prices" aria-labelledby="seo-pricing-title">
           <div className="seo-wrap">
             <div className="seo-section-header">
-              <div><span className="seo-mono seo-eyebrow">Numbers / No surprises</span><h2 id="seo-pricing-title">A guide before the quote.</h2></div>
-              <p>These example job sizes need a confirmed quote. See the <a href="/price-list">VAT-inclusive price list</a> for individually named products.</p>
+              <div><span className="seo-mono seo-eyebrow">Planning your order</span><h2 id="seo-pricing-title">Choose a scope. Confirm a price.</h2></div>
+              <p>The options below describe order sizes, not fixed packages. Individual guide rates are on our <a href="/price-list">VAT-inclusive price list</a>.</p>
             </div>
             <div className="seo-price-panel">
               <div className="seo-price-head">
@@ -151,8 +151,8 @@ export function LandingPage({ service }: { service: ServicePage }) {
         <section className="seo-section seo-faq" aria-labelledby="seo-faq-title">
           <div className="seo-wrap">
             <div className="seo-section-header">
-              <div><span className="seo-mono seo-eyebrow">Good to know / Before you order</span><h2 id="seo-faq-title">Straight answers.</h2></div>
-              <p>Still unsure about a detail? Send us the brief; a person on the team can help.</p>
+              <div><span className="seo-mono seo-eyebrow">Order preparation</span><h2 id="seo-faq-title">Check the details first.</h2></div>
+              <p>Use these answers to prepare your enquiry. Anything specific to your job can be discussed with Print Garage.</p>
             </div>
             <div className="seo-faq-grid">
               {service.faqs.map((faq, index) => (
@@ -170,8 +170,8 @@ export function LandingPage({ service }: { service: ServicePage }) {
         <section className="seo-section seo-related" aria-labelledby="seo-related-title">
           <div className="seo-wrap">
             <div className="seo-section-header">
-              <div><span className="seo-mono seo-eyebrow">More from Print Garage</span><h2 id="seo-related-title">One partner. More of the job covered.</h2></div>
-              <p>Explore other ways to print, equip and present your business.</p>
+              <div><span className="seo-mono seo-eyebrow">Build out your brief</span><h2 id="seo-related-title">What else does your project need?</h2></div>
+              <p>Pair this enquiry with another Print Garage service for the same team, premises or event.</p>
             </div>
             <nav className="seo-related-grid" aria-label="Related services">
               {related.map((item) => <a className="seo-related-link" href={item.path} key={item.slug} data-testid={`link-seo-related-${item.slug}`}><span>{item.label}</span><ArrowUpRight size={17} aria-hidden="true" /></a>)}
@@ -181,8 +181,8 @@ export function LandingPage({ service }: { service: ServicePage }) {
 
         <section className="seo-final" aria-labelledby="seo-final-title">
           <div className="seo-wrap seo-final-inner">
-            <div><span className="seo-mono seo-eyebrow">Your next move</span><h2 id="seo-final-title">Tell us what you need made.</h2></div>
-            <div><p>One message is enough to start. Send a quantity, your artwork or a reference and we’ll talk through the details.</p>
+            <div><span className="seo-mono seo-eyebrow">Start with the specification</span><h2 id="seo-final-title">Bring your next job to Print Garage.</h2></div>
+            <div><p>Tell us the item, the number of pieces and your target date. Add a design or reference so we can discuss the right production details.</p>
               <div className="seo-final-actions">
                  <a className="seo-btn seo-btn-dark" href={requestUrl} data-testid="link-seo-bottom-request-quote">Request a quote <ArrowUpRight size={15} aria-hidden="true" /></a>
                 <a className="seo-btn seo-btn-light" href={CALL} data-testid="link-seo-bottom-call"><Phone size={17} aria-hidden="true" /> Call {SITE.displayPhone}</a>
@@ -194,7 +194,7 @@ export function LandingPage({ service }: { service: ServicePage }) {
 
       <footer className="seo-footer">
         <div className="seo-wrap seo-footer-layout">
-          <div className="seo-footer-brand"><Brand /><p>Walk-in printing, branding, workwear, PPE and gifts in Kampala.</p></div>
+          <div className="seo-footer-brand"><Brand /><p>Kampala print and branding enquiries, from office materials to team kit.</p></div>
           <div className="seo-footer-links">
             <span className="seo-mono" style={{ color: 'var(--seo-blue)' }}>Keep in touch</span>
             <a href="/" data-testid="link-seo-footer-home">Home</a>

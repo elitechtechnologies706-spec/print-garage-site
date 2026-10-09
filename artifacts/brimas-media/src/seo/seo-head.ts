@@ -1,17 +1,18 @@
 import { SITE_URL, type ServicePage } from './service-data';
 import { SITE } from '../lib/site-config';
+import hero from '../lib/print-garage-hero.json';
 
 export const HOME_TITLE = 'Printing & Branding Services in Kampala | Print Garage';
-export const HOME_META = 'Print Garage is a printing and branding garage in Kampala, Uganda: large format, commercial printing, corporate branding, promotional gifts, garments and eco printing.';
+export const HOME_META = 'Get your next brand project made at Print Garage in Kampala: shopfront signs, business print, staff clothing and promotional items tailored to your brief.';
 export const PRICE_LIST_TITLE = 'Printing & Branding Price List Kampala | Print Garage';
-export const PRICE_LIST_META = 'Explore printing, banners, T-shirts, mugs and workwear options at Print Garage in Kampala. Confirm current prices, specifications and availability with our team.';
+export const PRICE_LIST_META = 'Plan a Print Garage order with our UGX, VAT-inclusive price guide. Compare print, garment and gift options, then request confirmation for your exact specification.';
 export const QUOTE_TITLE = 'Request a Printing & Branding Quote | Print Garage';
-export const QUOTE_META = 'Request a printing, workwear or corporate-gift quote from Print Garage in Kampala. Send your service, quantities and specifications directly to the team.';
+export const QUOTE_META = 'Build a Print Garage brief with your item, quantity, artwork details and target date. Review it in WhatsApp before sending it for a Kampala printing or branding quote.';
 export const PRODUCTS_TITLE = 'Products Catalogue Kampala | Print Garage';
-export const PRODUCTS_META = 'Browse the Print Garage catalogue: drinkware, bags, corporate gifts, promotional products, textiles, PPE and eco products. Enquire on WhatsApp in Kampala, Uganda.';
+export const PRODUCTS_META = 'Find a starting point for your Print Garage project. Explore mugs, bags, gift sets, workwear and eco options, with product-specific WhatsApp enquiries.';
 export const GALLERY_TITLE = 'Product & Branding Gallery Kampala | Print Garage';
-export const GALLERY_META = 'Browse product photos and branding concepts at Print Garage, with category filters and small image batches. Confirm specifications and availability with our team.';
-export const OG_IMAGE = `${SITE_URL}/hero/printing-branding.webp`;
+export const GALLERY_META = 'Explore the Print Garage visual reference gallery for product and branding ideas. These photos and concepts guide enquiries, not claims of completed client work.';
+export const OG_IMAGE = `${SITE_URL}${hero.image}`;
 export const MAP_URL = `https://maps.google.com/?q=${encodeURIComponent(SITE.address)}`;
 
 type SeoPage = { title: string; meta: string; path: string; indexable?: boolean };
@@ -28,7 +29,7 @@ export function structuredData(service?: ServicePage, page?: SeoPage) {
     '@type': ['Organization', 'LocalBusiness'],
     '@id': `${SITE_URL}/#print-garage`,
     name: SITE.name,
-    description: 'Commercial and large format printing, workwear and promotional branding in Kampala.',
+    description: 'Print Garage helps Kampala organisations specify business print, shopfront graphics, branded clothing and useful promotional items.',
     url: SITE_URL,
     image: OG_IMAGE,
     telephone: SITE.phone,

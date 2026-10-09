@@ -239,17 +239,12 @@ service_specs = [
     ("eco-printing","Eco Printing","eco-p05-03.webp"),
 ]
 services = [{"id":slug,"name":name,"image":f"/api/catalogue-assets/{file}","href":f"/products/{slug}"} for slug,name,file in service_specs]
+brand_copy = json.loads(Path("artifacts/brimas-media/src/lib/print-garage-copy.json").read_text())
 data = {
-    "about":"Print Garage is a branding and printing company offering quality commercial printing, PPE supplies, office supplies and promotional items. We offer packages for businesses and organizations to promote brand visibility.",
-    "vision":"To be a one stop center providing exceptional services.",
-    "mission":"To provide unique, timely and professional branding services for better customer experience.",
-    "purpose":"To establish sustainable relationships with our clients, as the leading service provider in the printing, advertising and marketing industry.",
+    **{field: brand_copy[field] for field in ("about", "vision", "mission", "purpose")},
     "products":products, "services":services,
     "sourceNotes":{
-        "about":"Adapted from MIN catalogue Garage.pdf, page 2",
-        "vision":"MIN catalogue Garage.pdf, page 2",
-        "mission":"MIN catalogue Garage.pdf, page 2",
-        "purpose":"User-provided fallback; no purpose wording was found in the PDFs.",
+        "brandCopy":"Independent Print Garage wording; catalogue assets remain sourced from the supplied PDFs.",
         "partners":"Partner logos are sourced separately from page 4 of the supplied Brimas corporate profile.",
         "missingItems":"No standalone umbrellas, speakers, power banks, AMP 020 identifier, JUCO identifier or seed-pencil claim could be verified; the MIN catalogue has eight pages, not 49.",
     },

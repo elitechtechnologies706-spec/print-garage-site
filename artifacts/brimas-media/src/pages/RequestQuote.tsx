@@ -37,7 +37,7 @@ export function RequestQuote() {
     const chosen = servicePages.find((item) => item.slug === brief.service);
     if (!chosen && brief.service !== 'other') return;
     const message = [
-      'Hello Print Garage, I would like a quote for one job.',
+      'Hello Print Garage, please review this project brief and advise on a quotation.',
       `Service: ${chosen?.label ?? 'Other / custom request'}`,
       `Quantity: ${brief.quantity.trim()}`,
       `What I need: ${brief.details.trim()}`,
@@ -65,8 +65,8 @@ export function RequestQuote() {
         <div className="request-quote-intro">
           <a href="/" className="request-quote-back" data-testid="link-quote-back"><ArrowLeft size={16} /> Back to home</a>
           <span className="seo-mono seo-eyebrow">One brief / One job</span>
-          <h1>Request a quote for what <em>you</em> need.</h1>
-          <p>Choose one service and tell us about your order. We’ll prepare a WhatsApp message with only your request, so the team can confirm a price based on your specs.</p>
+          <h1>Start your Print Garage <em>project brief.</em></h1>
+          <p>Select the job, add your quantities and describe the finish you have in mind. Your answers become a WhatsApp draft for a specification-based quotation.</p>
           <div className="request-quote-note">
             <strong>No fixed price for every job.</strong>
             <span>Quantities, materials, branding and timing can affect the final quote. You can review the message before sending it on WhatsApp.</span>
@@ -75,7 +75,7 @@ export function RequestQuote() {
         <Form {...form}>
           <form className="request-quote-form" onSubmit={form.handleSubmit(submit)}>
             <span className="seo-mono seo-eyebrow">Tell us about your job</span>
-            <h2>Your quote brief</h2>
+            <h2>Details for your quotation</h2>
             <label htmlFor="request-service">What do you need? <span aria-hidden="true">*</span></label>
             <select id="request-service" required data-testid="select-request-service" {...form.register('service', { required: true })}>
               <option value="">Choose one service</option>
@@ -93,7 +93,7 @@ export function RequestQuote() {
             <button type="submit" className="seo-btn seo-btn-primary request-quote-submit" data-testid="button-request-whatsapp">
               <FaWhatsapp size={20} aria-hidden="true" /> Continue to WhatsApp <ArrowUpRight size={17} aria-hidden="true" />
             </button>
-            <p className="request-quote-help">WhatsApp opens with your brief ready to review. You decide when to send it.</p>
+            <p className="request-quote-help">Check the draft in WhatsApp, make any changes and send it when you are ready.</p>
           </form>
         </Form>
       </main>

@@ -50,7 +50,7 @@
 .nav-category-dropdown > summary { display: flex; align-items: center; justify-content: space-between; gap: 6px; padding: 10px 11px; font-size: .9rem; font-weight: 600; cursor: pointer; list-style: none; color: hsl(220 15% 8%); }
 .nav-category-dropdown > summary::-webkit-details-marker { display: none; }
 .nav-category-dropdown[open] > summary svg { transform: rotate(180deg); }
-.nav-dropdown-panel { display: grid; background: hsl(210 25% 97%); padding: 6px; }
+.nav-dropdown-panel { display: grid; background: hsl(0 0% 97%); padding: 6px; }
 .nav-category-dropdown:not([open]) > .nav-dropdown-panel { display: none; }
 .nav-dropdown-panel a { display: block; padding: 10px 11px; font-size: .9rem; color: hsl(220 15% 8%); }
 .nav-dropdown-panel a:hover, .nav-dropdown-panel a:focus-visible { background: var(--brand-orange); color: hsl(220 15% 8%); text-decoration: none; }

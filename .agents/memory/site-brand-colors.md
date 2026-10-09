@@ -3,11 +3,11 @@ name: Site brand colors
 description: User-requested visual direction for Print Garage
 ---
 
-Use orange #FF6B00 and black #111 as the main Print Garage site palette.
+Use the supplied logo's orange #F47226 and gray #717274 for Print Garage accents.
 
-**Why:** The user's master update explicitly specifies these colors, superseding the earlier instruction to sample both colors from the supplied logo.
+**Why:** The user subsequently requested matching the logo to avoid site color mismatch. This supersedes the master update's brighter #FF6B00 orange.
 
-**How to apply:** Keep the supplied logo unchanged, but use the explicitly requested orange/black palette for the website.
+**How to apply:** Keep the supplied logo unchanged. Use its orange and gray consistently across homepage and inner-page controls, borders and highlights; retain readable black/white neutral surfaces and the dark partner section.
 
 Replace green interface colors with the logo's gray, including WhatsApp controls and icons.
 

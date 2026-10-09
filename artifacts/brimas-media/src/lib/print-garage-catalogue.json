@@ -1,8 +1,8 @@
 {
-  "about": "Print Garage is a branding and printing company offering quality commercial printing, PPE supplies, office supplies and promotional items. We offer packages for businesses and organizations to promote brand visibility.",
-  "vision": "To be a one stop center providing exceptional services.",
-  "mission": "To provide unique, timely and professional branding services for better customer experience.",
-  "purpose": "To establish sustainable relationships with our clients, as the leading service provider in the printing, advertising and marketing industry.",
+  "about": "We help Kampala businesses present themselves through printed materials, branded garments, signage and useful giveaways. At Print Garage, each enquiry starts with what you need, where it will be used and the quantities involved.",
+  "vision": "A dependable Kampala destination for businesses seeking distinctive print, workwear and promotional branding.",
+  "mission": "Make print and branding orders clear and manageable, with careful attention to artwork, product specifications and the customer's brief.",
+  "purpose": "Help organisations look consistent wherever people meet them: at their premises, on their team and in the items they share.",
   "products": [
     {
       "id": "min-p03-01",
@@ -4844,10 +4844,7 @@
     }
   ],
   "sourceNotes": {
-    "about": "Adapted from MIN catalogue Garage.pdf, page 2",
-    "vision": "MIN catalogue Garage.pdf, page 2",
-    "mission": "MIN catalogue Garage.pdf, page 2",
-    "purpose": "User-provided fallback; no purpose wording was found in the PDFs.",
+    "brandCopy": "Independent Print Garage wording; catalogue assets remain sourced from the supplied PDFs.",
     "partners": "Partner logos are sourced separately from page 4 of the supplied Brimas corporate profile.",
     "missingItems": "No standalone umbrellas, speakers, power banks, AMP 020 identifier, JUCO identifier or seed-pencil claim could be verified; the MIN catalogue has eight pages, not 49."
   }

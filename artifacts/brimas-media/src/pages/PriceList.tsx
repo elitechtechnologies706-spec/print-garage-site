@@ -38,8 +38,8 @@ export function PriceList() {
         <section className="price-page-hero">
           <div className="shell">
             <span className="price-page-eyebrow">Print Garage / Kampala</span>
-            <h1>Full price list<span>.</span></h1>
-            <p>Guide prices shown in <strong>UGX including VAT</strong>. Select a product, then confirm current pricing, specifications, quantity, branding and availability with Print Garage before ordering.</p>
+            <h1>Plan your Print Garage order<span>.</span></h1>
+            <p>Use these <strong>UGX guide rates, including VAT</strong>, to explore your options. Your final quotation depends on the exact item, quantities, branding requirements and current availability.</p>
             <a href={whatsappHref('Hello Print Garage, please help me confirm an item and its current price.')} target="_blank" rel="noreferrer" className="price-page-hero-link"><FaWhatsapp size={18} aria-hidden="true" /> Ask about an item <ArrowUpRight size={17} aria-hidden="true" /></a>
           </div>
         </section>
@@ -48,8 +48,8 @@ export function PriceList() {
           <div className="price-page-intro">
             <div>
               <span className="price-page-eyebrow">Prices / 001—062</span>
-              <h2>Find what you need made.</h2>
-              <p>“Request a quote” means the sheet has no fixed price for that job. A range means the exact option needs confirming. Outdoor banners are listed <strong>per metre</strong>, not per square metre.</p>
+              <h2>Compare items for your brief.</h2>
+              <p>Items marked “Request a quote” have no published fixed rate. For ranges, ask which option applies to your order. The outdoor banner unit is <strong>per metre</strong>; it must not be read as a square-metre price.</p>
             </div>
             <label className="price-page-search">
               <Search size={18} aria-hidden="true" />
@@ -82,7 +82,7 @@ export function PriceList() {
           ))}
           <div className="price-page-notice">
             <strong>Need something different?</strong>
-            <p>Business cards, helmets, custom-branded items and the Head to Toe PPE Pack do not have matching fixed prices in this list. Send your brief for a confirmed quote.</p>
+            <p>For business cards, helmets, custom branding or a Head to Toe PPE Pack, ask Print Garage to price the complete specification. This guide does not publish fixed totals for those jobs.</p>
             <a href="/request-a-quote">Request a quote <ArrowUpRight size={17} aria-hidden="true" /></a>
           </div>
         </div>

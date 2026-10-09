@@ -14,16 +14,17 @@ import { SITE } from '@/lib/site-config';
 import { CatalogueImage } from '@/components/CatalogueImage';
 import { catalogue, homeTeasers } from '@/lib/pg-catalogue';
 import hero from '@/lib/print-garage-hero.json';
+import copy from '@/lib/print-garage-copy.json';
 
 const queryClient = new QueryClient();
 
 const HERO_TITLE = 'Print Garage - Printing and Branding Garage in Kampala, Uganda';
-const HERO_COPY = 'A local branding, marketing and production partner for businesses across Kampala and Uganda. From the people running the machines to the team wearing the kit — there is no broker in the middle.';
+const HERO_COPY = copy.hero;
 const SERVICE_NAMES = ['Large Format', 'Commercial Printing', 'Corporate Branding', 'Promotional Gifts', 'Textile/Garment', 'Eco Printing'];
 
 function AppContent() {
   const { mutate: recordView } = useRecordView();
-  const generalMessage = 'Hello Print Garage, I would like to discuss a printing or branding job. Please help me with the next steps.';
+  const generalMessage = 'Hello Print Garage, I have a print or branding brief. Could you help me choose the specifications and confirm a price?';
 
   useEffect(() => {
     recordView(undefined, { onError: (error) => console.error('Could not record homepage view', error) });
@@ -103,7 +104,7 @@ function AppContent() {
           <div className="shell">
             <h2 className="pg-h">Products</h2>
             {teasers.length === 0
-              ? <p className="catalogue-empty">Our catalogue is being prepared. Tap View More to see what is available.</p>
+              ? <p className="catalogue-empty">Open the catalogue to explore available Print Garage product options.</p>
               : <div className="pg-masonry">
                 {teasers.map((p) => (
                   <a href={`/products/${p.category}`} className="pg-m-item" key={p.id} data-testid={`card-teaser-${p.id}`}>
@@ -118,10 +119,10 @@ function AppContent() {
         <section className="section pg-partners" id="partners">
           <div className="shell">
             <h2>OUR PARTNERS</h2>
-            <p className="pg-partners-sub">Over the years, we have formed alliances with organisations that share our commitment to quality and service.</p>
+            <p className="pg-partners-sub">{copy.partners}</p>
             {catalogue.partners.length > 0
               ? <div className="pg-logos">{catalogue.partners.map((p) => <div className="pg-logo" key={p.name}><img src={p.logo} alt={p.name} width={300} height={160} loading="lazy" decoding="async" /></div>)}</div>
-              : <p className="pg-partners-note" data-testid="text-partners-note">Partner logos will appear here once verified logo assets are supplied.</p>}
+              : <p className="pg-partners-note" data-testid="text-partners-note">We are checking the source material before displaying partner identities.</p>}
           </div>
         </section>
       </main>

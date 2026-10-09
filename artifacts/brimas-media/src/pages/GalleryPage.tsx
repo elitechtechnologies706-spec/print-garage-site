@@ -3,7 +3,6 @@ import { SiteMenu } from '../components/SiteMenu';
 import { Brand } from '../components/Brand';
 import { CatalogueImage } from '../components/CatalogueImage';
 import { fullGalleryCategories, fullGalleryItems } from '../lib/gallery-catalogue';
-import { galleryItems } from '../lib/gallery-items';
 import '../components/Gallery.css';
 
 const PAGE_SIZE = 12;
@@ -63,9 +62,9 @@ export function GalleryPage() {
             <div className="section-heading">
               <div className="eyebrow">Gallery / product examples</div>
               <h1 id="full-gallery-heading" className="full-gallery-heading">Print Garage Gallery</h1>
-              <h2 className="full-gallery-subheading">Browse {fullGalleryItems.length} product examples.</h2>
-              <p>Explore reviewed generic product photos and mockups in small batches. Images described as carrying inherited client marks and unreviewed images are not displayed. These examples are not a list of completed Print Garage projects.</p>
-              <a className="showcase-service-link" href="/#gallery">See the {galleryItems.length} selected homepage examples <span aria-hidden="true">↗</span></a>
+              <h2 className="full-gallery-subheading">{fullGalleryItems.length} references for your next brief.</h2>
+              <p>Choose a category to explore product photography and branding concepts. This reference collection helps you describe an enquiry; it does not document completed Print Garage commissions.</p>
+              <a className="showcase-service-link" href="/products">Explore the source-backed product catalogue <span aria-hidden="true">↗</span></a>
             </div>
             <div className="gallery-filters" role="group" aria-label="Filter full gallery by category">
               {['All', ...fullGalleryCategories].map((label) => <button key={label} type="button" aria-pressed={category === label} aria-controls="full-gallery-grid" onClick={() => navigate(label, 1)}>{label === 'All' ? `All ${fullGalleryItems.length} images` : label}</button>)}
@@ -82,7 +81,7 @@ export function GalleryPage() {
               <label htmlFor="gallery-page">Page<select id="gallery-page" value={currentPage} onChange={(event) => navigate(category, Number(event.target.value))}>{Array.from({ length: pageCount }, (_, index) => <option key={index} value={index + 1}>{index + 1} of {pageCount}</option>)}</select></label>
               <button className="button button-dark" type="button" disabled={currentPage === pageCount} onClick={() => navigate(category, currentPage + 1)}>Next</button>
             </nav>
-            <p className="showcase-note">Any logos shown are example branding, not client endorsements. Specifications and availability are confirmed with your quotation.</p>
+            <p className="showcase-note">Reference-image logos illustrate possible branding only. They do not establish a client relationship; request confirmation of the item and specification you want.</p>
           </div>
         </section>
       </main>

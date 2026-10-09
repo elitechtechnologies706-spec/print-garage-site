@@ -5,6 +5,49 @@ import { readFileSync } from 'node:fs';
 const data = JSON.parse(readFileSync(new URL('../src/lib/print-garage-catalogue.json', import.meta.url), 'utf8'));
 const partners = JSON.parse(readFileSync(new URL('../src/lib/print-garage-partners.json', import.meta.url), 'utf8'));
 
+test('independent Print Garage copy replaces the inherited homepage paragraphs', () => {
+  const copy = JSON.parse(readFileSync(new URL('../src/lib/print-garage-copy.json', import.meta.url), 'utf8'));
+  assert.match(copy.hero, /Print Garage/);
+  for (const key of ['about', 'mission', 'vision', 'purpose']) {
+    assert.equal(data[key], copy[key], `Generated ${key} must match authored brand copy`);
+  }
+  const combined = JSON.stringify(copy) + JSON.stringify(data);
+  for (const inherited of [
+    'A local branding, marketing and production partner',
+    'there is no broker in the middle',
+    'one stop center providing exceptional services',
+    'unique, timely and professional branding services',
+    'establish sustainable relationships with our clients',
+    'Over the years, we have formed alliances',
+  ]) assert.ok(!combined.includes(inherited), `Inherited wording remains: ${inherited}`);
+  const generator = readFileSync(new URL('../../../scripts/build_print_garage_catalogue.py', import.meta.url), 'utf8');
+  assert.ok(generator.includes('print-garage-copy.json'), 'Regeneration must retain the independent copy');
+});
+
+test('all service pages retain distinct descriptions and unchanged factual guide rates', () => {
+  const source = readFileSync(new URL('../src/seo/service-data.ts', import.meta.url), 'utf8');
+  const intros = [...source.matchAll(/intro: '([^']+)'/g)].map((match) => match[1]);
+  const details = [...source.matchAll(/detail: '([^']+)'/g)].map((match) => match[1]);
+  assert.equal(intros.length, 12);
+  assert.equal(new Set(intros).size, 12);
+  assert.equal(details.length, 12);
+  assert.equal(new Set(details).size, 12);
+  const rates = new Set([...source.matchAll(/UGX (\d{1,3}(?:,\d{3})*)/g)].map((match) => match[1]));
+  assert.deepEqual(rates, new Set(['17,700', '29,500', '53,100', '8,850', '70,800', '88,500']));
+});
+
+test('site accents match the supplied orange and gray logo instead of the brighter master palette', () => {
+  const css = readFileSync(new URL('../src/index.css', import.meta.url), 'utf8');
+  assert.ok(css.includes('--brand-orange: #F47226;'));
+  assert.ok(css.includes('--brand-gray: #717274;'));
+  assert.ok(!css.includes('#FF6B00'));
+  const productsCss = readFileSync(new URL('../src/pages/products.css', import.meta.url), 'utf8');
+  assert.ok(!productsCss.includes('#FF6B00'));
+  const config = readFileSync(new URL('../src/lib/site-config.ts', import.meta.url), 'utf8');
+  assert.ok(config.includes("primary: '#F47226'"));
+  assert.ok(config.includes("secondary: '#717274'"));
+});
+
 test('service-delivery hero has explicit intrinsic dimensions and a durable image URL', () => {
   const hero = JSON.parse(readFileSync(new URL('../src/lib/print-garage-hero.json', import.meta.url), 'utf8'));
   assert.match(hero.image, /^\/api\/catalogue-assets\/hero-p\d{2}-\d{2}\.webp$/);

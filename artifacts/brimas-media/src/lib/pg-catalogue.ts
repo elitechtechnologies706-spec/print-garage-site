@@ -10,12 +10,13 @@ export type Catalogue = {
 
 import data from './print-garage-catalogue.json';
 import partners from './print-garage-partners.json';
+import copy from './print-garage-copy.json';
 
 export const catalogue: Catalogue = {
-  about: data.about,
-  vision: data.vision,
-  mission: data.mission,
-  purpose: data.purpose || 'To help businesses and organisations promote themselves through quality printing, branding and promotional products.',
+  about: copy.about,
+  vision: copy.vision,
+  mission: copy.mission,
+  purpose: copy.purpose,
   products: data.products as CatalogueProduct[],
   services: data.services as CatalogueService[],
   partners,

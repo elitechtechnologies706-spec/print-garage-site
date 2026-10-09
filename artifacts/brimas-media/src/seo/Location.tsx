@@ -7,7 +7,7 @@ const MAP_QUERY = 'Peacock Building Kampala Uganda';
 const MAP_EMBED = `https://www.google.com/maps?q=${encodeURIComponent(MAP_QUERY)}&output=embed`;
 const MAP_DIRECTIONS = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(MAP_QUERY)}`;
 const OSM_SEARCH = `https://www.openstreetmap.org/search?query=${encodeURIComponent(MAP_QUERY)}`;
-const LOCATION_MESSAGE = `Hello Print Garage, I am looking for you at ${SITE.address}. Please share directions and confirm opening hours.`;
+const LOCATION_MESSAGE = `Hello Print Garage, I would like to discuss a project at ${SITE.address}. Could you send a location pin and advise a suitable visiting time?`;
 
 export function LocationSection() {
   return (
@@ -15,10 +15,10 @@ export function LocationSection() {
       <div className="seo-wrap">
         <div className="seo-section-header">
           <div>
-            <span className="seo-mono seo-eyebrow">Come to the source / Kampala</span>
+            <span className="seo-mono seo-eyebrow">Discuss your brief in Kampala</span>
             <h2 id="seo-location-title">Visit Print Garage.</h2>
           </div>
-          <p>Bring your sample, artwork or brief. Talk through the order with a local team before you commit.</p>
+          <p>Have a sample or design to discuss? Bring it to Print Garage so we can work through the materials, quantities and finish with you.</p>
         </div>
         <div className="seo-location-layout">
           <div>

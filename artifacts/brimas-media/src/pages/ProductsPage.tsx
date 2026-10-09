@@ -67,11 +67,11 @@ export function ProductsPage() {
             <label className="pp-eco"><input type="checkbox" checked={ecoOnly} onChange={(e) => { setEcoOnly(e.target.checked); setShown(PAGE); }} /> Eco only</label>
           </div>
           <p className="catalogue-results" role="status">Showing {visible.length} of {list.length} items</p>
-          {all.length === 0 && <p className="catalogue-empty">The catalogue is loading or has not been published yet. WhatsApp us to ask about any product.</p>}
-          {all.length > 0 && list.length === 0 && <p className="catalogue-empty">No matching products. Try another search or category.</p>}
+          {all.length === 0 && <p className="catalogue-empty">Product references are not available here yet. Send Print Garage the item you have in mind through WhatsApp.</p>}
+          {all.length > 0 && list.length === 0 && <p className="catalogue-empty">Nothing in this selection matches your search. Clear a filter or choose a different product group.</p>}
           <div className="pp-grid">
             {visible.map((p) => {
-              const msg = `Hello Print Garage, I am interested in this item from your catalogue:\n${p.name} (${categoryLabel(p.category)}${p.subcategory ? ` / ${labelise(p.subcategory)}` : ''})\nPlease share availability, branding options and a quote.`;
+              const msg = `Hello Print Garage, please help me plan an order for:\n${p.name} (${categoryLabel(p.category)}${p.subcategory ? ` / ${labelise(p.subcategory)}` : ''})\nWhat specifications, branding choices and quantities do you need to quote this item?`;
               return (
                 <article className="pp-card" key={p.id} data-testid={`card-product-${p.id}`}>
                   <div className="pp-media">
@@ -89,7 +89,7 @@ export function ProductsPage() {
             })}
           </div>
           {shown < list.length && <div className="pp-more"><button type="button" className="button button-dark" onClick={() => setShown((n) => n + PAGE)} data-testid="button-load-more">Load more</button></div>}
-          {groups?.includes('portfolio') && <p className="showcase-note">KCB portfolio items are catalogue samples, not proof of completed work.</p>}
+          {groups?.includes('portfolio') && <p className="showcase-note">These KCB-branded references come from the supplied catalogue. They should not be read as evidence of a completed Print Garage commission.</p>}
         </div>
       </main>
       <footer className="footer"><div className="shell footer-inner"><Brand /><div className="footer-meta"><small>© {new Date().getFullYear()} Print Garage · {SITE.address}</small></div></div></footer>
