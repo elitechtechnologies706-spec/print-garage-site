@@ -95,3 +95,13 @@ test('mobile navigation trigger has explicit accessible state and a controlled p
   assert.ok(source.includes('onToggle={(event) => setMobileMenuOpen(event.currentTarget.open)}'));
   assert.ok(source.includes('nav id={menuPanelId}'));
 });
+
+test('desktop navigation uses direct links while mobile retains category dropdowns', () => {
+  const source = readFileSync(new URL('../src/components/SiteMenu.tsx', import.meta.url), 'utf8');
+  assert.ok(source.includes('navigationItem(section, false)'));
+  assert.ok(source.includes('navigationItem(section, true)'));
+  assert.ok(source.includes("if (!mobile || (id !== 'showcase' && id !== 'services'))"));
+  const css = readFileSync(new URL('../src/components/SiteMenu.css', import.meta.url), 'utf8');
+  assert.ok(css.includes('@media (min-width: 1024px)'));
+  assert.ok(css.includes('.site-menu { display: none; }'));
+});

@@ -57,11 +57,11 @@ export function SiteMenu({ home = false, currentPath }: { home?: boolean; curren
 
   const sectionLink = (id: string) => id === 'showcase' ? '/products' : home ? `#${id}` : `/#${id}`;
   const productCats = CATEGORY_ORDER.filter((c) => catalogue.products.some((p) => p.category === c));
-  const navigationItem = ({ id, label }: typeof sections[number]) => {
+  const navigationItem = ({ id, label }: typeof sections[number], mobile: boolean) => {
     if (id === 'gallery') {
       return <a key={id} href="/gallery" onClick={closeMenu} aria-current={currentPath === '/gallery' ? 'page' : undefined} data-testid="link-gallery">{label}</a>;
     }
-    if (id !== 'showcase' && id !== 'services') {
+    if (!mobile || (id !== 'showcase' && id !== 'services')) {
       return <a key={id} href={sectionLink(id)} onClick={closeMenu} data-testid={`link-${id}`}>{label}</a>;
     }
     return (
@@ -84,7 +84,7 @@ export function SiteMenu({ home = false, currentPath }: { home?: boolean; curren
   return (
     <div className="navigation-controls" ref={navigationRef}>
     <nav className="desktop-site-navigation" aria-label="Main navigation">
-      {sections.map(navigationItem)}
+      {sections.map((section) => navigationItem(section, false))}
     </nav>
     <details className="site-menu" onToggle={(event) => setMobileMenuOpen(event.currentTarget.open)}>
       <summary role="button" tabIndex={0} aria-label={mobileMenuOpen ? 'Close navigation menu' : 'Open navigation menu'} aria-expanded={mobileMenuOpen} aria-controls={menuPanelId} data-testid="nav-menu-toggle">
@@ -95,7 +95,7 @@ export function SiteMenu({ home = false, currentPath }: { home?: boolean; curren
         <span className="site-menu-label">Navigate</span>
         <a href="/price-list" aria-current={currentPath === '/price-list' ? 'page' : undefined} onClick={closeMenu} data-testid="link-nav-price-list">Full price list · VAT included</a>
         <a href="/request-a-quote" aria-current={currentPath === '/request-a-quote' ? 'page' : undefined} onClick={closeMenu} data-testid="link-nav-request-quote">Request a quote</a>
-        {sections.map(navigationItem)}
+        {sections.map((section) => navigationItem(section, true))}
       </nav>
     </details>
     </div>
