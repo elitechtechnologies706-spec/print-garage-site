@@ -102,6 +102,8 @@ test('desktop navigation uses direct links while mobile retains category dropdow
   assert.ok(source.includes('navigationItem(section, true)'));
   assert.ok(source.includes("if (!mobile || (id !== 'showcase' && id !== 'services'))"));
   const css = readFileSync(new URL('../src/components/SiteMenu.css', import.meta.url), 'utf8');
-  assert.ok(css.includes('@media (min-width: 1024px)'));
+  const desktopMinimum = Number(css.match(/@media \(min-width: (\d+)px\)/)?.[1]);
+  assert.ok(desktopMinimum > 390, 'Normal phone view must retain the mobile menu');
+  assert.ok(desktopMinimum <= 980, 'Chrome phone desktop-site width must show direct links');
   assert.ok(css.includes('.site-menu { display: none; }'));
 });

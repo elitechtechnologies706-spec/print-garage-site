@@ -2,3 +2,4 @@
 - [Site brand colors](site-brand-colors.md) — orange #FF6B00/black #111; gray WhatsApp controls; preserve original product and partner-logo colors.
 - [Print Garage content rules](print-garage-content-rules.md) — fixed homepage order, six services, twelve teasers; catalogue assets must come from supplied sources.
 - [Generated image dimensions](generated-image-dimensions.md) — panoramic prompts can still return square images; inspect dimensions before preparing hero banners.
+- [Desktop-mode navigation](desktop-mode-navigation.md) — include phone desktop-site layout widths when choosing and checking the navigation breakpoint.

@@ -403,6 +403,8 @@ a[href^="tel:"] > svg:first-child { color: inherit; }
 }
 @media (min-width: 1024px) {
   .section[id] { scroll-margin-top: 170px; }
+}
+@media (min-width: 960px) {
   .topbar-inner { width: calc(100% - 48px); }
   .topbar .header-tools { flex: 1; justify-content: flex-end; }
   .topbar .desktop-site-navigation { margin-right: auto; margin-left: 20px; }

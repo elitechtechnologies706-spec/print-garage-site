@@ -55,7 +55,8 @@
 .nav-dropdown-panel a { display: block; padding: 10px 11px; font-size: .9rem; color: hsl(220 15% 8%); }
 .nav-dropdown-panel a:hover, .nav-dropdown-panel a:focus-visible { background: var(--brand-orange); color: hsl(220 15% 8%); text-decoration: none; }
 .nav-category-dropdown > summary:focus-visible { outline: 2px solid hsl(220 15% 8%); outline-offset: 3px; }
-@media (min-width: 1024px) {
+/* Include the narrower layout viewport used by phone browsers' desktop mode. */
+@media (min-width: 960px) {
   .site-menu { display: none; }
   .desktop-site-navigation { display: flex; align-items: center; gap: 16px; order: -1; }
   .desktop-site-navigation a { color: hsl(220 15% 8%); font-size: 13px; font-weight: 600; white-space: nowrap; padding: 12px 0; }
