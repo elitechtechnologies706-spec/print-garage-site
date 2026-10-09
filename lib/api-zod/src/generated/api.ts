@@ -9,6 +9,16 @@ import * as zod from 'zod';
 
 
 /**
+ * @summary Public product image extracted from a supplied catalogue
+ */
+export const GetCatalogueAssetParams = zod.object({
+  "filename": zod.coerce.string()
+})
+
+export const GetCatalogueAssetResponse = zod.unknown()
+
+
+/**
  * Returns server health status
  * @summary Health check
  */

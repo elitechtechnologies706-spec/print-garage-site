@@ -6,9 +6,10 @@ import { ErrorBoundary } from './components/error-boundary';
 import { LandingPage } from './seo/LandingPage';
 import { RequestQuote } from './pages/RequestQuote';
 import { PriceList } from './pages/PriceList';
+import { ProductsPage } from './pages/ProductsPage';
 import AdminViews from './pages/AdminViews';
 import { servicePages, type ServicePage } from './seo/service-data';
-import { applySeoHead, PRICE_LIST_META, PRICE_LIST_TITLE, QUOTE_META, QUOTE_TITLE, GALLERY_TITLE, GALLERY_META } from './seo/seo-head';
+import { applySeoHead, PRICE_LIST_META, PRICE_LIST_TITLE, QUOTE_META, QUOTE_TITLE, PRODUCTS_TITLE, PRODUCTS_META, GALLERY_TITLE, GALLERY_META } from './seo/seo-head';
 
 const LazyGalleryPage = lazy(() => import('./pages/GalleryPage').then((module) => ({ default: module.GalleryPage })));
 
@@ -30,6 +31,12 @@ function ServiceRoute({ service }: { service: ServicePage }) {
 function RequestQuoteRoute() {
   useEffect(() => applySeoHead(undefined, { title: QUOTE_TITLE, meta: QUOTE_META, path: '/request-a-quote' }), []);
   return <RequestQuote />;
+}
+
+function ProductsRoute() {
+  const [path] = useLocation();
+  useEffect(() => applySeoHead(undefined, { title: PRODUCTS_TITLE, meta: PRODUCTS_META, path: path.split('?')[0] }), [path]);
+  return <ProductsPage />;
 }
 
 function NotFoundRoute() {
@@ -55,6 +62,8 @@ export function Root({ ssrPath, ssrGalleryPage }: { ssrPath?: string; ssrGallery
         <Switch>
           <Route path="/" component={HomeRoute} />
           <Route path="/request-a-quote" component={RequestQuoteRoute} />
+          <Route path="/products" component={ProductsRoute} />
+          <Route path="/products/:category" component={ProductsRoute} />
           <Route path="/price-list" component={PriceListRoute} />
           <Route path="/gallery"><GalleryRoute component={ssrGalleryPage} /></Route>
           <Route path="/admin/views" component={AdminViews} />

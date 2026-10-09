@@ -55,3 +55,6 @@ Thumbs.db
 /artifacts/brimas-media/.media-import/
 __pycache__/
 *.pyc
+/generated-artifacts/
+/attached_assets/*.pdf
+/.pythonlibs/

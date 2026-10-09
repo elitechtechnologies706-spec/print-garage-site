@@ -1,7 +1,7 @@
 kind = "web"
 previewPath = "/"
-title = "Brimas Media"
-description = "A mobile-first website for Brimas Media Ltd in Kampala, helping businesses price commercial printing, branded merchandise, textiles, and PPE and request custom quotes directly through WhatsApp."
+title = "Print Garage"
+description = "Print Garage printing and branding in Kampala, with source-backed product catalogues and WhatsApp enquiries."
 version = "1.0.0"
 id = "artifacts/brimas-media"
 router = "path"
@@ -78,6 +78,70 @@ to = "/request-a-quote.html"
 [[services.production.rewrites]]
 from = "/admin/views"
 to = "/admin/views.html"
+
+[[services.production.rewrites]]
+from = "/products"
+to = "/products.html"
+
+[[services.production.rewrites]]
+from = "/gallery"
+to = "/gallery.html"
+
+[[services.production.rewrites]]
+from = "/products/promotional-products"
+to = "/products/promotional-products.html"
+
+[[services.production.rewrites]]
+from = "/products/textiles"
+to = "/products/textiles.html"
+
+[[services.production.rewrites]]
+from = "/products/drinkware"
+to = "/products/drinkware.html"
+
+[[services.production.rewrites]]
+from = "/products/corporate-gifts"
+to = "/products/corporate-gifts.html"
+
+[[services.production.rewrites]]
+from = "/products/bags"
+to = "/products/bags.html"
+
+[[services.production.rewrites]]
+from = "/products/commercial-printing"
+to = "/products/commercial-printing.html"
+
+[[services.production.rewrites]]
+from = "/products/ppe"
+to = "/products/ppe.html"
+
+[[services.production.rewrites]]
+from = "/products/large-format"
+to = "/products/large-format.html"
+
+[[services.production.rewrites]]
+from = "/products/eco"
+to = "/products/eco.html"
+
+[[services.production.rewrites]]
+from = "/products/portfolio"
+to = "/products/portfolio.html"
+
+[[services.production.rewrites]]
+from = "/products/corporate-branding"
+to = "/products/corporate-branding.html"
+
+[[services.production.rewrites]]
+from = "/products/promotional-gifts"
+to = "/products/promotional-gifts.html"
+
+[[services.production.rewrites]]
+from = "/products/textile-garment"
+to = "/products/textile-garment.html"
+
+[[services.production.rewrites]]
+from = "/products/eco-printing"
+to = "/products/eco-printing.html"
 
 [services.env]
 PORT = "20947"

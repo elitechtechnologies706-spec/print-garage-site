@@ -35,12 +35,20 @@ try {
   const {
     structuredData, OG_IMAGE, HOME_TITLE, HOME_META,
     PRICE_LIST_TITLE, PRICE_LIST_META, QUOTE_TITLE, QUOTE_META,
-    GALLERY_TITLE, GALLERY_META,
+    GALLERY_TITLE, GALLERY_META, PRODUCTS_TITLE, PRODUCTS_META,
   } = await server.ssrLoadModule('/src/seo/seo-head.ts');
+  const { catalogue, slugify, serviceAliases } = await server.ssrLoadModule('/src/lib/pg-catalogue.ts');
+  const productCategorySlugs = [...new Set([
+    ...catalogue.products.map((p) => slugify(p.category)),
+    ...catalogue.services.map((s) => s.id),
+  ])];
+  void serviceAliases;
   const pages = [
     { path: '/', title: HOME_TITLE, meta: HOME_META },
     { path: '/price-list', title: PRICE_LIST_TITLE, meta: PRICE_LIST_META },
     { path: '/request-a-quote', title: QUOTE_TITLE, meta: QUOTE_META },
+    { path: '/products', title: PRODUCTS_TITLE, meta: PRODUCTS_META },
+    ...productCategorySlugs.map((slug) => ({ path: `/products/${slug}`, title: PRODUCTS_TITLE, meta: PRODUCTS_META })),
     { path: '/gallery', title: GALLERY_TITLE, meta: GALLERY_META },
     ...servicePages.map((service) => ({ ...service, service })),
     { path: '/admin/views', title: 'Visit history | Print Garage Admin', meta: 'Private Print Garage administration.', indexable: false },

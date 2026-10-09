@@ -1,7 +1,7 @@
-import { useEffect, useRef } from 'react';
+import { useEffect, useId, useRef, useState } from 'react';
 import { ChevronDown, Menu, X } from 'lucide-react';
 import { servicePages } from '../seo/service-data';
-import { productCategories } from '../lib/product-navigation';
+import { catalogue, categoryLabel, CATEGORY_ORDER } from '../lib/pg-catalogue';
 import './SiteMenu.css';
 
 const sections = [
@@ -25,6 +25,8 @@ const serviceCategories = [
 
 export function SiteMenu({ home = false, currentPath }: { home?: boolean; currentPath?: string }) {
   const navigationRef = useRef<HTMLDivElement>(null);
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const menuPanelId = useId();
 
   useEffect(() => {
     const onPointerDown = (event: PointerEvent) => {
@@ -53,7 +55,8 @@ export function SiteMenu({ home = false, currentPath }: { home?: boolean; curren
     navigationRef.current?.querySelectorAll<HTMLDetailsElement>('details[open]').forEach((menu) => { menu.open = false; });
   };
 
-  const sectionLink = (id: string) => home ? `#${id}` : `/#${id}`;
+  const sectionLink = (id: string) => id === 'showcase' ? '/products' : home ? `#${id}` : `/#${id}`;
+  const productCats = CATEGORY_ORDER.filter((c) => catalogue.products.some((p) => p.category === c));
   const navigationItem = ({ id, label }: typeof sections[number]) => {
     if (id === 'gallery') {
       return <a key={id} href="/gallery" onClick={closeMenu} aria-current={currentPath === '/gallery' ? 'page' : undefined} data-testid="link-gallery">{label}</a>;
@@ -63,11 +66,11 @@ export function SiteMenu({ home = false, currentPath }: { home?: boolean; curren
     }
     return (
       <details className="nav-category-dropdown" key={id} data-testid={`nav-dropdown-${id}`}>
-        <summary>{label}<ChevronDown size={14} aria-hidden="true" /></summary>
+        <summary role="button" tabIndex={0}>{label}<ChevronDown size={14} aria-hidden="true" /></summary>
         <div className="nav-dropdown-panel">
           <a href={sectionLink(id)} onClick={closeMenu}>View all {id === 'showcase' ? 'products' : 'services'}</a>
           {id === 'showcase'
-            ? productCategories.map((category) => <a key={category.id} href={sectionLink(`products-${category.id}`)} onClick={closeMenu}>{category.label}</a>)
+            ? productCats.map((c) => <a key={c} href={`/products/${c}`} onClick={closeMenu} aria-current={currentPath === `/products/${c}` ? 'page' : undefined}>{categoryLabel(c)}</a>)
             : <>
               {serviceCategories.map(([category, href]) => <a key={category} href={href} onClick={closeMenu} aria-current={currentPath === href ? 'page' : undefined}>{category}</a>)}
               <span className="site-menu-label site-menu-divider">More service details</span>
@@ -83,12 +86,12 @@ export function SiteMenu({ home = false, currentPath }: { home?: boolean; curren
     <nav className="desktop-site-navigation" aria-label="Main navigation">
       {sections.map(navigationItem)}
     </nav>
-    <details className="site-menu">
-      <summary aria-label="Open navigation menu" data-testid="nav-menu-toggle">
+    <details className="site-menu" onToggle={(event) => setMobileMenuOpen(event.currentTarget.open)}>
+      <summary role="button" tabIndex={0} aria-label={mobileMenuOpen ? 'Close navigation menu' : 'Open navigation menu'} aria-expanded={mobileMenuOpen} aria-controls={menuPanelId} data-testid="nav-menu-toggle">
         <Menu className="site-menu-open-icon" size={21} aria-hidden="true" />
         <X className="site-menu-close-icon" size={21} aria-hidden="true" />
       </summary>
-      <nav className="site-menu-panel" aria-label="Site navigation">
+      <nav id={menuPanelId} className="site-menu-panel" aria-label="Site navigation">
         <span className="site-menu-label">Navigate</span>
         <a href="/price-list" aria-current={currentPath === '/price-list' ? 'page' : undefined} onClick={closeMenu} data-testid="link-nav-price-list">Full price list · VAT included</a>
         <a href="/request-a-quote" aria-current={currentPath === '/request-a-quote' ? 'page' : undefined} onClick={closeMenu} data-testid="link-nav-request-quote">Request a quote</a>

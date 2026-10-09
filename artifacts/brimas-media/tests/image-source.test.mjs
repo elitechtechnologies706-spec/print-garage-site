@@ -5,6 +5,10 @@ import { resolveImageSource } from '../src/lib/image-source.ts';
 test('local media retains existing URLs without a CDN', () => {
   assert.equal(resolveImageSource('/products/tassel-keyrings.webp'), '/products/tassel-keyrings.webp');
 });
+test('stored catalogue cuts stay on the API even when a legacy CDN is configured', () => {
+  assert.equal(resolveImageSource('/api/catalogue-assets/eco-p03-01.webp', 'https://media.example.com'),
+    '/api/catalogue-assets/eco-p03-01.webp');
+});
 test('a public CDN can preserve paths under an optional prefix', () => {
   assert.equal(resolveImageSource('/products/photo.webp', 'https://media.example.com/library/'),
     'https://media.example.com/library/products/photo.webp');

@@ -1,5 +1,7 @@
 // Public media delivery configuration only; never put credentials in image URLs.
 export function resolveImageSource(source: string, base = ''): string {
+  // Catalogue files are served by this app's API, not the legacy static CDN.
+  if (source.startsWith('/api/catalogue-assets/')) return source;
   if (!source.startsWith('/') || source.startsWith('//')) {
     const url = new URL(source);
     if (url.protocol !== 'https:' || url.username || url.password) {

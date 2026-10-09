@@ -13,6 +13,29 @@ tags:
   - name: views
     description: Homepage visit tracking and protected history
 paths:
+  /catalogue-assets/{filename}:
+    get:
+      operationId: getCatalogueAsset
+      tags: [catalogue]
+      summary: Public product image extracted from a supplied catalogue
+      parameters:
+        - name: filename
+          in: path
+          required: true
+          schema:
+            type: string
+      responses:
+        "200":
+          description: Original-color product cut
+          content:
+            image/webp:
+              schema:
+                type: string
+                format: binary
+        "404":
+          description: Image not found
+        "503":
+          description: Storage unavailable
   /healthz:
     get:
       operationId: healthCheck

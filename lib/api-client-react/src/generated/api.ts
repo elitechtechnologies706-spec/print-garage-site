@@ -54,6 +54,83 @@ const withQueryKey = <T extends object, K>(query: T, queryKey: K): T & { queryKe
   return result;
 };
 
+export const getGetCatalogueAssetUrl = (filename: string,) => {
+
+
+
+
+  return `/api/catalogue-assets/${filename}`
+}
+
+/**
+ * @summary Public product image extracted from a supplied catalogue
+ */
+export const getCatalogueAsset = async (filename: string, options?: Parameters<typeof customFetch>[1]): Promise<Blob> => {
+
+  return customFetch<Blob>(getGetCatalogueAssetUrl(filename),
+  {
+    ...options,
+    method: 'GET'
+
+
+  }
+);}
+
+
+
+
+
+export const getGetCatalogueAssetQueryKey = (filename: string,) => {
+    return [
+    `/api/catalogue-assets/${filename}`
+    ] as const;
+    }
+
+
+export const getGetCatalogueAssetQueryOptions = <TData = Awaited<ReturnType<typeof getCatalogueAsset>>, TError = ErrorType<void>>(filename: string, options?: { query?:UseQueryOptions<Awaited<ReturnType<typeof getCatalogueAsset>>, TError, TData>, request?: SecondParameter<typeof customFetch>}
+) => {
+
+const {query: queryOptions, request: requestOptions} = options ?? {};
+
+  const queryKey =  queryOptions?.queryKey ?? getGetCatalogueAssetQueryKey(filename);
+
+
+
+    const queryFn: QueryFunction<Awaited<ReturnType<typeof getCatalogueAsset>>> = ({ signal }) => getCatalogueAsset(filename, { signal, ...requestOptions });
+
+
+
+
+
+   return  { queryKey, queryFn, enabled: filename !== null && filename !== undefined, ...queryOptions} as UseQueryOptions<Awaited<ReturnType<typeof getCatalogueAsset>>, TError, TData> & { queryKey: QueryKey }
+}
+
+export type GetCatalogueAssetQueryResult = NonNullable<Awaited<ReturnType<typeof getCatalogueAsset>>>
+export type GetCatalogueAssetQueryError = ErrorType<void>
+
+
+/**
+ * @summary Public product image extracted from a supplied catalogue
+ */
+
+export function useGetCatalogueAsset<TData = Awaited<ReturnType<typeof getCatalogueAsset>>, TError = ErrorType<void>>(
+ filename: string, options?: { query?:UseQueryOptions<Awaited<ReturnType<typeof getCatalogueAsset>>, TError, TData>, request?: SecondParameter<typeof customFetch>}
+
+ ):  UseQueryResult<TData, TError> & { queryKey: QueryKey } {
+
+  const queryOptions = getGetCatalogueAssetQueryOptions(filename,options)
+
+  const query = useQuery(queryOptions) as  UseQueryResult<TData, TError> & { queryKey: QueryKey };
+
+  return withQueryKey(query, queryOptions.queryKey);
+}
+
+
+
+
+
+
+
 export const getHealthCheckUrl = () => {
 
 

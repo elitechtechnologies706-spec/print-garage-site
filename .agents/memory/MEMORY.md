@@ -1,2 +1,3 @@
 - [Imported workspace setup](imported-workspace-setup.md) — registering imported services and installing all workspace dependencies need separate steps.
-- [Site brand colors](site-brand-colors.md) — use the supplied Print Garage logo’s two colors as the website’s main palette.
+- [Site brand colors](site-brand-colors.md) — orange #FF6B00/black #111; gray WhatsApp controls; preserve original product and partner-logo colors.
+- [Print Garage content rules](print-garage-content-rules.md) — fixed homepage order, six services, twelve teasers; catalogue assets must come from supplied sources.
