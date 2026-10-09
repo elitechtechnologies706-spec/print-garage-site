@@ -5,6 +5,25 @@ import { readFileSync } from 'node:fs';
 const data = JSON.parse(readFileSync(new URL('../src/lib/print-garage-catalogue.json', import.meta.url), 'utf8'));
 const partners = JSON.parse(readFileSync(new URL('../src/lib/print-garage-partners.json', import.meta.url), 'utf8'));
 
+test('paragraphs use natural word spacing rather than stretched justification', () => {
+  const css = readFileSync(new URL('../src/index.css', import.meta.url), 'utf8');
+  assert.ok(css.includes('main p { text-align: start; text-align-last: auto; text-justify: none; word-spacing: normal; }'));
+  assert.doesNotMatch(css, /text-align:\s*justify/);
+});
+
+test('every product type has a compact sales caption instead of a visible PDF source label', () => {
+  const descriptions = JSON.parse(readFileSync(new URL('../src/lib/product-descriptions.json', import.meta.url), 'utf8'));
+  for (const product of data.products) {
+    const text = descriptions[product.subcategory];
+    assert.equal(typeof text, 'string', `Missing caption for ${product.subcategory}`);
+    assert.ok(text.length > 15 && text.length <= 110, `Caption must stay compact: ${product.subcategory}`);
+    assert.ok(product.sourcePdf && product.page, 'Source provenance remains in the catalogue');
+  }
+  const page = readFileSync(new URL('../src/pages/ProductsPage.tsx', import.meta.url), 'utf8');
+  assert.ok(page.includes('productDescription(p)'));
+  assert.ok(!page.includes('Source:') && !page.includes('p.sourcePdf') && !page.includes('pp-src'));
+});
+
 test('independent Print Garage copy replaces the inherited homepage paragraphs', () => {
   const copy = JSON.parse(readFileSync(new URL('../src/lib/print-garage-copy.json', import.meta.url), 'utf8'));
   assert.match(copy.hero, /Print Garage/);

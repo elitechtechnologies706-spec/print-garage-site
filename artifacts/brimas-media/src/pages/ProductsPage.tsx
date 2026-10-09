@@ -8,6 +8,7 @@ import { CatalogueImage } from '@/components/CatalogueImage';
 import { catalogue, categoriesFor, categoryLabel, labelise, CATEGORY_ORDER } from '@/lib/pg-catalogue';
 import { whatsappHref } from '@/lib/catalog';
 import { SITE } from '@/lib/site-config';
+import { productDescription } from '@/lib/product-description';
 import './products.css';
 
 const PAGE = 24;
@@ -81,7 +82,7 @@ export function ProductsPage() {
                   <div className="pp-body">
                     <span className="pp-cat">{categoryLabel(p.category)}{p.subcategory ? ` / ${labelise(p.subcategory)}` : ''}</span>
                     <h2>{p.name}</h2>
-                    {p.sourcePdf && <small className="pp-src">Source: {p.sourcePdf}{p.page ? `, p. ${p.page}` : ''}</small>}
+                    <p className="pp-description" data-testid={`text-product-description-${p.id}`}>{productDescription(p)}</p>
                     <a className="pp-enquire" href={whatsappHref(msg)} target="_blank" rel="noreferrer" data-testid={`link-enquire-${p.id}`}><FaWhatsapp size={16} aria-hidden="true" /> Enquire on WhatsApp</a>
                   </div>
                 </article>
@@ -89,7 +90,7 @@ export function ProductsPage() {
             })}
           </div>
           {shown < list.length && <div className="pp-more"><button type="button" className="button button-dark" onClick={() => setShown((n) => n + PAGE)} data-testid="button-load-more">Load more</button></div>}
-          {groups?.includes('portfolio') && <p className="showcase-note">These KCB-branded references come from the supplied catalogue. They should not be read as evidence of a completed Print Garage commission.</p>}
+          {groups?.includes('portfolio') && <p className="showcase-note">KCB-branded samples are design references, not evidence of completed Print Garage work.</p>}
         </div>
       </main>
       <footer className="footer"><div className="shell footer-inner"><Brand /><div className="footer-meta"><small>© {new Date().getFullYear()} Print Garage · {SITE.address}</small></div></div></footer>

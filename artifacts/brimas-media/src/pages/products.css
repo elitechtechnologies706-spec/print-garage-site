@@ -17,7 +17,7 @@
 .pp-body { padding: 12px; display: flex; flex-direction: column; gap: 6px; flex: 1; }
 .pp-cat { font: 700 10px var(--app-font-sans); text-transform: uppercase; letter-spacing: .06em; color: var(--brand-gray); }
 .pp-body h2 { margin: 0; font-size: 1rem; line-height: 1.15; color: #111; }
-.pp-src { color: #6b6b6b; font-size: 10px; }
+.pp-description { margin: 0; color: var(--brand-gray); font-size: .78rem; line-height: 1.4; }
 .pp-enquire { margin-top: auto; display: inline-flex; align-items: center; justify-content: center; gap: 8px; padding: 10px; font: 700 12px var(--app-font-sans); }
 .pp-more { display: flex; justify-content: center; margin-top: 28px; }
 @media (min-width: 700px) { .pp-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); } }

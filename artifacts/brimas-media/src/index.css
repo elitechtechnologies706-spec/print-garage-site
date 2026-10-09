@@ -419,7 +419,7 @@ a[href^="tel:"] > svg:first-child { color: inherit; }
 .hero--center h1, .hero--center .hero-intro { color: #fff; opacity: 1; }
 .hero--center h1 { font-size: clamp(2.3rem, 6vw, 5rem); line-height: .98; letter-spacing: -.045em; text-transform: uppercase; font-weight: 800; margin: 0 0 24px; }
 .hero--center .hero-intro { margin: 0 auto; max-width: 720px; }
-main p { text-align: justify; text-align-last: start; text-justify: inter-word; }
+main p { text-align: start; text-align-last: auto; text-justify: none; word-spacing: normal; }
 .hero--center .hero-actions { justify-content: center; }
 .hero .hero-quote { background: var(--brand-orange); color: #111; }
 .hero .hero-quote:hover { background: #E65F00; }

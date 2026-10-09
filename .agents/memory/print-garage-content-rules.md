@@ -31,10 +31,22 @@ Left-align the hero heading and use a business-relevant printing/branding servic
 
 **Why:** The user explicitly requested these refinements, including a new hero background. This supersedes the earlier request to preserve the original workshop background.
 
-**How to apply:** Keep the established content order, justified paragraphs and source-logo colors; changing the background does not authorize replacing catalogue products or client logos.
+**How to apply:** Keep the established content order and source-logo colors; changing the background does not authorize replacing catalogue products or client logos.
 
 Use independently written Print Garage marketing copy, not Brimas website paragraphs or a company-name substitution.
 
 **Why:** The user requested a different hero description and said all text found on the Brimas site should not be found here. This supersedes the earlier exact hero description and catalogue-derived mission/vision/purpose wording.
 
 **How to apply:** Give homepage and inner-page descriptions their own wording. Preserve factual product names, technical specifications, approved partner identities and contact details; source PDFs remain references for assets, not reusable marketing paragraphs.
+
+Show compact item-based sales descriptions on product cards instead of PDF/image source labels.
+
+**Why:** The user requested removing image sources and replacing them with small sales descriptions based on the item.
+
+**How to apply:** Keep provenance internally for catalogue verification. Public captions should describe the item’s purpose without inventing prices, specifications, safety certifications or completed portfolio commissions.
+
+Use normal word spacing rather than stretched, justified paragraphs.
+
+**Why:** The user subsequently requested adjusting word spacing to normal, superseding the earlier “Justify text” instruction.
+
+**How to apply:** Use natural start-aligned paragraphs so words retain their normal gaps on both mobile and desktop.
