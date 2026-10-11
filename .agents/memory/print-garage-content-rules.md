@@ -21,6 +21,12 @@ The user approved the partners from the supplied Brimas corporate profile for us
 
 **How to apply:** Treat its dedicated partner section as an approved source despite the Brimas branding; do not mistake decorative brands on product samples for additional approved partners.
 
+Partners show the first twelve logos in three columns, with “View All Partners” / “Show Less” expansion.
+
+**Why:** The user requested this compact display instead of showing the entire partner collection immediately.
+
+**How to apply:** Keep three responsive columns, a black section, white logo boxes and a logo-orange toggle. Retain all approved partners for expansion and preserve original logo colors.
+
 Keep the site compact rather than using oversized structures.
 
 **Why:** The user said “reduce on site structures don't need big things.”

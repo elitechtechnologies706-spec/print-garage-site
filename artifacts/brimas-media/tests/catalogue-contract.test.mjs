@@ -5,6 +5,19 @@ import { readFileSync } from 'node:fs';
 const data = JSON.parse(readFileSync(new URL('../src/lib/print-garage-catalogue.json', import.meta.url), 'utf8'));
 const partners = JSON.parse(readFileSync(new URL('../src/lib/print-garage-partners.json', import.meta.url), 'utf8'));
 
+test('partners default to twelve logos with an accessible show-all toggle and three columns', () => {
+  const app = readFileSync(new URL('../src/App.tsx', import.meta.url), 'utf8');
+  const css = readFileSync(new URL('../src/index.css', import.meta.url), 'utf8');
+  assert.ok(app.includes('useState(false)'));
+  assert.ok(app.includes('partnersExpanded ? catalogue.partners : catalogue.partners.slice(0, 12)'));
+  assert.ok(app.includes("partnersExpanded ? 'Show Less' : 'View All Partners'"));
+  assert.ok(app.includes('aria-expanded={partnersExpanded}'));
+  assert.ok(app.includes('aria-controls="partner-logo-grid"'));
+  assert.ok(css.includes('.pg-logos { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr))'));
+  assert.doesNotMatch(css, /\.pg-logos\s*\{[^}]*repeat\(6/);
+  assert.ok(css.includes('.pg-partners-toggle { background: var(--brand-orange)'));
+});
+
 test('paragraphs use natural word spacing rather than stretched justification', () => {
   const css = readFileSync(new URL('../src/index.css', import.meta.url), 'utf8');
   assert.ok(css.includes('main p { text-align: start; text-align-last: auto; text-justify: none; word-spacing: normal; }'));

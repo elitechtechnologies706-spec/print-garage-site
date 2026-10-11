@@ -456,7 +456,10 @@ main p { text-align: start; text-align-last: auto; text-justify: none; word-spac
 .pg-partners h2 { margin: 0; font-size: clamp(2.4rem, 7vw, 5rem); font-weight: 800; letter-spacing: -.04em; }
 .pg-partners-sub { max-width: 640px; margin: 18px auto 36px; color: #d8d8d6; line-height: 1.6; }
 .pg-partners-note { max-width: 520px; margin: 0 auto; padding: 18px; border: 1px dashed #777; color: #d8d8d6; }
-.pg-logos { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; }
+.pg-logos { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; max-width: 840px; margin-inline: auto; }
+.pg-partners-actions { display: flex; justify-content: center; margin-top: 20px; }
+.pg-partners-toggle { background: var(--brand-orange); border-color: var(--brand-orange); color: #111; }
+.pg-partners-toggle:hover { background: var(--brand-orange-hover); border-color: var(--brand-orange-hover); }
 .pg-logo { background: #fff; padding: 14px; aspect-ratio: 3 / 2; display: grid; place-items: center; }
 .pg-logo img { max-width: 100%; max-height: 100%; object-fit: contain; }
 .footer-links { display: flex; flex-wrap: wrap; gap: 14px; }
@@ -470,7 +473,7 @@ main p { text-align: start; text-align-last: auto; text-justify: none; word-spac
   .pg-masonry { columns: 3; column-gap: 16px; }
   .pg-m-item { margin-bottom: 16px; }
 }
-@media (min-width: 1024px) { .pg-logos { grid-template-columns: repeat(6, 1fr); } .pg-masonry { columns: 4; } }
+@media (min-width: 1024px) { .pg-masonry { columns: 4; } }
 
 /* Compact pass: restrained type, tighter spacing, smaller imagery */
 .section { padding: 48px 0; }

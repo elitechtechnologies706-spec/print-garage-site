@@ -1,4 +1,4 @@
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import { ArrowUpRight, Phone } from 'lucide-react';
 import { FaEnvelope, FaWhatsapp } from 'react-icons/fa6';
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
@@ -23,6 +23,7 @@ const HERO_COPY = copy.hero;
 const SERVICE_NAMES = ['Large Format', 'Commercial Printing', 'Corporate Branding', 'Promotional Gifts', 'Textile/Garment', 'Eco Printing'];
 
 function AppContent() {
+  const [partnersExpanded, setPartnersExpanded] = useState(false);
   const { mutate: recordView } = useRecordView();
   const generalMessage = 'Hello Print Garage, I have a print or branding brief. Could you help me choose the specifications and confirm a price?';
 
@@ -125,8 +126,22 @@ function AppContent() {
             <h2>OUR PARTNERS</h2>
             <p className="pg-partners-sub">{copy.partners}</p>
             {catalogue.partners.length > 0
-              ? <div className="pg-logos">{catalogue.partners.map((p) => <div className="pg-logo" key={p.name}><img src={p.logo} alt={p.name} width={300} height={160} loading="lazy" decoding="async" /></div>)}</div>
+              ? <div className="pg-logos" id="partner-logo-grid">{(partnersExpanded ? catalogue.partners : catalogue.partners.slice(0, 12)).map((p) => <div className="pg-logo" key={p.name}><img src={p.logo} alt={p.name} width={300} height={160} loading="lazy" decoding="async" /></div>)}</div>
               : <p className="pg-partners-note" data-testid="text-partners-note">We are checking the source material before displaying partner identities.</p>}
+            {catalogue.partners.length > 12 && (
+              <div className="pg-partners-actions">
+                <button
+                  type="button"
+                  className="button pg-partners-toggle"
+                  aria-expanded={partnersExpanded}
+                  aria-controls="partner-logo-grid"
+                  onClick={() => setPartnersExpanded((expanded) => !expanded)}
+                  data-testid="button-toggle-partners"
+                >
+                  {partnersExpanded ? 'Show Less' : 'View All Partners'}
+                </button>
+              </div>
+            )}
           </div>
         </section>
       </main>
