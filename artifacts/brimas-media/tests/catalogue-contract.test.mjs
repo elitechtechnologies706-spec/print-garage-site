@@ -24,7 +24,7 @@ test('every product type has a compact sales caption instead of a visible PDF so
   assert.ok(!page.includes('Source:') && !page.includes('p.sourcePdf') && !page.includes('pp-src'));
 });
 
-test('independent Print Garage copy replaces the inherited homepage paragraphs', () => {
+test('homepage copy stays consistent and preserves the independent Print Garage hero', () => {
   const copy = JSON.parse(readFileSync(new URL('../src/lib/print-garage-copy.json', import.meta.url), 'utf8'));
   assert.match(copy.hero, /Print Garage/);
   for (const key of ['about', 'mission', 'vision', 'purpose']) {
@@ -34,13 +34,22 @@ test('independent Print Garage copy replaces the inherited homepage paragraphs',
   for (const inherited of [
     'A local branding, marketing and production partner',
     'there is no broker in the middle',
-    'one stop center providing exceptional services',
-    'unique, timely and professional branding services',
     'establish sustainable relationships with our clients',
     'Over the years, we have formed alliances',
   ]) assert.ok(!combined.includes(inherited), `Inherited wording remains: ${inherited}`);
   const generator = readFileSync(new URL('../../../scripts/build_print_garage_catalogue.py', import.meta.url), 'utf8');
   assert.ok(generator.includes('print-garage-copy.json'), 'Regeneration must retain the independent copy');
+});
+
+test('the approved catalogue screenshot supplies the company overview, vision and mission', () => {
+  const copy = JSON.parse(readFileSync(new URL('../src/lib/print-garage-copy.json', import.meta.url), 'utf8'));
+  assert.equal(copy.vision, 'To be a one stop center providing exceptional services.');
+  assert.equal(copy.mission, 'To provide unique, timely and professional branding services for better customer experience.');
+  assert.equal(copy.about.split(/\n\s*\n/).length, 2);
+  for (const detail of ['commercial printing', 'PPE supplies', 'office supplies', 'promotional items', 'discounts', 'enrolled clients', 'service packages', 'brand visibility']) {
+    assert.ok(copy.about.includes(detail), `Screenshot detail missing: ${detail}`);
+  }
+  assert.equal(copy.purpose, 'Help organisations look consistent wherever people meet them: at their premises, on their team and in the items they share.');
 });
 
 test('all service pages retain distinct descriptions and unchanged factual guide rates', () => {

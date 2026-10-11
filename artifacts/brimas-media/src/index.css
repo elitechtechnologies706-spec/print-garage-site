@@ -428,6 +428,7 @@ main p { text-align: start; text-align-last: auto; text-justify: none; word-spac
 .pg-h, .pg-about h2 { font-size: clamp(2.6rem, 8vw, 6rem); line-height: .9; letter-spacing: -.05em; text-transform: uppercase; font-weight: 800; margin: 0; color: #111; }
 .pg-about { background: #fff; }
 .pg-about-grid { display: grid; gap: 28px; }
+.pg-about-copy { display: grid; gap: 12px; }
 .pg-about p { font-size: clamp(1.1rem, 2vw, 1.5rem); line-height: 1.5; margin: 0; max-width: 760px; color: #111; border-left: 6px solid var(--brand-orange); padding-left: 20px; }
 .pg-services { background: #f4f4f3; }
 .pg-zig { display: grid; gap: 28px; margin-top: 40px; }

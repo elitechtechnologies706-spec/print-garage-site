@@ -244,7 +244,7 @@ data = {
     **{field: brand_copy[field] for field in ("about", "vision", "mission", "purpose")},
     "products":products, "services":services,
     "sourceNotes":{
-        "brandCopy":"Independent Print Garage wording; catalogue assets remain sourced from the supplied PDFs.",
+        "brandCopy":"Company overview, vision and mission approved from the supplied Print Garage catalogue screenshot; other descriptions independently written.",
         "partners":"Partner logos are sourced separately from page 4 of the supplied Brimas corporate profile.",
         "missingItems":"No standalone umbrellas, speakers, power banks, AMP 020 identifier, JUCO identifier or seed-pencil claim could be verified; the MIN catalogue has eight pages, not 49.",
     },

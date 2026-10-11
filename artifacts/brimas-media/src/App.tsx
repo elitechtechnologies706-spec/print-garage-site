@@ -74,7 +74,11 @@ function AppContent() {
         <section className="section pg-about" id="proof">
           <div className="shell pg-about-grid">
             <h2>Who we are</h2>
-            <p>{catalogue.about}</p>
+            <div className="pg-about-copy">
+              {catalogue.about.split(/\n\s*\n/).map((paragraph, index) => (
+                <p key={`about-${index}`}>{paragraph}</p>
+              ))}
+            </div>
           </div>
         </section>
 

@@ -37,7 +37,13 @@ Use independently written Print Garage marketing copy, not Brimas website paragr
 
 **Why:** The user requested a different hero description and said all text found on the Brimas site should not be found here. This supersedes the earlier exact hero description and catalogue-derived mission/vision/purpose wording.
 
-**How to apply:** Give homepage and inner-page descriptions their own wording. Preserve factual product names, technical specifications, approved partner identities and contact details; source PDFs remain references for assets, not reusable marketing paragraphs.
+**How to apply:** Give homepage and inner-page descriptions their own wording, except explicitly approved Print Garage source copy. Preserve factual product names, technical specifications, approved partner identities and contact details.
+
+Use the user-approved Print Garage catalogue screenshot for Who We Are, Vision and Mission.
+
+**Why:** The user subsequently supplied that screenshot and requested updating the site with it. This overrides the independent-copy rule for these three sections, even where source wording resembles Brimas.
+
+**How to apply:** Preserve those approved statements and the two-paragraph company overview. Keep the separate Purpose statement and independent hero/inner-page copy unchanged unless requested.
 
 Show compact item-based sales descriptions on product cards instead of PDF/image source labels.
 
