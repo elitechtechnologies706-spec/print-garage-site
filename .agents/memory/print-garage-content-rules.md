@@ -68,3 +68,9 @@ Preserve the user-supplied live offers’ pack quantities, size variants, curren
 **Why:** The user supplied the digital services and textile offers as live site data, including “Licensed via BrimasMedia.” This attribution is explicitly approved despite the earlier independent-copy rule.
 
 **How to apply:** Do not convert USD starting rates to UGX or infer VAT inclusion from older catalogue rates. Confirm VAT for these offers unless the user specifies it; retain “Branding extra” for the NYTiL reflective overalls.
+
+Social Media Management is a service under Auto Content Studio, which handles clients’ social media platforms automatically on autopilot. The studio system is separate and must not be designed here.
+
+**Why:** The user explicitly clarified the service relationship and scope exclusion.
+
+**How to apply:** Advertise the offering under Auto Content Studio without building automation functionality. Podcast recording has two location choices: the team travels to the client, or the client visits the studio; make both options and their enquiry messages unambiguous.

@@ -1,17 +1,28 @@
 // Prices and enquiry text supplied by Print Garage. VAT status was not specified.
 export const services = [
   { title: "Website Development", price: "From $49.99", wa: "Website Dev $49.99" },
-  { title: "Auto Content Studio", price: "Licensed via BrimasMedia", wa: "Auto Studio demo", badge: "NEW" },
+  {
+    title: "Auto Content Studio",
+    price: "Licensed via BrimasMedia",
+    wa: "Auto Studio demo",
+    badge: "NEW",
+    offering: {
+      title: "Social Media Management",
+      description: "Our Auto Content Studio handles clients’ social media management across all social media platforms automatically, running on autopilot.",
+      price: "From $30 - per platform",
+      wa: "Social Mgmt $30",
+    },
+  },
   {
     title: "Podcast Recording - Videography & Photography",
     price: "From $25",
+    description: "Book our team at your location, or come to our studio for your recording session.",
     type: "2-buttons",
     btns: [
-      { label: "In-Call / House Call", wa: "Podcast: In-Call / House Call" },
-      { label: "In-House / On-Site", wa: "Podcast: In-House / On-Site" },
+      { label: "We come to your location", wa: "Hello Print Garage, I would like to book podcast recording at my location. Please confirm availability and travel costs." },
+      { label: "Visit our studio", wa: "Hello Print Garage, I would like to come to your studio for podcast recording. Please confirm your location and available sessions." },
     ],
   },
-  { title: "Social Media Management", price: "From $30 - per platform", wa: "Social Mgmt $30" },
 ];
 
 export const textiles: Record<string, { name: string; price: string; note?: string }[]> = {

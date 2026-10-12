@@ -12,8 +12,19 @@ export function ServiceOffers() {
             {service.badge && <span className="live-offer-badge">{service.badge}</span>}
             <h3>{service.title}</h3>
             <p className="live-offer-price">{service.price}</p>
+            {service.description && <p className="live-offer-description">{service.description}</p>}
+            {service.offering && (
+              <div className="live-sub-offer">
+                <h4>{service.offering.title}</h4>
+                <p className="live-offer-description">{service.offering.description}</p>
+                <p className="live-offer-price">{service.offering.price}</p>
+                <div className="live-offer-actions">
+                  <a href={whatsappHref(service.offering.wa)} target="_blank" rel="noreferrer">Enquire about social media management</a>
+                </div>
+              </div>
+            )}
             <div className="live-offer-actions">
-              {(service.btns ?? [{ label: 'Enquire on WhatsApp', wa: service.wa! }]).map((button) => (
+              {(service.btns ?? [{ label: service.offering ? 'Request a studio demo' : 'Enquire on WhatsApp', wa: service.wa! }]).map((button) => (
                 <a key={button.label} href={whatsappHref(button.wa)} target="_blank" rel="noreferrer">{button.label}</a>
               ))}
             </div>
