@@ -73,4 +73,4 @@ Social Media Management is a service under Auto Content Studio, which handles cl
 
 **Why:** The user explicitly clarified the service relationship and scope exclusion.
 
-**How to apply:** Advertise the offering under Auto Content Studio without building automation functionality. Podcast recording has two location choices: the team travels to the client, or the client visits the studio; make both options and their enquiry messages unambiguous.
+**How to apply:** Advertise the offering under Auto Content Studio without building automation functionality. Podcast recording has two location choices: the team travels to the client, or the client visits the studio. The user approved the short labels “At Your Location” and “At Our Studio”; keep their enquiry messages unambiguous.

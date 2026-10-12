@@ -19,8 +19,8 @@ export const services = [
     description: "Book our team at your location, or come to our studio for your recording session.",
     type: "2-buttons",
     btns: [
-      { label: "We come to your location", wa: "Hello Print Garage, I would like to book podcast recording at my location. Please confirm availability and travel costs." },
-      { label: "Visit our studio", wa: "Hello Print Garage, I would like to come to your studio for podcast recording. Please confirm your location and available sessions." },
+      { label: "At Your Location", wa: "Hello Print Garage, I would like to book podcast recording at my location. Please confirm availability and travel costs." },
+      { label: "At Our Studio", wa: "Hello Print Garage, I would like to come to your studio for podcast recording. Please confirm your location and available sessions." },
     ],
   },
 ];
