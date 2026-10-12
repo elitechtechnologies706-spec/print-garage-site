@@ -15,6 +15,7 @@ import { CatalogueImage } from '@/components/CatalogueImage';
 import { catalogue, homeTeasers } from '@/lib/pg-catalogue';
 import hero from '@/lib/print-garage-hero.json';
 import copy from '@/lib/print-garage-copy.json';
+import { ServiceOffers } from '@/components/LiveOffers';
 
 const queryClient = new QueryClient();
 
@@ -94,6 +95,7 @@ function AppContent() {
                 </a>
               ))}
             </div>
+            <ServiceOffers />
           </div>
         </section>
 

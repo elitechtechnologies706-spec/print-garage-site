@@ -39,6 +39,7 @@
 .price-page-item-name small { display: block; margin-top: 6px; color: hsl(220 15% 8% / .76); line-height: 1.35; }
 .price-page-value { font-weight: 800; font-variant-numeric: tabular-nums; white-space: nowrap; }
 .price-page-value--quote { font-size: .82rem; }
+.price-page-tax-note { display: block; font-size: .7rem; font-weight: 400; color: var(--brand-gray); margin-top: 4px; }
 .price-page-item a { display: inline-flex; align-items: center; justify-content: center; gap: 8px; background: hsl(220 15% 8%); color: hsl(0 0% 100%); text-decoration: none; font-size: .78rem; font-weight: 700; padding: 11px 9px; }
 .price-page-item a:hover, .price-page-item a:focus-visible { background: var(--brand-orange); }
 .price-page-notice { padding: clamp(24px, 4vw, 44px); background: hsl(0 0% 98%); border: 1px solid hsl(220 8% 82%); margin-top: 60px; max-width: 800px; }

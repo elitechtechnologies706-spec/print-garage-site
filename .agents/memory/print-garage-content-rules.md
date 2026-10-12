@@ -62,3 +62,9 @@ Use normal word spacing rather than stretched, justified paragraphs.
 **Why:** The user subsequently requested adjusting word spacing to normal, superseding the earlier “Justify text” instruction.
 
 **How to apply:** Use natural start-aligned paragraphs so words retain their normal gaps on both mobile and desktop.
+
+Preserve the user-supplied live offers’ pack quantities, size variants, currencies, enquiry choices and licensing attribution.
+
+**Why:** The user supplied the digital services and textile offers as live site data, including “Licensed via BrimasMedia.” This attribution is explicitly approved despite the earlier independent-copy rule.
+
+**How to apply:** Do not convert USD starting rates to UGX or infer VAT inclusion from older catalogue rates. Confirm VAT for these offers unless the user specifies it; retain “Branding extra” for the NYTiL reflective overalls.

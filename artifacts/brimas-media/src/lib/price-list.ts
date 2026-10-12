@@ -1,11 +1,14 @@
 // VAT-inclusive values transcribed from the supplied "TOTAL PRICE LIST".
 // Prices are listed exactly by product variant; unspecified sizes, decoration and units
 // must be confirmed with Print Garage rather than inferred from a different product.
+import { textiles } from './live-offers';
+
 export type PriceListItem = {
   code: string;
   name: string;
-  price: number | readonly [number, number] | null;
+  price: number | string | readonly [number, number] | null;
   note?: string;
+  vatIncluded?: boolean;
 };
 
 export const priceListSections: { title: string; items: PriceListItem[] }[] = [
@@ -82,15 +85,20 @@ export const priceListSections: { title: string; items: PriceListItem[] }[] = [
     ],
   },
   {
-    title: 'Textiles & garments',
+    title: 'Other textile specifications',
     items: [
       { code: '058', name: 'Full overalls', price: 70800 },
-      { code: '059', name: 'Two-piece overalls with reflectors', price: 88500 },
-      { code: '060', name: 'Overcoats', price: 53100 },
-      { code: '061', name: 'Aprons', price: 29500 },
       { code: '062', name: 'Chef coats', price: 64900 },
     ],
   },
+  ...Object.entries(textiles).map(([title, items], group) => ({
+    title,
+    items: items.map((item, index) => ({
+      ...item,
+      code: `T${group + 1}-${String(index + 1).padStart(2, '0')}`,
+      vatIncluded: false,
+    })),
+  })),
 ];
 
 export const pricedItemByCode = new Map(

@@ -9,6 +9,7 @@ import { catalogue, categoriesFor, categoryLabel, labelise, CATEGORY_ORDER } fro
 import { whatsappHref } from '@/lib/catalog';
 import { SITE } from '@/lib/site-config';
 import { productDescription } from '@/lib/product-description';
+import { TextileOffers } from '@/components/LiveOffers';
 import './products.css';
 
 const PAGE = 24;
@@ -51,6 +52,7 @@ export function ProductsPage() {
         <div className="shell">
           <p className="pp-kicker">Print Garage catalogue</p>
           <h1>{title}</h1>
+          {groups?.includes('textiles') && <TextileOffers />}
           <nav className="pp-cats" aria-label="Product categories">
             <button type="button" className={!groups ? 'on' : ''} onClick={() => { setSearch(''); setEcoOnly(false); navigate('/products'); }} data-testid="button-cat-all">All</button>
             {categories.map(([slug, label]) => (
