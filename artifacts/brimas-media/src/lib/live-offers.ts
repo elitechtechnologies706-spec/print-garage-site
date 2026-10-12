@@ -1,6 +1,11 @@
 // Prices and enquiry text supplied by Print Garage. VAT status was not specified.
 export const services = [
-  { title: "Website Development", price: "From $49.99", wa: "Website Dev $49.99" },
+  {
+    title: "Software Development",
+    price: "Websites from $49.99",
+    description: "We develop websites, SaaS apps and custom software systems. SaaS apps and systems are quoted according to your requirements.",
+    wa: "Hello Print Garage, I am interested in software development for a website, SaaS app or custom system. Please help me discuss my requirements and get a quote.",
+  },
   {
     title: "Auto Content Studio",
     price: "Licensed via BrimasMedia",
@@ -15,12 +20,12 @@ export const services = [
   },
   {
     title: "Podcast Recording - Videography & Photography",
-    price: "From $25",
+    price: "Request a quote",
     description: "Book our team at your location, or come to our studio for your recording session.",
     type: "2-buttons",
     btns: [
-      { label: "At Your Location", wa: "Hello Print Garage, I would like to book podcast recording at my location. Please confirm availability and travel costs." },
-      { label: "At Our Studio", wa: "Hello Print Garage, I would like to come to your studio for podcast recording. Please confirm your location and available sessions." },
+      { label: "At Your Location", wa: "Hello Print Garage, I would like a quote for podcast recording at my location. Please confirm availability, recording charges and any travel costs." },
+      { label: "At Our Studio", wa: "Hello Print Garage, I would like a quote for podcast recording at your studio. Please confirm recording charges, your location and available sessions." },
     ],
   },
 ];

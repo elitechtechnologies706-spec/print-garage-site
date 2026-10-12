@@ -74,3 +74,9 @@ Social Media Management is a service under Auto Content Studio, which handles cl
 **Why:** The user explicitly clarified the service relationship and scope exclusion.
 
 **How to apply:** Advertise the offering under Auto Content Studio without building automation functionality. Podcast recording has two location choices: the team travels to the client, or the client visits the studio. The user approved the short labels “At Your Location” and “At Our Studio”; keep their enquiry messages unambiguous.
+
+Software Development covers websites, SaaS apps and custom systems. Podcast recording has no confirmed price.
+
+**Why:** The user clarified that they do all software development and were not given a podcast charge, superseding the earlier supplied $25 podcast starting rate.
+
+**How to apply:** Describe the broader software offering without treating the website starting rate as a fixed SaaS/system price. Keep podcast pricing quote-based until the user supplies a confirmed charge.
