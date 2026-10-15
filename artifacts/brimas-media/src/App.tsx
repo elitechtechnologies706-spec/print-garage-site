@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { ArrowUpRight, Gift, HardHat, LayoutTemplate, Megaphone, MonitorSmartphone, Phone, Printer, Shirt, type LucideIcon } from 'lucide-react';
+import { ArrowUpRight, Phone } from 'lucide-react';
 import { FaEnvelope, FaWhatsapp } from 'react-icons/fa6';
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 import { useRecordView } from '@workspace/api-client-react';
@@ -21,14 +21,13 @@ const queryClient = new QueryClient();
 
 const HERO_TITLE = 'Print Garage - Printing and Branding Garage in Kampala, Uganda';
 const HERO_COPY = copy.hero;
-const SERVICE_ICONS: Record<string, LucideIcon> = {
-  'corporate-gifts': Gift,
-  'commercial-printing': Printer,
-  'large-format': LayoutTemplate,
-  promotional: Megaphone,
-  ppe: HardHat,
-  textiles: Shirt,
-  'digital-media': MonitorSmartphone,
+const SERVICE_IMAGE_NAMES: Record<string, string> = {
+  'corporate-gifts': 'Notebook and drinkware gift set',
+  'commercial-printing': 'Printed stationery',
+  'large-format': 'Large-format branding examples',
+  promotional: 'Printed promotional wristbands',
+  ppe: 'Blue safety helmet',
+  textiles: 'Round-neck T-shirt collection',
 };
 const SERVICE_CATEGORIES = productFilters.filter((filter) => filter.id !== 'all');
 
@@ -48,10 +47,19 @@ function AppContent() {
     return () => { cancelAnimationFrame(frame); window.removeEventListener('hashchange', go); };
   }, []);
 
-  const services = SERVICE_CATEGORIES.map((service) => ({
-    ...service,
-    Icon: SERVICE_ICONS[service.id],
-  }));
+  const services = SERVICE_CATEGORIES.map((service) => {
+    if (service.id === 'digital-media') {
+      return {
+        ...service,
+        image: `${import.meta.env.BASE_URL}service-crops/digital-media.svg`,
+        imageAlt: 'Illustration of digital design, web development and media production',
+      };
+    }
+
+    const imageProduct = catalogue.products.find((product) => product.name === SERVICE_IMAGE_NAMES[service.id]);
+    if (!imageProduct) throw new Error(`Missing representative image for ${service.label}.`);
+    return { ...service, imageProduct };
+  });
   const teasers = homeTeasers(catalogue.products);
   const pillars = [
     ['Mission', catalogue.mission], ['Vision', catalogue.vision], ['Purpose', catalogue.purpose],
@@ -100,11 +108,17 @@ function AppContent() {
           <div className="shell">
             <h2 className="pg-h">Services</h2>
             <div className="pg-service-grid">
-              {services.map(({ id, label, Icon }) => (
-                <a className="pg-service-card" href={`/products/${id}`} key={id} aria-label={`Explore ${label} products`} data-testid={`link-service-${id}`}>
-                  <span className="pg-service-icon"><Icon size={24} strokeWidth={1.8} aria-hidden="true" /></span>
-                  <h3>{label}</h3>
-                  <ArrowUpRight className="pg-service-arrow" size={18} aria-hidden="true" />
+              {services.map((service) => (
+                <a className="pg-service-card" href={`/products/${service.id}`} key={service.id} aria-label={`Explore ${service.label}`} data-testid={`link-service-${service.id}`}>
+                  <div className="pg-service-card-media">
+                    {'image' in service
+                      ? <img src={service.image} alt={service.imageAlt} width={1200} height={760} loading="lazy" decoding="async" />
+                      : <CatalogueImage src={service.imageProduct.image} alt={`${service.label}: ${service.imageProduct.name}`} width={service.imageProduct.width} height={service.imageProduct.height} loading="lazy" decoding="async" sizes="(max-width: 620px) 50vw, (max-width: 900px) 33vw, 25vw" />}
+                  </div>
+                  <div className="pg-service-card-content">
+                    <h3>{service.label}</h3>
+                    <ArrowUpRight className="pg-service-arrow" size={18} aria-hidden="true" />
+                  </div>
                 </a>
               ))}
             </div>

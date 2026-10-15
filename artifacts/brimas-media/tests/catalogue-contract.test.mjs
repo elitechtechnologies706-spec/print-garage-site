@@ -64,8 +64,11 @@ test('homepage and mobile service navigation show only the seven product categor
   assert.deepEqual(filterIds, expected);
   assert.ok(app.includes("productFilters.filter((filter) => filter.id !== 'all')"));
   assert.ok(app.includes('<div className="pg-service-grid">'));
-  assert.ok(app.includes('href={`/products/${id}`}'));
+  assert.ok(app.includes('href={`/products/${service.id}`}'));
   assert.ok(!app.includes('SERVICE_NAMES'));
+  assert.ok(app.includes("image: `${import.meta.env.BASE_URL}service-crops/digital-media.svg`"));
+  assert.ok(app.includes('<CatalogueImage src={service.imageProduct.image}'));
+  assert.ok(app.includes('<img src={service.image} alt={service.imageAlt}'));
   assert.ok(!app.includes('<ServiceOffers'));
   assert.ok(menu.includes('productFilters.filter((category) => category.id !== \'all\')'));
   assert.ok(menu.includes('href={`/products/${category.id}`}'));
