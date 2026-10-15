@@ -35,6 +35,26 @@ test('mobile navigation starts with Home and products use only the eight request
   assert.ok(catalogue.includes("'promotional-products', 'drinkware', 'bags', 'eco', 'portfolio'"));
 });
 
+test('homepage and mobile service navigation show only the seven product categories', () => {
+  const app = readFileSync(new URL('../src/App.tsx', import.meta.url), 'utf8');
+  const menu = readFileSync(new URL('../src/components/SiteMenu.tsx', import.meta.url), 'utf8');
+  const expected = ['corporate-gifts', 'commercial-printing', 'large-format', 'promotional', 'ppe', 'textiles', 'digital-media'];
+  const filters = readFileSync(new URL('../src/lib/pg-catalogue.ts', import.meta.url), 'utf8');
+  const filterIds = [...filters.matchAll(/\{ id: '([^']+)', label:/g)].map((match) => match[1]).filter((id) => id !== 'all');
+  assert.deepEqual(filterIds, expected);
+  assert.ok(app.includes("productFilters.filter((filter) => filter.id !== 'all')"));
+  assert.ok(app.includes('<div className="pg-service-grid">'));
+  assert.ok(app.includes('href={`/products/${id}`}'));
+  assert.ok(!app.includes('SERVICE_NAMES'));
+  assert.ok(!app.includes('<ServiceOffers'));
+  assert.ok(menu.includes('productFilters.filter((category) => category.id !== \'all\')'));
+  assert.ok(menu.includes('href={`/products/${category.id}`}'));
+  assert.ok(!menu.includes('servicePages'));
+  assert.ok(!menu.includes('More service details'));
+  assert.ok(!menu.includes("['Printing',"));
+  assert.ok(!menu.includes("['Packaging',"));
+});
+
 test('software offer shows the updated website price and excludes domain, hosting and SEO', () => {
   const offers = readFileSync(new URL('../src/lib/live-offers.ts', import.meta.url), 'utf8');
   const component = readFileSync(new URL('../src/components/LiveOffers.tsx', import.meta.url), 'utf8');

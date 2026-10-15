@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { ArrowUpRight, Phone } from 'lucide-react';
+import { ArrowUpRight, Gift, HardHat, LayoutTemplate, Megaphone, MonitorSmartphone, Phone, Printer, Shirt, type LucideIcon } from 'lucide-react';
 import { FaEnvelope, FaWhatsapp } from 'react-icons/fa6';
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 import { useRecordView } from '@workspace/api-client-react';
@@ -12,17 +12,25 @@ import { SiteMenu } from '@/components/SiteMenu';
 import { Brand } from '@/components/Brand';
 import { SITE } from '@/lib/site-config';
 import { CatalogueImage } from '@/components/CatalogueImage';
-import { catalogue, homeTeasers } from '@/lib/pg-catalogue';
+import { catalogue, homeTeasers, productFilters } from '@/lib/pg-catalogue';
 import hero from '@/lib/print-garage-hero.json';
 import copy from '@/lib/print-garage-copy.json';
-import { ServiceOffers } from '@/components/LiveOffers';
 import { SocialLinks } from '@/components/SocialLinks';
 
 const queryClient = new QueryClient();
 
 const HERO_TITLE = 'Print Garage - Printing and Branding Garage in Kampala, Uganda';
 const HERO_COPY = copy.hero;
-const SERVICE_NAMES = ['Large Format', 'Commercial Printing', 'Corporate Branding', 'Promotional Gifts', 'Textile/Garment', 'Eco Printing'];
+const SERVICE_ICONS: Record<string, LucideIcon> = {
+  'corporate-gifts': Gift,
+  'commercial-printing': Printer,
+  'large-format': LayoutTemplate,
+  promotional: Megaphone,
+  ppe: HardHat,
+  textiles: Shirt,
+  'digital-media': MonitorSmartphone,
+};
+const SERVICE_CATEGORIES = productFilters.filter((filter) => filter.id !== 'all');
 
 function AppContent() {
   const [partnersExpanded, setPartnersExpanded] = useState(false);
@@ -40,7 +48,10 @@ function AppContent() {
     return () => { cancelAnimationFrame(frame); window.removeEventListener('hashchange', go); };
   }, []);
 
-  const services = SERVICE_NAMES.map((name, i) => ({ id: catalogue.services[i].id, name, image: catalogue.services[i].image, dims: catalogue.products.find((p) => p.image === catalogue.services[i].image) }));
+  const services = SERVICE_CATEGORIES.map((service) => ({
+    ...service,
+    Icon: SERVICE_ICONS[service.id],
+  }));
   const teasers = homeTeasers(catalogue.products);
   const pillars = [
     ['Mission', catalogue.mission], ['Vision', catalogue.vision], ['Purpose', catalogue.purpose],
@@ -88,15 +99,15 @@ function AppContent() {
         <section className="section pg-services" id="services">
           <div className="shell">
             <h2 className="pg-h">Services</h2>
-            <div className="pg-zig">
-              {services.map((s, i) => (
-                <a className={`pg-zig-row${i % 2 ? ' flip' : ''}`} href={`/products/${s.id}`} key={s.name} data-testid={`link-service-${s.id}`}>
-                  <div className="pg-zig-media"><CatalogueImage src={s.image} alt={s.name} width={s.dims?.width} height={s.dims?.height} loading="lazy" decoding="async" /></div>
-                  <div className="pg-zig-text"><span className="pg-num">{String(i + 1).padStart(2, '0')}</span><h3>{s.name}</h3><span className="pg-link">View products <ArrowUpRight size={16} aria-hidden="true" /></span></div>
+            <div className="pg-service-grid">
+              {services.map(({ id, label, Icon }) => (
+                <a className="pg-service-card" href={`/products/${id}`} key={id} aria-label={`Explore ${label} products`} data-testid={`link-service-${id}`}>
+                  <span className="pg-service-icon"><Icon size={24} strokeWidth={1.8} aria-hidden="true" /></span>
+                  <h3>{label}</h3>
+                  <ArrowUpRight className="pg-service-arrow" size={18} aria-hidden="true" />
                 </a>
               ))}
             </div>
-            <ServiceOffers />
           </div>
         </section>
 

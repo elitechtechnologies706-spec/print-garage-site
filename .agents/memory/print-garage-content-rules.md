@@ -7,7 +7,13 @@ The user’s final homepage order is Hero → Who We Are → Services → Missio
 
 **Why:** The user explicitly called this the final combined master order, including the request that the three-column Mission/Vision/Purpose follow Services and Partners be last.
 
-**How to apply:** Preserve six service images (Large Format, Commercial Printing, Corporate Branding, Promotional Gifts, Textile/Garment, Eco Printing). Homepage Products has twelve teasers, two each for drinkware, bags, eco, corporate gifts, promotional products, and portfolio. No top product-description box; full product browsing belongs behind View More.
+**How to apply:** Homepage Products has twelve teasers, two each for drinkware, bags, eco, corporate gifts, promotional products, and portfolio. No top product-description box; full product browsing belongs behind View More.
+
+The homepage and mobile Services menu show exactly seven product-linked categories: Corporate Gifts, Commercial Printing, Large Format, Promotional Products, PPE, Textiles, and Digital & Media Services. Do not show the old Printing or Packaging links or a separate “More service details” list there.
+
+**Why:** The user clarified that only the seven updated product categories should be presented as services, correcting the earlier six-service homepage and expanded service menu.
+
+**How to apply:** Derive the homepage service cards and mobile Services submenu from the seven non-“All” product filters. Keep service details inside the matching category page or price list, not as extra homepage/menu entries.
 
 Catalogue products and client/partner marks must come from supplied source material, not invented substitutes.
 

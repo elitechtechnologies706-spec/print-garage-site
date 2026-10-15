@@ -1,6 +1,5 @@
 import { useEffect, useId, useRef, useState } from 'react';
 import { ChevronDown, Menu, X } from 'lucide-react';
-import { servicePages } from '../seo/service-data';
 import { productFilters } from '../lib/pg-catalogue';
 import './SiteMenu.css';
 
@@ -11,16 +10,6 @@ const sections = [
   { id: 'gallery', label: 'Gallery' },
   { id: 'proof', label: 'About Us' },
   { id: 'contact', label: 'Contact Us' },
-] as const;
-
-const serviceCategories = [
-  ['Printing', '/printing-services-kampala'],
-  ['Large Format & Signage', '/large-format-printing-industrial-area'],
-  ['Branded Clothing', '/t-shirt-printing-embroidery-kampala'],
-  ['PPE & Safety', '/ppe-supplier-kampala-uganda'],
-  ['Promotional Products', '/promotional-items-mugs-pens-kampala'],
-  ['Corporate Gifts', '/corporate-gifts-branding-kampala'],
-  ['Packaging', '/corporate-gifts-branding-kampala#guide-prices'],
 ] as const;
 
 export function SiteMenu({ home = false, currentPath }: { home?: boolean; currentPath?: string }) {
@@ -72,9 +61,7 @@ export function SiteMenu({ home = false, currentPath }: { home?: boolean; curren
           {id === 'showcase'
             ? productCats.map((category) => <a key={category.id} href={`/products/${category.id}`} onClick={closeMenu} aria-current={currentPath === `/products/${category.id}` ? 'page' : undefined}>{category.label}</a>)
             : <>
-              {serviceCategories.map(([category, href]) => <a key={category} href={href} onClick={closeMenu} aria-current={currentPath === href ? 'page' : undefined}>{category}</a>)}
-              <span className="site-menu-label site-menu-divider">More service details</span>
-              {servicePages.filter((service) => !serviceCategories.some(([, href]) => href === service.path)).map((service) => <a key={service.slug} href={service.path} onClick={closeMenu} aria-current={currentPath === service.path ? 'page' : undefined}>{service.label}</a>)}
+              {productCats.map((category) => <a key={category.id} href={`/products/${category.id}`} onClick={closeMenu} aria-current={currentPath === `/products/${category.id}` ? 'page' : undefined} data-testid={`link-service-category-${category.id}`}>{category.label}</a>)}
             </>}
         </div>
       </details>
