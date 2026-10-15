@@ -21,11 +21,11 @@ Catalogue products and client/partner marks must come from supplied source mater
 
 **How to apply:** Verify actual source content and page bounds before claiming an item or relationship exists. A brand printed on a catalogue sample is not by itself proof that it is a confirmed partner. Explicitly flag absent requested assets rather than manufacturing them.
 
-The user approved the partners from the supplied Brimas corporate profile for use on the Print Garage site.
+Only Forest Art & Fabrication is confirmed from the earlier Brimas profile logo sheet; the user said the other logos in that set are not theirs. The supplied Print Garage clients PDF and Brimas Media logo are approved sources for the replacement marks.
 
-**Why:** The user uploaded that profile and explicitly said “Get partners from here.”
+**Why:** The user corrected the imported logo set, asked to keep Forest Art, provided a new client-logo sheet, and separately supplied the Brimas Media logo.
 
-**How to apply:** Treat its dedicated partner section as an approved source despite the Brimas branding; do not mistake decorative brands on product samples for additional approved partners.
+**How to apply:** Keep Forest Art & Fabrication and logos from the supplied Print Garage client sheet, plus Brimas Media when requested. Do not restore the other logos from the earlier Brimas profile or infer partners from product samples.
 
 Partners show the first twelve logos in three columns, with “View All Partners” / “Show Less” expansion.
 

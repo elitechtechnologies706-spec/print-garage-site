@@ -186,19 +186,23 @@ test('service-delivery hero has explicit intrinsic dimensions and a durable imag
   assert.ok(source.includes('src={hero.image} alt={hero.alt} width={hero.width} height={hero.height}'));
 });
 
-test('partner grid uses unique full-color source-profile cuts, excluding the site’s own logo', () => {
-  assert.equal(partners.length, 93);
-  assert.equal(new Set(partners.map((p) => p.name)).size, 93);
-  assert.equal(new Set(partners.map((p) => p.logo)).size, 93);
-  assert.equal(partners.filter((p) => p.name === 'Aga Khan Foundation').length, 1);
-  assert.ok(!partners.some((p) => p.name === 'Print Garage'));
-  assert.ok(partners.some((p) => p.name === 'KCB'));
-  assert.ok(partners.some((p) => p.name === 'MTN'));
+test('partner grid keeps Forest Art and uses only logos from the supplied Print Garage client PDF', () => {
+  assert.equal(partners.length, 25);
+  assert.equal(new Set(partners.map((p) => p.name)).size, 25);
+  assert.equal(new Set(partners.map((p) => p.logo)).size, 25);
+  assert.deepEqual(partners.slice(0, 2).map((p) => p.name), ['Forest Art & Fabrication', 'Brimas Media']);
+  assert.equal(partners.filter((p) => p.name === 'Forest Art & Fabrication').length, 1);
+  assert.equal(partners[0].logo, '/api/catalogue-assets/partner-p04-91.webp');
+  assert.equal(partners[1].sourcePdf, 'BRIMAS_LOGO_1792069898126.ai');
+  assert.equal(partners[1].logo, '/api/catalogue-assets/partner-p01-24.webp');
+  assert.equal(partners.filter((p) => p.sourcePdf === 'PRINT_GARAGE_CLIENTS_1792069309749.pdf').length, 23);
+  assert.ok(!partners.some((p) => ['KCB', 'MTN', 'USAID', 'PATH'].includes(p.name)));
   for (const partner of partners) {
-    assert.equal(partner.page, 4);
-    assert.match(partner.sourcePdf, /^BRIMAS_PROFILE_PRINT_/);
-    assert.match(partner.logo, /^\/api\/catalogue-assets\/partner-p04-\d{2}\.webp$/);
     assert.ok(partner.width > 0 && partner.height > 0);
+    if (partner.sourcePdf === 'PRINT_GARAGE_CLIENTS_1792069309749.pdf') {
+      assert.equal(partner.page, 1);
+      assert.match(partner.logo, /^\/api\/catalogue-assets\/partner-p01-\d{2}\.webp$/);
+    }
   }
   const source = readFileSync(new URL('../src/lib/pg-catalogue.ts', import.meta.url), 'utf8');
   assert.ok(source.includes("import partners from './print-garage-partners.json'"));
