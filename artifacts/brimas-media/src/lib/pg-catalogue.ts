@@ -36,7 +36,7 @@ export function homeTeasers(products: CatalogueProduct[]) {
 }
 
 export const CATEGORY_LABELS: Record<string, string> = {
-  'promotional-products': 'Promotional Products', textiles: 'Textiles', drinkware: 'Drinkware',
+  'promotional-products': 'Promotional Products', textiles: 'Textiles & Garments', drinkware: 'Drinkware',
   'corporate-gifts': 'Corporate Gifts', bags: 'Bags', 'commercial-printing': 'Commercial Printing',
   ppe: 'PPE', 'large-format': 'Large Format', eco: 'Eco', portfolio: 'KCB Portfolio',
 };
@@ -48,9 +48,9 @@ export const productFilters = [
   { id: 'corporate-gifts', label: 'Corporate Gifts', categories: ['corporate-gifts'] },
   { id: 'commercial-printing', label: 'Commercial Printing', categories: ['commercial-printing'] },
   { id: 'large-format', label: 'Large Format', categories: ['large-format'] },
-  { id: 'promotional', label: 'Promotional Products', categories: ['promotional-products', 'drinkware', 'bags', 'eco', 'portfolio'] },
+  { id: 'promotional', label: 'Promotional Products', categories: ['promotional-products', 'bags', 'drinkware', 'eco', 'portfolio'] },
   { id: 'ppe', label: 'PPE', categories: ['ppe'] },
-  { id: 'textiles', label: 'Textiles', categories: ['textiles'] },
+  { id: 'textiles', label: 'Textiles & Garments', categories: ['textiles'] },
   { id: 'digital-media', label: 'Digital & Media Services', categories: [] },
 ] as const;
 

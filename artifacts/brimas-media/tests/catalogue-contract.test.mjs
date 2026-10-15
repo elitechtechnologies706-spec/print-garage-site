@@ -32,7 +32,27 @@ test('mobile navigation starts with Home and products use only the eight request
   assert.deepEqual(filterIds, ['all', 'corporate-gifts', 'commercial-printing', 'large-format', 'promotional', 'ppe', 'textiles', 'digital-media']);
   assert.ok(catalogue.includes("digital-media', label: 'Digital & Media Services'"));
   assert.ok(products.includes('<ServiceOffers showHeading={false} />'));
-  assert.ok(catalogue.includes("'promotional-products', 'drinkware', 'bags', 'eco', 'portfolio'"));
+  assert.ok(catalogue.includes("'promotional-products', 'bags', 'drinkware', 'eco', 'portfolio'"));
+});
+
+test('promotional product groups remain independently browseable without adding filter chips', () => {
+  const catalogue = readFileSync(new URL('../src/lib/pg-catalogue.ts', import.meta.url), 'utf8');
+  const products = readFileSync(new URL('../src/pages/ProductsPage.tsx', import.meta.url), 'utf8');
+  const css = readFileSync(new URL('../src/pages/products.css', import.meta.url), 'utf8');
+  assert.ok(catalogue.includes("categories: ['promotional-products', 'bags', 'drinkware', 'eco', 'portfolio']"));
+  assert.ok(products.includes('data-testid="select-product-category"'));
+  assert.ok(products.includes("filter.categories.some((category) => category === param)"));
+  assert.ok(products.includes('? activeProductFilter.label'));
+  assert.ok(products.includes("p.category === selectedPromotionalCategory"));
+  assert.ok(products.includes('navigate(event.currentTarget.value ? `/products/${event.currentTarget.value}` : \'/products/promotional\')'));
+  assert.ok(css.includes('.pp-group-filter select'));
+  assert.ok(css.includes('@media (max-width: 620px)'));
+});
+
+test('textile and garment products use one combined category label', () => {
+  const catalogue = readFileSync(new URL('../src/lib/pg-catalogue.ts', import.meta.url), 'utf8');
+  assert.ok(catalogue.includes("textiles: 'Textiles & Garments'"));
+  assert.ok(catalogue.includes("{ id: 'textiles', label: 'Textiles & Garments', categories: ['textiles'] }"));
 });
 
 test('homepage and mobile service navigation show only the seven product categories', () => {

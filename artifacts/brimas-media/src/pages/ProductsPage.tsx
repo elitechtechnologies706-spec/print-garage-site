@@ -20,6 +20,11 @@ export function ProductsPage() {
   const [, navigate] = useLocation();
   const param = params?.category;
   const groups = categoriesFor(param);
+  const activeProductFilter = productFilters.find((filter) => filter.id === param)
+    ?? productFilters.find((filter) => param !== undefined && filter.categories.some((category) => category === param));
+  const promotionalCategoryGroups = activeProductFilter?.id === 'promotional' ? activeProductFilter.categories : [];
+  const selectedPromotionalCategory = activeProductFilter?.id === 'promotional' && param !== 'promotional' ? param ?? '' : '';
+  const currentFilterTitle = activeProductFilter && activeProductFilter.id === param ? activeProductFilter.label : undefined;
   const isDigitalMedia = param === 'digital-media';
   const [search, setSearch] = useState('');
   const [ecoOnly, setEcoOnly] = useState(false);
@@ -29,14 +34,16 @@ export function ProductsPage() {
 
   const all = catalogue.products;
 
-  const inGroup = useMemo(() => all.filter((p) => !groups || groups.includes(p.category)), [all, groups]);
+  const inGroup = useMemo(() => all.filter((p) =>
+    (!groups || groups.includes(p.category))
+    && (!selectedPromotionalCategory || p.category === selectedPromotionalCategory)), [all, groups, selectedPromotionalCategory]);
   const q = search.toLowerCase().replace(/[^a-z0-9]+/g, '');
   const list = inGroup.filter((p) =>
     (!ecoOnly || p.eco)
     && `${p.name}${p.category}${p.subcategory ?? ''}`.toLowerCase().replace(/[^a-z0-9]+/g, '').includes(q));
   const visible = list.slice(0, shown);
   const serviceName = catalogue.services.find((x) => x.id === param)?.name;
-  const title = isDigitalMedia ? 'Digital & Media Services' : !groups ? 'Products' : serviceName ?? (groups.length === 1 ? categoryLabel(groups[0]) : labelise(param ?? ''));
+  const title = isDigitalMedia ? 'Digital & Media Services' : !groups ? 'Products' : currentFilterTitle ?? serviceName ?? (groups.length === 1 ? categoryLabel(groups[0]) : labelise(param ?? ''));
 
   return (
     <div className="print-garage-page">
@@ -50,9 +57,27 @@ export function ProductsPage() {
           <h1>{title}</h1>
           <nav className="pp-cats" aria-label="Product categories">
             {productFilters.map((filter) => (
-              <button type="button" key={filter.id} className={filter.id === 'all' ? (!param || param === 'all' ? 'on' : '') : param === filter.id ? 'on' : ''} onClick={() => { setSearch(''); setEcoOnly(false); navigate(filter.id === 'all' ? '/products' : `/products/${filter.id}`); }} data-testid={`button-cat-${filter.id}`}>{filter.label}</button>
+                <button type="button" key={filter.id} className={filter.id === (activeProductFilter?.id ?? (!param ? 'all' : undefined)) ? 'on' : ''} onClick={() => { setSearch(''); setEcoOnly(false); navigate(filter.id === 'all' ? '/products' : `/products/${filter.id}`); }} data-testid={`button-cat-${filter.id}`}>{filter.label}</button>
             ))}
           </nav>
+            {promotionalCategoryGroups.length > 1 && (
+              <label className="pp-group-filter">
+                <span>Browse category</span>
+                <select
+                  value={selectedPromotionalCategory}
+                  onChange={(event) => navigate(event.currentTarget.value ? `/products/${event.currentTarget.value}` : '/products/promotional')}
+                  aria-label="Browse promotional product category"
+                  data-testid="select-product-category"
+                >
+                  <option value="">All promotional categories</option>
+                  {promotionalCategoryGroups.map((category) => (
+                    <option value={category} key={category}>
+                      {categoryLabel(category)} ({all.filter((product) => product.category === category).length})
+                    </option>
+                  ))}
+                </select>
+              </label>
+            )}
           {isDigitalMedia ? <ServiceOffers showHeading={false} /> : <>
           {groups?.includes('textiles') && <TextileOffers />}
           <div className="pp-tools">
@@ -82,7 +107,7 @@ export function ProductsPage() {
             })}
           </div>
           {shown < list.length && <div className="pp-more"><button type="button" className="button button-dark" onClick={() => setShown((n) => n + PAGE)} data-testid="button-load-more">Load more</button></div>}
-          {groups?.includes('portfolio') && <p className="showcase-note">KCB-branded samples are design references, not evidence of completed Print Garage work.</p>}
+          {groups?.length === 1 && groups[0] === 'portfolio' && <p className="showcase-note">KCB-branded samples are design references, not evidence of completed Print Garage work.</p>}
           </>}
         </div>
       </main>
