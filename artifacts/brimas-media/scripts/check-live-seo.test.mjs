@@ -9,7 +9,7 @@ const origin = 'https://www.print-garage.test'; // Offline fixture, never a publ
 const serviceSource = await readFile(new URL('../src/seo/service-data.ts', import.meta.url), 'utf8');
 const paths = ['/', '/price-list', '/request-a-quote', '/gallery',
   ...[...serviceSource.matchAll(/path: '(\/[^']+)'/g)].map(([, path]) => path)];
-const source = `<urlset>${paths.map((path) => `<url><loc>${origin}${path}</loc></url>`).join('')}</urlset>`;
+const source = `<urlset xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">${paths.map((path) => `<url><loc>${origin}${path}</loc><image:image><image:loc>${origin}/image.svg</image:loc></image:image></url>`).join('')}</urlset>`;
 const escape = (text) => text.replaceAll('&', '&amp;').replaceAll('"', '&quot;');
 const errorHtml = '<meta name="robots" content="noindex, nofollow"><h1>Page not found</h1>';
 
@@ -57,7 +57,7 @@ function page(path) {
 function fixture(mutate = () => {}) {
   const resources = new Map(paths.map((path) => [path, { body: page(path), type: 'text/html', status: 200 }]));
   resources.set('/sitemap.xml', { body: source, type: 'application/xml', status: 200 });
-  resources.set('/robots.txt', { body: `User-agent: *\nAllow: /\nDisallow: /admin/\nDisallow: /api/\nSitemap: ${origin}/sitemap.xml`, type: 'text/plain', status: 200 });
+  resources.set('/robots.txt', { body: `User-agent: *\nAllow: /\nDisallow: /admin/\nDisallow: /api/\nAllow: /api/catalogue-assets/\nSitemap: ${origin}/sitemap.xml`, type: 'text/plain', status: 200 });
   resources.set('/admin/views', { body: '<meta name="robots" content="noindex, nofollow"><h1>Admin</h1>', type: 'text/html', status: 200 });
   resources.set('/404.html', { body: errorHtml, type: 'text/html', status: 200 });
   resources.set('/image.svg', { body: '<svg xmlns="http://www.w3.org/2000/svg"></svg>', type: 'image/svg+xml', status: 200 });
@@ -93,7 +93,7 @@ async function run(mutate, timeoutMs = 500) {
 
 test('baseline passes shared HTML inventory, images, contact links, redirects and genuine 404s using GET only', async () => {
   const result = await run();
-  assert.equal(result.exitCode, 0);
+  assert.equal(result.exitCode, 0, result.lines.join('\n'));
   assert.equal(result.skipped, 0);
   assert(result.lines.some((line) => line.startsWith('SEO checks passed:')));
   assert.equal(new Set(result.requested).size, result.requested.length, 'Requests must be deduplicated');
@@ -106,7 +106,7 @@ test('metadata regression is an SEO assertion, not a transport failure', async (
   });
   assert.equal(result.exitCode, 1);
   assert.equal(result.transportFailures, 0);
-  assert(result.issues.some((item) => item.message.includes('Canonical')));
+  assert(result.issues.some((item) => item.message.includes('Canonical')), result.lines.join('\n'));
 });
 
 test('network failure is transport-only, with incomplete HTML audit explicitly skipped', async () => {
@@ -190,7 +190,7 @@ test('schema facts and missing internal fragment targets are still checked by th
   ]) {
     const result = await run((resources) => { resources.get('/').body = resources.get('/').body.replace(before, after); });
     assert.equal(result.exitCode, 1);
-    assert(result.issues.some((item) => item.message.includes(expected)));
+    assert(result.issues.some((item) => item.message.includes(expected)), result.lines.join('\n'));
   }
 });
 

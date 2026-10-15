@@ -31,6 +31,30 @@ if (!urls.length) {
   process.exit(0);
 }
 const origin = new URL(urls[0]).origin;
+assert(sitemap.includes('xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"'), 'Missing Google image sitemap namespace');
+const imageLocationsByPage = new Map([...sitemap.matchAll(/<url>([\s\S]*?)<\/url>/g)].map(([, entry]) => {
+  const pageUrl = decode(entry.match(/<loc>([^<]+)<\/loc>/)?.[1] ?? '');
+  const images = [...entry.matchAll(/<image:loc>([^<]+)<\/image:loc>/g)].map(([, url]) => decode(url));
+  return [new URL(pageUrl).pathname, new Set(images)];
+}));
+const allImageLocations = new Set([...imageLocationsByPage.values()].flatMap((images) => [...images]));
+assert(allImageLocations.size > 0, 'Image sitemap is empty');
+if (process.env.PRINT_GARAGE_SEO_LIVE_AUDIT !== '1') {
+  const catalogue = JSON.parse(await readFile(resolve('src/lib/print-garage-catalogue.json'), 'utf8'));
+  const partners = JSON.parse(await readFile(resolve('src/lib/print-garage-partners.json'), 'utf8'));
+  const productsPageImages = imageLocationsByPage.get('/products');
+  for (const product of catalogue.products) {
+    const imageUrl = new URL(product.image, origin).href;
+    assert(productsPageImages?.has(imageUrl), `Catalogue image missing from /products image sitemap: ${imageUrl}`);
+    assert(imageLocationsByPage.get(`/products/${product.category}`)?.has(imageUrl),
+      `Catalogue image missing from its category image sitemap: ${imageUrl}`);
+  }
+  const homePageImages = imageLocationsByPage.get('/');
+  for (const partner of partners) {
+    const imageUrl = new URL(partner.logo, origin).href;
+    assert(homePageImages?.has(imageUrl), `Partner logo missing from homepage image sitemap: ${imageUrl}`);
+  }
+}
 assert.equal(urls.length, new Set(urls).size, 'Duplicate sitemap URLs');
 const paths = new Set(urls.map((url) => {
   assert.equal(new URL(url).origin, origin, `Wrong sitemap host: ${url}`);
@@ -69,7 +93,9 @@ for (const [path, html] of documents) {
   for (const key of ['og:image', 'twitter:image']) {
     const image = new URL(meta(html, key));
     assert.equal(image.origin, origin);
-    await access(resolve(out, image.pathname.slice(1)));
+    if (!image.pathname.startsWith('/api/catalogue-assets/')) {
+      await access(resolve(out, image.pathname.slice(1)));
+    }
   }
   const schema = JSON.parse(html.match(/<script id="print-garage-structured-data" type="application\/ld\+json">([\s\S]*?)<\/script>/)?.[1] ?? 'null');
   assert(Array.isArray(schema), `Invalid JSON-LD: ${path}`);
@@ -83,7 +109,17 @@ for (const [path, html] of documents) {
   assert.equal(business.address.addressLocality, 'Kampala');
   assert.equal(business.address.addressCountry, 'UG');
   assert(business.address.streetAddress.includes('Peacock Building'));
-  if (!['/', '/price-list', '/request-a-quote', '/gallery'].includes(path)) {
+  const isProductsPath = path === '/products' || path.startsWith('/products/');
+  if (isProductsPath) {
+    assert(types.includes('BreadcrumbList'), `BreadcrumbList: ${path}`);
+    const crumbs = schema.find((item) => item['@type'] === 'BreadcrumbList').itemListElement;
+    assert.equal(crumbs.at(-1).item, `${origin}${path}`);
+    assert.deepEqual(crumbs.map((item) => item.position), crumbs.map((_, index) => index + 1));
+    const breadcrumbNav = html.match(/<nav[^>]*aria-label="Breadcrumb"[^>]*>([\s\S]*?)<\/nav>/)?.[1];
+    assert(breadcrumbNav, `Visible breadcrumbs missing: ${path}`);
+    const breadcrumbText = decode(breadcrumbNav.replace(/<[^>]*>/g, ' ')).replace(/\s+/g, ' ');
+    for (const crumb of crumbs) assert(breadcrumbText.includes(crumb.name), `Breadcrumb not visible: ${path} ${crumb.name}`);
+  } else if (!['/', '/price-list', '/request-a-quote', '/gallery'].includes(path)) {
     for (const type of ['BreadcrumbList', 'FAQPage']) assert(types.includes(type), `${type}: ${path}`);
     assert(types.includes('Service') || types.includes('Product'), `Missing genuine offering schema: ${path}`);
     const crumbs = schema.find((item) => item['@type'] === 'BreadcrumbList').itemListElement;
@@ -106,7 +142,10 @@ for (const [path, html] of documents) {
     const buttonText = inButton ? html.slice(buttonStart, buttonEnd).replace(/<[^>]*>/g, '').trim() : '';
     assert(attr(tag, 'alt').trim() || buttonText, `Empty important image alt: ${path}`);
     const source = new URL(attr(tag, 'src'), `${origin}${path}`);
-    if (source.origin === origin) await access(resolve(out, source.pathname.slice(1)));
+    assert(imageLocationsByPage.get(path)?.has(source.href), `Image missing from page image sitemap: ${path} ${source.href}`);
+    if (source.origin === origin && !source.pathname.startsWith('/api/catalogue-assets/')) {
+      await access(resolve(out, source.pathname.slice(1)));
+    }
     images++;
   }
   for (const [tag] of html.matchAll(/<a\b[^>]*>/g)) {
@@ -129,5 +168,6 @@ for (const file of ['404.html', 'admin/views.html']) {
 }
 const robots = await read('robots.txt');
 assert(robots.includes('Allow: /') && robots.includes('Disallow: /admin/') && robots.includes('Disallow: /api/'));
+assert(robots.includes('Allow: /api/catalogue-assets/'), 'Robots must allow Google to crawl catalogue images');
 assert(robots.includes(`Sitemap: ${origin}/sitemap.xml`));
 console.log(`SEO checks passed: ${paths.size} crawlable pages, unique metadata, H1s, schema, ${links} internal links, ${images} image references, sitemap, robots and noindex 404/admin.`);

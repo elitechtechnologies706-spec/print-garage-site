@@ -29,6 +29,12 @@ const SERVICE_IMAGE_NAMES: Record<string, string> = {
   ppe: 'Blue safety helmet',
   textiles: 'Round-neck T-shirt collection',
 };
+const SERVICE_LOCAL_IMAGES: Record<string, string | undefined> = {
+  'corporate-gifts': 'service-corporate-gifts.webp',
+  'commercial-printing': 'service-commercial-printing.webp',
+  'large-format': 'service-large-format.webp',
+  promotional: 'service-promotional-products.webp',
+};
 const SERVICE_CATEGORIES = productFilters.filter((filter) => filter.id !== 'all');
 
 function AppContent() {
@@ -58,7 +64,12 @@ function AppContent() {
 
     const imageProduct = catalogue.products.find((product) => product.name === SERVICE_IMAGE_NAMES[service.id]);
     if (!imageProduct) throw new Error(`Missing representative image for ${service.label}.`);
-    return { ...service, imageProduct };
+    const localImage = SERVICE_LOCAL_IMAGES[service.id];
+    return {
+      ...service,
+      imageProduct,
+      localImage: localImage ? `${import.meta.env.BASE_URL}images/${localImage}` : undefined,
+    };
   });
   const teasers = homeTeasers(catalogue.products);
   const pillars = [
@@ -113,6 +124,8 @@ function AppContent() {
                   <div className="pg-service-card-media">
                     {'image' in service
                       ? <img src={service.image} alt={service.imageAlt} width={1200} height={760} loading="lazy" decoding="async" />
+                      : service.localImage
+                        ? <img src={service.localImage} alt={`${service.label}: ${service.imageProduct.name}`} width={service.imageProduct.width} height={service.imageProduct.height} loading="lazy" decoding="async" />
                       : <CatalogueImage src={service.imageProduct.image} alt={`${service.label}: ${service.imageProduct.name}`} width={service.imageProduct.width} height={service.imageProduct.height} loading="lazy" decoding="async" sizes="(max-width: 620px) 50vw, (max-width: 900px) 33vw, 25vw" />}
                   </div>
                   <div className="pg-service-card-content">

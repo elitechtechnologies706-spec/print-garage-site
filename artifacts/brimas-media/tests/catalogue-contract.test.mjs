@@ -1,6 +1,6 @@
 import assert from 'node:assert/strict';
 import test from 'node:test';
-import { readFileSync } from 'node:fs';
+import { existsSync, readFileSync } from 'node:fs';
 
 const data = JSON.parse(readFileSync(new URL('../src/lib/print-garage-catalogue.json', import.meta.url), 'utf8'));
 const partners = JSON.parse(readFileSync(new URL('../src/lib/print-garage-partners.json', import.meta.url), 'utf8'));
@@ -31,7 +31,7 @@ test('mobile navigation starts with Home and products use only the eight request
   const filterIds = [...catalogue.matchAll(/\{ id: '([^']+)', label:/g)].map((match) => match[1]);
   assert.deepEqual(filterIds, ['all', 'corporate-gifts', 'commercial-printing', 'large-format', 'promotional', 'ppe', 'textiles', 'digital-media']);
   assert.ok(catalogue.includes("digital-media', label: 'Digital & Media Services'"));
-  assert.ok(products.includes('<ServiceOffers showHeading={false} />'));
+  assert.ok(products.includes('<ServiceOffers />'));
   assert.ok(catalogue.includes("'promotional-products', 'bags', 'drinkware', 'eco', 'portfolio'"));
 });
 
@@ -154,6 +154,22 @@ test('the approved catalogue screenshot supplies the company overview, vision an
     assert.ok(copy.about.includes(detail), `Screenshot detail missing: ${detail}`);
   }
   assert.equal(copy.purpose, 'Help organisations look consistent wherever people meet them: at their premises, on their team and in the items they share.');
+});
+
+test('affected service cards load their own local static images without changing other cards', () => {
+  const app = readFileSync(new URL('../src/App.tsx', import.meta.url), 'utf8');
+  const localImages = [
+    ["'corporate-gifts'", 'service-corporate-gifts.webp'],
+    ["'commercial-printing'", 'service-commercial-printing.webp'],
+    ["'large-format'", 'service-large-format.webp'],
+    ['promotional', 'service-promotional-products.webp'],
+  ];
+  for (const [service, filename] of localImages) {
+    assert.ok(app.includes(`${service}: '${filename}'`), `${service} must use its matching local image`);
+    assert.ok(existsSync(new URL(`../public/images/${filename}`, import.meta.url)), `${filename} must exist`);
+  }
+  assert.ok(app.includes('`${import.meta.env.BASE_URL}images/${localImage}`'));
+  assert.ok(app.includes(': <CatalogueImage src={service.imageProduct.image}'));
 });
 
 test('all service pages retain distinct descriptions and unchanged factual guide rates', () => {

@@ -9,7 +9,7 @@ import { PriceList } from './pages/PriceList';
 import { ProductsPage } from './pages/ProductsPage';
 import AdminViews from './pages/AdminViews';
 import { servicePages, type ServicePage } from './seo/service-data';
-import { applySeoHead, PRICE_LIST_META, PRICE_LIST_TITLE, QUOTE_META, QUOTE_TITLE, PRODUCTS_TITLE, PRODUCTS_META, GALLERY_TITLE, GALLERY_META } from './seo/seo-head';
+import { applySeoHead, PRICE_LIST_META, PRICE_LIST_TITLE, QUOTE_META, QUOTE_TITLE, PRODUCTS_TITLE, PRODUCTS_META, GALLERY_TITLE, GALLERY_META, productCategorySeo } from './seo/seo-head';
 
 const LazyGalleryPage = lazy(() => import('./pages/GalleryPage').then((module) => ({ default: module.GalleryPage })));
 
@@ -35,7 +35,10 @@ function RequestQuoteRoute() {
 
 function ProductsRoute() {
   const [path] = useLocation();
-  useEffect(() => applySeoHead(undefined, { title: PRODUCTS_TITLE, meta: PRODUCTS_META, path: path.split('?')[0] }), [path]);
+  const pathname = path.split('?')[0];
+  const category = pathname.split('/')[2];
+  const pageMeta = category ? productCategorySeo(category) : { title: PRODUCTS_TITLE, meta: PRODUCTS_META };
+  useEffect(() => applySeoHead(undefined, { ...pageMeta, path: pathname }), [path]);
   return <ProductsPage />;
 }
 

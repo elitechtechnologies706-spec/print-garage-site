@@ -13,7 +13,11 @@ const decode = (text) => text.replace(/&amp;/g, '&').replace(/&quot;/g, '"')
 const attr = (tag, name) => decode(tag.match(new RegExp(`\\b${name}=["']([^"']*)["']`, 'i'))?.[1] ?? '');
 const meta = (html, key) => attr([...html.matchAll(/<meta\b[^>]*>/gi)]
   .map(([tag]) => tag).find((tag) => attr(tag, 'name') === key || attr(tag, 'property') === key) ?? '', 'content');
-const locs = (xml) => [...xml.matchAll(/<loc>([^<]+)<\/loc>/g)].map(([, url]) => decode(url));
+const locs = (xml) => [...xml.matchAll(/<url>([\s\S]*?)<\/url>/g)].map(([, entry]) => {
+  const match = entry.match(/<loc>([^<]+)<\/loc>/);
+  assert(match, 'Sitemap URL entry is missing its page loc');
+  return decode(match[1]);
+});
 const redirects = new Set([301, 308]);
 
 // Read-only GETs only. Inject fetch/logger for deterministic, offline regression tests.
@@ -93,7 +97,7 @@ export async function runLive({ fetchImpl = fetch, timeoutMs = 15000, log = cons
   const robots = await get(`${origin}/robots.txt`);
   if (expectResponse('Robots response', robots, 200, /^text\/plain\b/i)) {
     check('Robots directives', () => {
-      for (const directive of ['User-agent: *', 'Allow: /', 'Disallow: /admin/', 'Disallow: /api/', `Sitemap: ${origin}/sitemap.xml`]) {
+      for (const directive of ['User-agent: *', 'Allow: /', 'Disallow: /admin/', 'Disallow: /api/', 'Allow: /api/catalogue-assets/', `Sitemap: ${origin}/sitemap.xml`]) {
         assert(robots.text.includes(directive), `Missing ${directive}`);
       }
       assert(!/^Disallow:\s*\/\s*$/mi.test(robots.text), 'Robots blocks the entire site');
@@ -175,6 +179,13 @@ export async function runLive({ fetchImpl = fetch, timeoutMs = 15000, log = cons
         for (const child of Object.values(value)) walk(child);
       };
       walk(schema);
+    });
+  }
+  for (const [, location] of source.matchAll(/<image:loc>([^<]+)<\/image:loc>/g)) {
+    check('Image sitemap URL', () => {
+      const image = new URL(decode(location));
+      assert(['http:', 'https:'].includes(image.protocol), 'Unsupported image sitemap URL scheme');
+      imageUrls.add(image.href);
     });
   }
   const quoteHtml = documents.get('/request-a-quote');
@@ -274,7 +285,11 @@ export async function runLive({ fetchImpl = fetch, timeoutMs = 15000, log = cons
     if (robots?.status === 200) await put('dist/public/robots.txt', robots.text);
     const complete = documents.size === paths.size && privateHtml.size === 2 && images.size === imageUrls.size && robots?.status === 200;
     if (complete) {
-      const result = spawnSync(process.execPath, [checker], { cwd: mirror, encoding: 'utf8' });
+      const result = spawnSync(process.execPath, [checker], {
+        cwd: mirror,
+        encoding: 'utf8',
+        env: { ...process.env, PRINT_GARAGE_SEO_LIVE_AUDIT: '1' },
+      });
       if (result.error || result.signal) throw result.error ?? new Error(`Local checker terminated by ${result.signal}`);
       checks++;
       if (result.status !== 0) issue('SEO', 'Downloaded HTML inventory', result.stderr.trim() || `Checker exited ${result.status}`);

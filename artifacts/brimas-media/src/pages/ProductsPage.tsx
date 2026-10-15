@@ -48,6 +48,11 @@ export function ProductsPage() {
       </div></header>
       <main className="section pp">
         <div className="shell">
+          <nav className="pp-breadcrumbs" aria-label="Breadcrumb">
+            <a href="/">Home</a><span aria-hidden="true">/</span>
+            {param ? <a href="/products">Products</a> : <span aria-current="page">Products</span>}
+            {param && <><span aria-hidden="true">/</span><span aria-current="page">{title}</span></>}
+          </nav>
           <p className="pp-kicker">Print Garage catalogue</p>
           <h1>{title}</h1>
           <nav className="pp-cats" aria-label="Product categories">
@@ -55,7 +60,7 @@ export function ProductsPage() {
                 <button type="button" key={filter.id} className={filter.id === (activeProductFilter?.id ?? (!param ? 'all' : undefined)) ? 'on' : ''} onClick={() => { setSearch(''); navigate(filter.id === 'all' ? '/products' : `/products/${filter.id}`); }} data-testid={`button-cat-${filter.id}`}>{filter.label}</button>
             ))}
           </nav>
-          {isDigitalMedia ? <ServiceOffers showHeading={false} /> : <>
+          {isDigitalMedia ? <ServiceOffers /> : <>
           {groups?.includes('textiles') && <TextileOffers />}
           <div className="pp-tools">
             <label className="pp-search"><Search size={16} aria-hidden="true" /><input type="search" value={search} onChange={(e) => { setSearch(e.target.value); setShown(PAGE); }} placeholder="Search products" aria-label="Search products" data-testid="input-product-search" /></label>

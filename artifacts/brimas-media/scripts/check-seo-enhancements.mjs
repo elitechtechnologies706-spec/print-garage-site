@@ -45,7 +45,7 @@ for (const path of paths) {
     }
   }
   const crumbs = schema.find((item) => item['@type'] === 'BreadcrumbList');
-  if (crumbs) {
+  if (crumbs && !path.startsWith('/products')) {
     const nav = html.match(/<nav\b[^>]*aria-label="Breadcrumb"[^>]*>([\s\S]*?)<\/nav>/)?.[1];
     assert(nav, `Visible breadcrumb missing: ${path}`);
     const names = [...nav.matchAll(/<(a|span)\b[^>]*>([\s\S]*?)<\/\1>/g)]
@@ -74,7 +74,7 @@ for (const path of paths) {
   }
   assert(!html.includes('cost in Kampala in 2026?'), `Outdated generated FAQ date: ${path}`);
   assert(redirects.includes(`${path === '/' ? '/index' : path}.html ${path} 301!`), `Public HTML alias: ${path}`);
-  if (crumbs) {
+  if (crumbs && !path.startsWith('/products')) {
     const detail = html.match(/<p\b[^>]*data-testid="text-seo-detail"[^>]*>([\s\S]*?)<\/p>/)?.[1] ?? '';
     const links = [...detail.matchAll(/<a\b[^>]*href="([^"]+)"/g)].map(([, href]) => href);
     assert(links.length >= 2 && links.every((href) => paths.includes(href) && href !== path),

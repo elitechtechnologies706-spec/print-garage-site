@@ -1,6 +1,6 @@
 [build]
   base = "."
-  command = "pnpm install --frozen-lockfile && PORT=3000 BASE_PATH=/ pnpm --filter @workspace/brimas-media run build"
+  command = "pnpm install --frozen-lockfile && PORT=3000 BASE_PATH=/ VITE_SITE_URL=https://www.printgarage.online pnpm --filter @workspace/brimas-media run build && pnpm --filter @workspace/brimas-media run check:seo"
   publish = "artifacts/brimas-media/dist/public"
   functions = "netlify/functions"
 
@@ -14,6 +14,12 @@
   for = "/assets/*"
   [headers.values]
     Cache-Control = "public, max-age=31536000, immutable"
+
+[[redirects]]
+  from = "/api/catalogue-assets/*"
+  to = "https://print-garage-site.replit.app/api/catalogue-assets/:splat"
+  status = 200
+  force = true
 
 [[redirects]]
   from = "/api/*"

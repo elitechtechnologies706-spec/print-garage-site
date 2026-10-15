@@ -1,5 +1,6 @@
 import { SITE_URL, type ServicePage } from './service-data';
 import { SITE } from '../lib/site-config';
+import { categoryLabel, productFilters } from '../lib/pg-catalogue';
 import hero from '../lib/print-garage-hero.json';
 
 export const HOME_TITLE = 'Printing & Branding Services in Kampala | Print Garage';
@@ -14,6 +15,27 @@ export const GALLERY_TITLE = 'Product & Branding Gallery Kampala | Print Garage'
 export const GALLERY_META = 'Explore the Print Garage visual reference gallery for product and branding ideas. These photos and concepts guide enquiries, not claims of completed client work.';
 export const OG_IMAGE = `${SITE_URL}${hero.image}`;
 export const MAP_URL = `https://maps.google.com/?q=${encodeURIComponent(SITE.address)}`;
+
+export function productCategorySeo(slug: string) {
+  const filter = productFilters.find((item) => item.id === slug);
+  const label = filter?.label ?? categoryLabel(slug);
+  if (slug === 'promotional') {
+    return {
+      title: 'Promotional Gifts & Branding Items in Kampala | Print Garage',
+      meta: 'Browse promotional products, bags, drinkware and eco options in the Print Garage catalogue. Share your item, quantity and branding details for an enquiry.',
+    };
+  }
+  if (slug === 'digital-media') {
+    return {
+      title: 'Digital & Media Services in Kampala | Print Garage',
+      meta: 'Explore website and software development plus digital and media services from Print Garage. Share your project scope and requirements for an enquiry.',
+    };
+  }
+  return {
+    title: `${label} Catalogue in Kampala | Print Garage`,
+    meta: `Browse ${label.toLowerCase()} examples in the Print Garage catalogue. Send your Kampala enquiry with the item, quantity and branding details to discuss a suitable specification.`,
+  };
+}
 
 type SeoPage = { title: string; meta: string; path: string; indexable?: boolean };
 
@@ -70,7 +92,26 @@ export function structuredData(service?: ServicePage, page?: SeoPage) {
     inLanguage: 'en',
   };
 
-  if (!service) return [business, website, webpage];
+  if (!service) {
+    if (page?.path === '/products' || page?.path.startsWith('/products/')) {
+      const category = page.path.split('/')[2];
+      const label = category
+        ? productFilters.find((item) => item.id === category)?.label ?? categoryLabel(category)
+        : 'Products';
+      const items = [
+        { '@type': 'ListItem', position: 1, name: 'Home', item: `${SITE_URL}/` },
+        { '@type': 'ListItem', position: 2, name: 'Products', item: `${SITE_URL}/products` },
+      ];
+      if (category) items.push({ '@type': 'ListItem', position: 3, name: label, item: `${SITE_URL}${page.path}` });
+      return [
+        business,
+        website,
+        webpage,
+        { '@context': 'https://schema.org', '@type': 'BreadcrumbList', itemListElement: items },
+      ];
+    }
+    return [business, website, webpage];
+  }
 
   const breadcrumbs = {
     '@context': 'https://schema.org',

@@ -1,4 +1,8 @@
 .pp { padding-top: 56px; background: #f4f4f3; }
+.pp-breadcrumbs { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; margin-bottom: 12px; color: var(--brand-gray); font: 500 12px var(--app-font-sans); }
+.pp-breadcrumbs a { color: inherit; text-decoration: none; }
+.pp-breadcrumbs a:hover { color: var(--brand-orange); text-decoration: underline; }
+.pp-breadcrumbs [aria-current="page"] { color: #111; font-weight: 700; }
 .pp-kicker { font: 700 12px var(--app-font-sans); letter-spacing: .14em; text-transform: uppercase; color: var(--brand-gray); margin: 0; }
 .pp h1 { font-size: clamp(2.6rem, 8vw, 6rem); line-height: .9; letter-spacing: -.05em; text-transform: uppercase; margin: 10px 0 28px; color: #111; }
 .pp-cats { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 14px; }
