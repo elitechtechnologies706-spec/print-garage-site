@@ -15,6 +15,12 @@ The homepage and mobile Services menu show exactly seven product-linked categori
 
 **How to apply:** Derive the homepage service cards and mobile Services submenu from the seven non-“All” product filters. Keep service details inside the matching category page or price list, not as extra homepage/menu entries.
 
+The Products page should show only its main category buttons followed by the search bar; do not show detailed item-type filters or an additional Eco-only control.
+
+**Why:** The user pointed out the repeated detailed filter list and explicitly requested only the search bar after the main categories.
+
+**How to apply:** Let search match product names and type labels; keep subtype details on product cards, not as another row of filters.
+
 Catalogue products and client/partner marks must come from supplied source material, not invented substitutes.
 
 **Why:** The user requested standalone, complete product cuts and original-color partner/client logos from the five uploaded PDFs.
