@@ -16,6 +16,7 @@ import { catalogue, homeTeasers } from '@/lib/pg-catalogue';
 import hero from '@/lib/print-garage-hero.json';
 import copy from '@/lib/print-garage-copy.json';
 import { ServiceOffers } from '@/components/LiveOffers';
+import { SocialLinks } from '@/components/SocialLinks';
 
 const queryClient = new QueryClient();
 
@@ -158,6 +159,7 @@ function AppContent() {
               <a href={`mailto:${SITE.email}`} data-testid="link-email-primary"><FaEnvelope size={14} aria-hidden="true" /> {SITE.email}</a>
               <a href={SITE.whatsapp} target="_blank" rel="noreferrer" data-testid="link-footer-whatsapp"><FaWhatsapp size={14} aria-hidden="true" /> WhatsApp</a>
             </div>
+            <SocialLinks />
             <small>© {new Date().getFullYear()} Print Garage · {SITE.address}</small>
           </div>
         </div>

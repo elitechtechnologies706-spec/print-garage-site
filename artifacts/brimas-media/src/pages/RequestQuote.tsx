@@ -5,6 +5,7 @@ import { useForm } from 'react-hook-form';
 import { Form } from '../components/ui/form';
 import { SiteMenu } from '../components/SiteMenu';
 import { Brand } from '../components/Brand';
+import { SocialLinks } from '../components/SocialLinks';
 import { servicePages } from '../seo/service-data';
 import { whatsappHref } from '../lib/catalog';
 import '../seo/landing.css';
@@ -97,6 +98,9 @@ export function RequestQuote() {
           </form>
         </Form>
       </main>
+      <footer className="seo-footer request-quote-footer">
+        <div className="seo-wrap"><SocialLinks /></div>
+      </footer>
     </div>
   );
 }

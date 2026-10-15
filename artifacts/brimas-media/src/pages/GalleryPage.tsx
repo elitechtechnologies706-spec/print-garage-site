@@ -4,6 +4,7 @@ import { Brand } from '../components/Brand';
 import { CatalogueImage } from '../components/CatalogueImage';
 import { fullGalleryCategories, fullGalleryItems } from '../lib/gallery-catalogue';
 import '../components/Gallery.css';
+import { SocialLinks } from '@/components/SocialLinks';
 
 const PAGE_SIZE = 12;
 
@@ -85,7 +86,7 @@ export function GalleryPage() {
           </div>
         </section>
       </main>
-      <footer className="footer"><div className="shell"><a href="/">Print Garage home</a> · <a href="/request-a-quote">Request a quote</a></div></footer>
+      <footer className="footer"><div className="shell footer-social-layout"><span><a href="/">Print Garage home</a> · <a href="/request-a-quote">Request a quote</a></span><SocialLinks /></div></footer>
     </div>
   );
 }

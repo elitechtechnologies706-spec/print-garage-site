@@ -6,6 +6,7 @@ import type { ServicePage } from './service-data';
 import { LocationSection, MiniMap } from './Location';
 import { SiteMenu } from '../components/SiteMenu';
 import { Brand } from '../components/Brand';
+import { SocialLinks } from '../components/SocialLinks';
 import { SITE } from '../lib/site-config';
 import { quotePageHref } from '../pages/RequestQuote';
 import { CatalogueImage } from '../components/CatalogueImage';
@@ -194,7 +195,7 @@ export function LandingPage({ service }: { service: ServicePage }) {
 
       <footer className="seo-footer">
         <div className="seo-wrap seo-footer-layout">
-          <div className="seo-footer-brand"><Brand /><p>Kampala print and branding enquiries, from office materials to team kit.</p></div>
+          <div className="seo-footer-brand"><Brand /><p>Kampala print and branding enquiries, from office materials to team kit.</p><SocialLinks /></div>
           <div className="seo-footer-links">
             <span className="seo-mono" style={{ color: 'var(--seo-blue)' }}>Keep in touch</span>
             <a href="/" data-testid="link-seo-footer-home">Home</a>

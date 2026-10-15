@@ -10,6 +10,7 @@ import { whatsappHref } from '@/lib/catalog';
 import { SITE } from '@/lib/site-config';
 import { productDescription } from '@/lib/product-description';
 import { ServiceOffers, TextileOffers } from '@/components/LiveOffers';
+import { SocialLinks } from '@/components/SocialLinks';
 import './products.css';
 
 const PAGE = 24;
@@ -85,7 +86,7 @@ export function ProductsPage() {
           </>}
         </div>
       </main>
-      <footer className="footer"><div className="shell footer-inner"><Brand /><div className="footer-meta"><small>© {new Date().getFullYear()} Print Garage · {SITE.address}</small></div></div></footer>
+      <footer className="footer"><div className="shell footer-inner"><Brand /><div className="footer-meta"><SocialLinks /><small>© {new Date().getFullYear()} Print Garage · {SITE.address}</small></div></div></footer>
     </div>
   );
 }

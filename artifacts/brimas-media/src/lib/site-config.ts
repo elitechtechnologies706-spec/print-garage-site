@@ -15,3 +15,12 @@ export const SITE = {
   primary: '#F47226',
   secondary: '#717274',
 } as const;
+
+export const SOCIAL_LINKS = [
+  { id: 'x', label: 'X', href: 'https://x.com/print__garage' },
+  { id: 'instagram', label: 'Instagram', href: 'https://www.instagram.com/print__garage' },
+  { id: 'linkedin', label: 'LinkedIn', href: 'https://www.linkedin.com/in/print-garage-6aa11b2a3/' },
+  { id: 'tiktok', label: 'TikTok', href: 'https://www.tiktok.com/@print.garage' },
+  { id: 'youtube', label: 'YouTube', href: 'https://www.youtube.com/channel/UCvRVPJYwF1-_iohaurbYMOQ' },
+  { id: 'facebook', label: 'Facebook', href: 'https://www.facebook.com/profile.php?id=61594641246359' },
+] as const;

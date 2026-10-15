@@ -9,6 +9,7 @@ import { formatUgx, whatsappHref } from '../lib/catalog';
 import { priceListSections, type PriceListItem } from '../lib/price-list';
 import './price-list.css';
 import { ServiceOffers } from '@/components/LiveOffers';
+import { SocialLinks } from '@/components/SocialLinks';
 
 function displayPrice(item: PriceListItem) {
   if (item.price === null) return 'Request a quote';
@@ -91,7 +92,7 @@ export function PriceList() {
           </div>
         </div>
       </main>
-      <footer className="price-page-footer"><div className="shell">Print Garage · {SITE.address} <a href={CALL}>{SITE.displayPhone}</a></div></footer>
+      <footer className="price-page-footer"><div className="shell">Print Garage · {SITE.address} <a href={CALL}>{SITE.displayPhone}</a><SocialLinks /></div></footer>
     </div>
   );
 }

@@ -44,6 +44,25 @@ test('software offer shows the updated website price and excludes domain, hostin
   assert.ok(component.includes('{service.exclusiveNote && <p className="live-offer-note">({service.exclusiveNote})</p>}'));
 });
 
+test('the six supplied social profiles are linked from the site footers', () => {
+  const config = readFileSync(new URL('../src/lib/site-config.ts', import.meta.url), 'utf8');
+  const socialLinks = readFileSync(new URL('../src/components/SocialLinks.tsx', import.meta.url), 'utf8');
+  for (const profile of [
+    'https://x.com/print__garage',
+    'https://www.instagram.com/print__garage',
+    'https://www.linkedin.com/in/print-garage-6aa11b2a3/',
+    'https://www.tiktok.com/@print.garage',
+    'https://www.youtube.com/channel/UCvRVPJYwF1-_iohaurbYMOQ',
+    'https://www.facebook.com/profile.php?id=61594641246359',
+  ]) assert.ok(config.includes(profile), `Missing user-supplied social profile: ${profile}`);
+  assert.ok(socialLinks.includes('aria-label={`Print Garage on ${label} (opens in a new tab)`}'));
+  assert.ok(socialLinks.includes('target="_blank"'));
+  assert.ok(socialLinks.includes('rel="noopener noreferrer"'));
+  for (const page of ['../src/App.tsx', '../src/pages/ProductsPage.tsx', '../src/pages/PriceList.tsx', '../src/pages/GalleryPage.tsx', '../src/seo/LandingPage.tsx', '../src/pages/RequestQuote.tsx']) {
+    assert.ok(readFileSync(new URL(page, import.meta.url), 'utf8').includes('<SocialLinks'), `Social links missing from ${page}`);
+  }
+});
+
 test('paragraphs use natural word spacing rather than stretched justification', () => {
   const css = readFileSync(new URL('../src/index.css', import.meta.url), 'utf8');
   assert.ok(css.includes('main p { text-align: start; text-align-last: auto; text-justify: none; word-spacing: normal; }'));
