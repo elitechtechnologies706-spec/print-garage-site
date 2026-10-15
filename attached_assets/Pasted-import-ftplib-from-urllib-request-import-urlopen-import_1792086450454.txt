@@ -1,0 +1,64 @@
+import ftplib
+from urllib.request import urlopen
+import mysql.connector
+
+# ====== FILL YOUR DETAILS HERE ONLY ======
+FTP_HOST = "printgarage.online"
+FTP_USER = "your_cpanel_user"
+FTP_PASS = "your_password"
+SITE_URL = "https://printgarage.online"
+OLD_URL = "http://old-site.com"  # change to old domain / localhost
+NEW_URL = "https://printgarage.online"
+
+DB_HOST = "localhost"  # from wp-config.php - or your hosting DB host
+DB_USER = "your_db_user"
+DB_PASS = "your_db_pass"
+DB_NAME = "your_db_name"
+# ===========================================
+
+print("=== 1. CHECK UPLOADS VIA FTP ===")
+try:
+    ftp = ftplib.FTP(FTP_HOST)
+    ftp.login(FTP_USER, FTP_PASS)
+    ftp.cwd("public_html/wp-content/uploads")
+    files = ftp.nlst()
+    print(f"Found {len(files)} items in uploads")
+    print(files[:20])
+    if len(files) == 0:
+        print("ERROR: Uploads folder EMPTY - you must re-upload wp-content/uploads zip from old host")
+    else:
+        print("Uploads folder OK - files exist")
+    ftp.quit()
+except Exception as e:
+    print("FTP Failed:", e)
+
+print("\n=== 2. TEST IMAGE URL ===")
+test_img = SITE_URL + "/wp-content/uploads/2025/01/test.jpg"
+try:
+    urlopen(test_img)
+    print("Image loads OK")
+except Exception as e:
+    print("Image BROKEN:", e)
+
+print("\n=== 3. FIX DATABASE URLS ===")
+try:
+    db = mysql.connector.connect(host=DB_HOST, user=DB_USER, password=DB_PASS, database=DB_NAME)
+    cursor = db.cursor()
+    queries = [
+        "UPDATE wp_posts SET guid = REPLACE(guid, %s, %s)",
+        "UPDATE wp_posts SET post_content = REPLACE(post_content, %s, %s)",
+        "UPDATE wp_postmeta SET meta_value = REPLACE(meta_value, %s, %s)",
+        "UPDATE wp_options SET option_value = REPLACE(option_value, %s, %s) WHERE option_name IN ('siteurl','home')"
+    ]
+    for q in queries:
+        cursor.execute(q, (OLD_URL, NEW_URL))
+        print(f"Fixed: {cursor.rowcount} rows - {q[:30]}")
+    db.commit()
+    print("Database fix DONE - Clear cache in WP now")
+    db.close()
+except Exception as e:
+    print("DB Failed:", e)
+    print("Tip: Allow Remote MySQL in cPanel > Remote MySQL > Add your Replit IP, or run this part in cPanel Terminal")
+
+print("\n=== DONE ===")
+print("Now: Go to WP Admin > Settings > Permalinks > Save, and clear LiteSpeed Cache")
