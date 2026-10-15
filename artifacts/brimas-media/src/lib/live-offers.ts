@@ -2,7 +2,8 @@
 export const services = [
   {
     title: "Software Development",
-    price: "Websites from $49.99",
+    price: "Websites from as low as $100",
+    exclusiveNote: "Exclusive of Domain, Hosting & SEO",
     description: "We develop websites, SaaS apps and custom software systems. SaaS apps and systems are quoted according to your requirements.",
     wa: "Hello Print Garage, I am interested in software development for a website, SaaS app or custom system. Please help me discuss my requirements and get a quote.",
   },

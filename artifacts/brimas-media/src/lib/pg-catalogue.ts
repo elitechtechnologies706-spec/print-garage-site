@@ -43,6 +43,17 @@ export const CATEGORY_LABELS: Record<string, string> = {
 export const categoryLabel = (slug: string) => CATEGORY_LABELS[slug] ?? labelise(slug);
 export const CATEGORY_ORDER = Object.keys(CATEGORY_LABELS);
 
+export const productFilters = [
+  { id: 'all', label: 'All', categories: [] },
+  { id: 'corporate-gifts', label: 'Corporate Gifts', categories: ['corporate-gifts'] },
+  { id: 'commercial-printing', label: 'Commercial Printing', categories: ['commercial-printing'] },
+  { id: 'large-format', label: 'Large Format', categories: ['large-format'] },
+  { id: 'promotional', label: 'Promotional Products', categories: ['promotional-products', 'drinkware', 'bags', 'eco', 'portfolio'] },
+  { id: 'ppe', label: 'PPE', categories: ['ppe'] },
+  { id: 'textiles', label: 'Textiles', categories: ['textiles'] },
+  { id: 'digital-media', label: 'Digital & Media Services', categories: [] },
+] as const;
+
 // Service id -> exact catalogue category slugs.
 export const serviceAliases: Record<string, string[]> = {
   'large-format': ['large-format'],
@@ -56,6 +67,8 @@ export const serviceAliases: Record<string, string[]> = {
 export function categoriesFor(param?: string): string[] | null {
   if (!param) return null;
   const slug = slugify(param);
+  const filter = productFilters.find((item) => item.id === slug);
+  if (filter) return slug === 'all' || slug === 'digital-media' ? null : [...filter.categories];
   if (serviceAliases[slug]) return serviceAliases[slug];
   return [slug];
 }

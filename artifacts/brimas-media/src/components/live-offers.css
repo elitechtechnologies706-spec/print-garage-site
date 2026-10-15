@@ -5,6 +5,7 @@
 .live-service h3 { font-size: 1rem; line-height: 1.4; margin: 0 0 10px; }
 .live-offer-badge { display: inline-block; background: var(--brand-orange); color: #111; font-size: .7rem; font-weight: 800; padding: 3px 7px; margin-bottom: 8px; }
 .live-offer-price { font-weight: 700; font-size: .92rem; }
+.live-offer-note { font-size: .8rem; color: var(--brand-gray); margin: 5px 0; }
 .live-offer-description { font-size: .85rem; line-height: 1.5; }
 .live-sub-offer { border-top: 1px solid #ddd; margin-top: 16px; padding-top: 14px; }
 .live-sub-offer h4 { font-size: .95rem; margin: 0 0 8px; }

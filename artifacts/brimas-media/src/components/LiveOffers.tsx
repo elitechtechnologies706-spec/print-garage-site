@@ -2,16 +2,17 @@ import { services, textiles } from '@/lib/live-offers';
 import { whatsappHref } from '@/lib/catalog';
 import './live-offers.css';
 
-export function ServiceOffers() {
+export function ServiceOffers({ showHeading = true }: { showHeading?: boolean }) {
   return (
-    <section className="live-offers" aria-labelledby="digital-services-heading">
-      <h2 id="digital-services-heading">Digital & media services</h2>
+    <section className="live-offers" aria-label={showHeading ? undefined : 'Digital and media services'} aria-labelledby={showHeading ? 'digital-services-heading' : undefined}>
+      {showHeading && <h2 id="digital-services-heading">Digital & media services</h2>}
       <div className="live-service-grid">
         {services.map((service) => (
           <article className="live-service" key={service.title}>
             {service.badge && <span className="live-offer-badge">{service.badge}</span>}
             <h3>{service.title}</h3>
             <p className="live-offer-price">{service.price}</p>
+            {service.exclusiveNote && <p className="live-offer-note">({service.exclusiveNote})</p>}
             {service.description && <p className="live-offer-description">{service.description}</p>}
             {service.offering && (
               <div className="live-sub-offer">

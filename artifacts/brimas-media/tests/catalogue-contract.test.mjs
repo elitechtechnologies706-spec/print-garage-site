@@ -18,6 +18,32 @@ test('partners default to twelve logos with an accessible show-all toggle and th
   assert.ok(css.includes('.pg-partners-toggle { background: var(--brand-orange)'));
 });
 
+test('mobile navigation starts with Home and products use only the eight requested filters', () => {
+  const menu = readFileSync(new URL('../src/components/SiteMenu.tsx', import.meta.url), 'utf8');
+  const products = readFileSync(new URL('../src/pages/ProductsPage.tsx', import.meta.url), 'utf8');
+  const catalogue = readFileSync(new URL('../src/lib/pg-catalogue.ts', import.meta.url), 'utf8');
+  const sectionLabels = [...menu.matchAll(/\{ id: '[^']+', label: '([^']+)' \}/g)].map((match) => match[1]);
+  assert.deepEqual(sectionLabels, ['Home', 'Our Products', 'Services', 'Gallery', 'About Us', 'Contact Us']);
+  assert.ok(menu.includes("id === 'top' ? '/'"));
+  assert.ok(menu.indexOf('{sections.map((section) => navigationItem(section, true))}') < menu.indexOf('>Full price list</a>'));
+  assert.ok(products.includes('{productFilters.map((filter) =>'));
+  assert.ok(!products.includes('.pp-subs'));
+  const filterIds = [...catalogue.matchAll(/\{ id: '([^']+)', label:/g)].map((match) => match[1]);
+  assert.deepEqual(filterIds, ['all', 'corporate-gifts', 'commercial-printing', 'large-format', 'promotional', 'ppe', 'textiles', 'digital-media']);
+  assert.ok(catalogue.includes("digital-media', label: 'Digital & Media Services'"));
+  assert.ok(products.includes('<ServiceOffers showHeading={false} />'));
+  assert.ok(catalogue.includes("'promotional-products', 'drinkware', 'bags', 'eco', 'portfolio'"));
+});
+
+test('software offer shows the updated website price and excludes domain, hosting and SEO', () => {
+  const offers = readFileSync(new URL('../src/lib/live-offers.ts', import.meta.url), 'utf8');
+  const component = readFileSync(new URL('../src/components/LiveOffers.tsx', import.meta.url), 'utf8');
+  assert.ok(offers.includes('Websites from as low as $100'));
+  assert.ok(offers.includes('exclusiveNote: "Exclusive of Domain, Hosting & SEO"'));
+  assert.ok(offers.includes('SaaS apps and custom software systems'));
+  assert.ok(component.includes('{service.exclusiveNote && <p className="live-offer-note">({service.exclusiveNote})</p>}'));
+});
+
 test('paragraphs use natural word spacing rather than stretched justification', () => {
   const css = readFileSync(new URL('../src/index.css', import.meta.url), 'utf8');
   assert.ok(css.includes('main p { text-align: start; text-align-last: auto; text-justify: none; word-spacing: normal; }'));

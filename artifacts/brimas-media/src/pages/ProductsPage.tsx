@@ -5,11 +5,11 @@ import { FaWhatsapp } from 'react-icons/fa6';
 import { SiteMenu } from '@/components/SiteMenu';
 import { Brand } from '@/components/Brand';
 import { CatalogueImage } from '@/components/CatalogueImage';
-import { catalogue, categoriesFor, categoryLabel, labelise, CATEGORY_ORDER } from '@/lib/pg-catalogue';
+import { catalogue, categoriesFor, categoryLabel, labelise, productFilters } from '@/lib/pg-catalogue';
 import { whatsappHref } from '@/lib/catalog';
 import { SITE } from '@/lib/site-config';
 import { productDescription } from '@/lib/product-description';
-import { TextileOffers } from '@/components/LiveOffers';
+import { ServiceOffers, TextileOffers } from '@/components/LiveOffers';
 import './products.css';
 
 const PAGE = 24;
@@ -19,28 +19,23 @@ export function ProductsPage() {
   const [, navigate] = useLocation();
   const param = params?.category;
   const groups = categoriesFor(param);
+  const isDigitalMedia = param === 'digital-media';
   const [search, setSearch] = useState('');
-  const [sub, setSub] = useState('all');
   const [ecoOnly, setEcoOnly] = useState(false);
   const [shown, setShown] = useState(PAGE);
 
-  useEffect(() => { setSub('all'); setShown(PAGE); setSearch(''); setEcoOnly(false); }, [param]);
+  useEffect(() => { setShown(PAGE); setSearch(''); setEcoOnly(false); }, [param]);
 
   const all = catalogue.products;
-  const categories = useMemo(() => {
-    const present = new Set(all.map((p) => p.category));
-    return [...CATEGORY_ORDER.filter((c) => present.has(c)), ...[...present].filter((c) => !CATEGORY_ORDER.includes(c))].map((c) => [c, categoryLabel(c)] as const);
-  }, [all]);
 
   const inGroup = useMemo(() => all.filter((p) => !groups || groups.includes(p.category)), [all, groups]);
-  const subs = useMemo(() => [...new Set(inGroup.map((p) => p.subcategory).filter(Boolean) as string[])], [inGroup]);
   const q = search.toLowerCase().replace(/[^a-z0-9]+/g, '');
   const list = inGroup.filter((p) =>
-    (sub === 'all' || p.subcategory === sub) && (!ecoOnly || p.eco)
+    (!ecoOnly || p.eco)
     && `${p.name}${p.category}${p.subcategory ?? ''}`.toLowerCase().replace(/[^a-z0-9]+/g, '').includes(q));
   const visible = list.slice(0, shown);
   const serviceName = catalogue.services.find((x) => x.id === param)?.name;
-  const title = !groups ? 'Products' : serviceName ?? (groups.length === 1 ? categoryLabel(groups[0]) : labelise(param ?? ''));
+  const title = isDigitalMedia ? 'Digital & Media Services' : !groups ? 'Products' : serviceName ?? (groups.length === 1 ? categoryLabel(groups[0]) : labelise(param ?? ''));
 
   return (
     <div className="print-garage-page">
@@ -52,19 +47,13 @@ export function ProductsPage() {
         <div className="shell">
           <p className="pp-kicker">Print Garage catalogue</p>
           <h1>{title}</h1>
-          {groups?.includes('textiles') && <TextileOffers />}
           <nav className="pp-cats" aria-label="Product categories">
-            <button type="button" className={!groups ? 'on' : ''} onClick={() => { setSearch(''); setEcoOnly(false); navigate('/products'); }} data-testid="button-cat-all">All</button>
-            {categories.map(([slug, label]) => (
-              <button type="button" key={slug} className={groups?.length === 1 && groups[0] === slug ? 'on' : ''} onClick={() => { setSearch(''); setEcoOnly(false); navigate(`/products/${slug}`); }} data-testid={`button-cat-${slug}`}>{label}</button>
+            {productFilters.map((filter) => (
+              <button type="button" key={filter.id} className={filter.id === 'all' ? (!param || param === 'all' ? 'on' : '') : param === filter.id ? 'on' : ''} onClick={() => { setSearch(''); setEcoOnly(false); navigate(filter.id === 'all' ? '/products' : `/products/${filter.id}`); }} data-testid={`button-cat-${filter.id}`}>{filter.label}</button>
             ))}
           </nav>
-          {subs.length > 0 && (
-            <div className="pp-subs" aria-label="Subcategories">
-              <button type="button" className={sub === 'all' ? 'on' : ''} onClick={() => { setSub('all'); setShown(PAGE); }}>All types</button>
-              {subs.map((s) => <button type="button" key={s} className={sub === s ? 'on' : ''} onClick={() => { setSub(s); setShown(PAGE); }}>{labelise(s)}</button>)}
-            </div>
-          )}
+          {isDigitalMedia ? <ServiceOffers showHeading={false} /> : <>
+          {groups?.includes('textiles') && <TextileOffers />}
           <div className="pp-tools">
             <label className="pp-search"><Search size={16} aria-hidden="true" /><input type="search" value={search} onChange={(e) => { setSearch(e.target.value); setShown(PAGE); }} placeholder="Search products" aria-label="Search products" data-testid="input-product-search" /></label>
             <label className="pp-eco"><input type="checkbox" checked={ecoOnly} onChange={(e) => { setEcoOnly(e.target.checked); setShown(PAGE); }} /> Eco only</label>
@@ -93,6 +82,7 @@ export function ProductsPage() {
           </div>
           {shown < list.length && <div className="pp-more"><button type="button" className="button button-dark" onClick={() => setShown((n) => n + PAGE)} data-testid="button-load-more">Load more</button></div>}
           {groups?.includes('portfolio') && <p className="showcase-note">KCB-branded samples are design references, not evidence of completed Print Garage work.</p>}
+          </>}
         </div>
       </main>
       <footer className="footer"><div className="shell footer-inner"><Brand /><div className="footer-meta"><small>© {new Date().getFullYear()} Print Garage · {SITE.address}</small></div></div></footer>

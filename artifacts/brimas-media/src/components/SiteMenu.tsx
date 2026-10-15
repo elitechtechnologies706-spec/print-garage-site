@@ -1,7 +1,7 @@
 import { useEffect, useId, useRef, useState } from 'react';
 import { ChevronDown, Menu, X } from 'lucide-react';
 import { servicePages } from '../seo/service-data';
-import { catalogue, categoryLabel, CATEGORY_ORDER } from '../lib/pg-catalogue';
+import { productFilters } from '../lib/pg-catalogue';
 import './SiteMenu.css';
 
 const sections = [
@@ -55,8 +55,8 @@ export function SiteMenu({ home = false, currentPath }: { home?: boolean; curren
     navigationRef.current?.querySelectorAll<HTMLDetailsElement>('details[open]').forEach((menu) => { menu.open = false; });
   };
 
-  const sectionLink = (id: string) => id === 'showcase' ? '/products' : home ? `#${id}` : `/#${id}`;
-  const productCats = CATEGORY_ORDER.filter((c) => catalogue.products.some((p) => p.category === c));
+  const sectionLink = (id: string) => id === 'top' ? '/' : id === 'showcase' ? '/products' : home ? `#${id}` : `/#${id}`;
+  const productCats = productFilters.filter((category) => category.id !== 'all');
   const navigationItem = ({ id, label }: typeof sections[number], mobile: boolean) => {
     if (id === 'gallery') {
       return <a key={id} href="/gallery" onClick={closeMenu} aria-current={currentPath === '/gallery' ? 'page' : undefined} data-testid="link-gallery">{label}</a>;
@@ -70,7 +70,7 @@ export function SiteMenu({ home = false, currentPath }: { home?: boolean; curren
         <div className="nav-dropdown-panel">
           <a href={sectionLink(id)} onClick={closeMenu}>View all {id === 'showcase' ? 'products' : 'services'}</a>
           {id === 'showcase'
-            ? productCats.map((c) => <a key={c} href={`/products/${c}`} onClick={closeMenu} aria-current={currentPath === `/products/${c}` ? 'page' : undefined}>{categoryLabel(c)}</a>)
+            ? productCats.map((category) => <a key={category.id} href={`/products/${category.id}`} onClick={closeMenu} aria-current={currentPath === `/products/${category.id}` ? 'page' : undefined}>{category.label}</a>)
             : <>
               {serviceCategories.map(([category, href]) => <a key={category} href={href} onClick={closeMenu} aria-current={currentPath === href ? 'page' : undefined}>{category}</a>)}
               <span className="site-menu-label site-menu-divider">More service details</span>
@@ -92,10 +92,10 @@ export function SiteMenu({ home = false, currentPath }: { home?: boolean; curren
         <X className="site-menu-close-icon" size={21} aria-hidden="true" />
       </summary>
       <nav id={menuPanelId} className="site-menu-panel" aria-label="Site navigation">
-        <span className="site-menu-label">Navigate</span>
-        <a href="/price-list" aria-current={currentPath === '/price-list' ? 'page' : undefined} onClick={closeMenu} data-testid="link-nav-price-list">Full price list · VAT included</a>
-        <a href="/request-a-quote" aria-current={currentPath === '/request-a-quote' ? 'page' : undefined} onClick={closeMenu} data-testid="link-nav-request-quote">Request a quote</a>
         {sections.map((section) => navigationItem(section, true))}
+        <span className="site-menu-label site-menu-divider">More</span>
+        <a href="/price-list" aria-current={currentPath === '/price-list' ? 'page' : undefined} onClick={closeMenu} data-testid="link-nav-price-list">Full price list</a>
+        <a href="/request-a-quote" aria-current={currentPath === '/request-a-quote' ? 'page' : undefined} onClick={closeMenu} data-testid="link-nav-request-quote">Request a quote</a>
       </nav>
     </details>
     </div>
